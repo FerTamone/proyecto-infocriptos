@@ -269,10 +269,18 @@ footer{
 
 }
 
+.blockchain__info--videTabla{
+    display: flex;
+    flex-direction: column;
+    height: 110rem;
+    justify-content: space-evenly;
+}
+
 #blockchain__flujo{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column-reverse;
+    align-items:flex-start;
+    margin-top: 5rem;
 }
 
 .estiloTabla{
@@ -321,6 +329,12 @@ td,th {
     flex-direction: row;
 }
 
+.blockchain__flujo--descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 
 /* CSS AYUDA */
 
@@ -347,6 +361,10 @@ td,th {
     height: 80rem;
 }
 
+.formulario__size{
+    width: 100%;
+    height: 100%;
+}
 
 form{
     width: 60rem;
@@ -354,7 +372,7 @@ form{
 }
 
 #form1 {
-    border:1px solid #FF2E63;
+    border:1px solid #5B7DB1;
     background-color:#F9F7F7 ;
     padding: 5rem;
     margin: 1rem;
@@ -401,7 +419,7 @@ form{
 #form1 input.btn {
     padding:0.5rem;
     color:black;
-    background-color:#FF2E63;
+    background-color:#5B7DB1;
     border:1px solid #000000;
     margin: 0.4rem;
 }
@@ -409,7 +427,7 @@ form{
 
 
 #form2 {
-    border:1px solid #FF2E63;
+    border:1px solid #5B7DB1;
     background-color:#F9F7F7 ;
     padding: 4rem;
     margin: 1rem;
@@ -443,7 +461,7 @@ form{
 #form2 input.btn {
     padding:0.5rem;
     color: black;;
-    background-color:#FF2E63;
+    background-color:#5B7DB1;
     border:1px solid #000000;
     margin:0.4rem;
 }
@@ -564,7 +582,186 @@ form{
 
 @media screen and (max-width:368px) {
     #grilla{
-
+        grid-template-areas:
+            "header"
+            "header"
+            "section"
+            "section"
+            "footer";
+        grid-template-rows: auto auto auto auto auto ; 
+        grid-template-columns: 100%;
     }
-}
+    .header{
+        flex-wrap: wrap;
+    }
+    .subheader{
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .header nav ul{
+        flex-wrap: wrap;
+        justify-content:center ;
+    }
+    .pagina__titulo{
+        font-size: 5rem;
+    }
+
+    section{
+        flex-wrap: nowrap;
+    }
+    .estiloTxt{
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .estiloTituloBannerNegro{
+        font-size: 7rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    #bannerTamaño{
+        width: 99.4%;
+    }
+
+    .tarjetas{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin: 2rem 0rem 5rem 0rem;
+    }
+
+    .tarjetaForma{
+        border-radius: 0px;
+        background-color: transparent;
+        border: transparent;
+        width: auto;
+    }
+
+    .estilo__icono{
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+    }
+
+    .estiloBoton{
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+    }
+    .orden__descripcion{
+        display: none;
+    }
+    .tamañoVideo{
+        height: 100%;
+        width: 100vw;
+    }
+
+    #blockchain__info{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .videoBlock{
+        width: 100%;
+        height: 35rem;
+    }
+
+    .titulos__blockchain{
+        font-size: 3rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    #blockchain__flujo{
+        display: none;
+    }
+
+    .blockchain__flujo--descripcion{
+        display: none;
+    }
+    
+    #blockchain__tabla{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .estiloTabla{
+        width: 100vw;
+        height: 40rem;
+    }
+
+    td,th { 
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+    .img__mercados--secciones{
+        width: 100%;
+        height: 100%;
+    }
+
+    .estiloTxtDescripciones{
+        display: none;
+    }
+
+    .descripcionTitulo{
+        font-size: 4rem;
+    }
+
+    .paginaDer{
+        flex-direction: column;
+    }
+    
+    .paginaIzq{
+        flex-direction: column;
+    }
+
+    #mercados__article{
+        justify-content: space-around;
+        height: 135rem;
+    }
+
+    .ubicacionTitulo{
+        padding: 3rem;
+    }
+
+    .formularios{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+    }
+
+    #form1 {
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+        height: auto;
+    }
+
+    #form1 textarea{
+        border:1px solid black;
+        margin: 0rem 0rem 0rem 7.7rem;
+    
+    }
+    #form2 {
+        padding: 2rem;
+        margin: 3rem;
+        width: auto ;
+        height: auto;
+    }
+
+
+
+
+} 
 
