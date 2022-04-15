@@ -560,3 +560,11 @@ form{
     justify-content:space-around ;
     height: 200rem;
 }
+
+
+@media screen and (max-width:368px) {
+    #grilla{
+
+    }
+}
+
