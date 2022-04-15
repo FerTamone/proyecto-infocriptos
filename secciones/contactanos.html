@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <link rel="stylesheet" href="/css/index_grid.css">
+    <title>Contacto</title>
+</head>
+<body >
+    <div id="grilla">
+        <header class="header">
+            <div class="subheader">
+                <a href="/index_grid.html"><img class="logoPagina" src="../iconos/pagina-icon.png" alt="pag-icon"></a>
+                <h1 class="pagina__titulo">infocryptos</h1> 
+            </div>
+            <nav >
+                <ul>
+                    <li ><a  href="/index_grid.html">INICIO</a></li>
+                    <li><a  href="/secciones/criptomonedas.html">CRIPTOMONEDAS</a>
+                        <ul>
+                            <li><a href="/secciones/criptomonedas.html#btc">BITCOIN</a></li>
+                            <li><a href="/secciones/criptomonedas.html#eth">ETHEREUM</a></li>
+                            <li><a href="/secciones/criptomonedas.html#tusd">TETHER</a></li>
+                            <li><a href="/secciones/criptomonedas.html#binance">BINANCE COIN</a></li>
+                            <li><a href="/secciones/criptomonedas.html#usdC">USD COIN</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="/secciones/blockchain.html">BLOCKCHAIN</a></li>
+                    <li><a  href="/secciones/mercados.html">MERCADOS</a>
+                        <ul>
+                            <li><a href="/secciones/mercados.html#binance">BINANCE</a></li>
+                            <li><a href="/secciones/mercados.html#coinbase">COINBASE</a></li>
+                            <li><a href="/secciones/mercados.html#ftx">FTX</a></li>
+                            <li><a href="/secciones/mercados.html#kraken">KRAKEN</a></li>
+                            <li><a href="/secciones/mercados.html#kucoin">KUCOIN</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="/secciones/contactanos.html">AYUDA</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="fondo__ayuda">
+            <div class="ubicacionTitulo">
+                <h2 class="estiloTituloBannerBlanco">contact us</h2>
+            </div>
+            <article class="formularios">
+                <div >
+                    <form >
+                        <fieldset id="form1">
+                        <legend>consultas</legend>
+                        <ol>
+                            <li>
+                                <label>Nombre: </label>
+                                <input type="text" name="nombre" size="25" />
+                            </li>
+                            <li>
+                                <label>Apellido: </label>
+                                <input type="text" name="apellido" size="25" />
+                            </li>
+                            <li>
+                                <label>E-mail: </label>
+                                <input type="email" name="email" size="25" />
+                            </li>
+                            <li>
+                                <label>Consulta: </label>
+                                <textarea name="consulta" cols="30" rows="10"></textarea>
+                            </li>
+                            <p class="ubicacionBotones">
+                                <input type="submit" class="btn" value="Enviar consulta" />
+                                <input type="reset" class="btn" value="Borrar consulta">
+                            </p>
+                        </ol>
+                        </fieldset>
+                    </form>
+                </div>
+                <div>
+                    <form >
+                        <fieldset id="form2">
+                            <legend>encuesta</legend>
+                            <ol>
+                                <li>
+                                    <label>¿Conoces las criptomonedas? </label>
+                                    <input type="radio" name="resp" size="25" >SI
+                                    <input type="radio" name="resp" size="25">NO 
+                                </li>
+                                <li>
+                                    <label> Si respondistes si, ¿cual es?</label>
+                                    <select name="criptos" >
+                                        <option value="BTC">Bitcoin</option>
+                                        <option value="ETH">Ethereum</option>
+                                        <option value="TUSD">Tether</option>
+                                        <option value="BNB">Binance Coin</option>
+                                        <option value="USDC">USD Coin</option>    
+                                        <option value="NN">No esta en la lista</option>   
+                                    </select>
+                                </li>
+                                <li>
+                                    <label >Si respondistes no, ¿porque?</label>
+                                    <ul>
+                                        <li> 
+                                            <input type="checkbox" name="nointeres" value="1">No contesta
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nointeres" value="1">No me interesa
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nointeres" value="1">No tengo plata
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nointeres" value="1">No confio
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nointeres" value="1">Compro dolares
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nointeres" value="1">Aun no me informé
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                                <li>
+                                    <label>¿Recomedarias la pagina? </label>
+                                    <input type="radio" name="pagina">SI
+                                    <input type="radio" name="pagina">NO
+                                    <input type="radio" name="pagina">PUEDE SER
+                                </li>
+                                <p class="ubicacionBotones"> 
+                                    <input type="submit" class="btn" value="Enviar respuesta" >
+                                    <input type="reset" class="btn" value="Borrar respuesta">
+                                </p>
+                            </ol>
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="piePagina_Autor">
+                <h4 class="estiloAutor" >Autor</h4>
+                <p class="estiloTxtAutor">Fernando Tamone</p>
+            </div>
+            <div class="piePagina_redes">
+                <h4 class="estiloRedes">Encontranos en</h4>
+                <div>
+                    <a href="https://www.facebook.com/"><img
+                        src="/iconos/face-icon.png" alt="face-icon" ></a>
+                    <a href="https://www.instagram.com/?hl=es-la"><img src="/iconos/insta-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/?lang=es"><img src="/iconos/twitter-icon.png" alt="tweet-icon"></a>
+                    <a href="https://web.telegram.org/z/"><img src="/iconos/tele-icon.png" alt="tele-icon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
