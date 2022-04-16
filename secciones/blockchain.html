@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- definimos el viewport para poder ver el contenido en todas las vistas posibles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="/css/index_grid.css">
     <title>Blockchain</title>
 </head>
 <body >
+    <!-- definimos un "contenedor" de todas las secciones de la pagina -->
     <div id="grilla">
+        <!-- seccion HEADER de la pagina -->
         <header class="header">
             <div class="subheader">
                 <a href="/index_grid.html"><img class="logoPagina" src="../iconos/pagina-icon.png" alt="pag-icon"></a>
                 <h1 class="pagina__titulo">infocryptos</h1>
             </div>
+            <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
             <nav >
                 <ul>
                     <li ><a  href="/index_grid.html">INICIO</a></li>
@@ -40,16 +46,22 @@
                 </ul>
             </nav>
         </header>
+        <!-- section de la pagina donde va a estar todo el contenido de la misma -->
         <section >
+            <!-- banner con efecto parallax del contenido de la pagina -->
             <div id="bannerTamaño" class="bannerBlockchain efectoParallax">
                 <h2 class="estiloTituloBannerNegro" >red de bloques</h2>
             </div>
+            <!-- article que va a tener toda la info de la pagina -->
             <article id="blockchain__info" >
+                <!-- secotirzamos el article en 2 partes. PT1 -->
                 <div class="blockchain__info--videTabla">
+                    <!-- video con informacion de la pagina junto a su titulo -->
                     <div id="blockchain__video">
                         <h3 class="titulos__blockchain">¿que es una blockchain?</h3>
                         <iframe class="videoBlock" src="https://www.youtube.com/embed/70asKwy15Ds?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <!-- tabla con informacion de la pagina -->
                     <div id="blockchain__tabla">
                         <h3 class="titulos__blockchain">blockchains y sus caracteristicas</h3>
                         <table class="estiloTabla" >
@@ -160,7 +172,9 @@
                         </table>
                     </div>
                 </div>
+                <!-- article PT2 -->
                 <div id="blockchain__flujo">
+                    <!-- imagen junto a su titulo y descripcion de la misma -->
                     <div>
                         <img class="img__blockchain--flujo" src="../imagenes/block2-img.jpg" alt="funcionamiento">
                     </div>
@@ -169,15 +183,17 @@
                         <p class="estiloTxtParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste veniam molestiae praesentium aut et non modi temporibus quidem amet, natus saepe enim debitis reiciendis ab, repellendus recusandae, minima cumque?
                         Quas ea molestias quis aut ad quasi nam beatae accusamus reprehenderit similique eaque eius quo ratione tenetur laudantium omnis placeat esse alias sint, nesciunt dolore commodi nemo. Est, temporibus repellendus.</p>
                     </div>
-                    
                 </div>
             </article>
         </section>
+        <!-- footer de la pagina -->
         <footer>
+            <!-- datos del autor de la pagina -->
             <div class="piePagina_Autor">
                 <h4 class="estiloAutor" >Autor</h4>
                 <p class="estiloTxtAutor">Fernando Tamone</p>
             </div>
+            <!-- las redes de la pagina, con sus iconos y enlaces al sitio -->
             <div class="piePagina_redes">
                 <h4 class="estiloRedes">Encontranos en</h4>
                 <div>

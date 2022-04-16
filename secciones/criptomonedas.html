@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- definimos el viewport para poder ver el contenido en todas las vistas posibles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="/css/index_grid.css">
     <title>Criptomonedas</title>
 </head>
 <body >
+    <!-- definimos un "contenedor" de todas las secciones de la pagina -->
     <div id="grilla">
+        <!-- seccion HEADER de la pagina -->
         <header class="header">
             <div class="subheader">
                 <a href="/index_grid.html"><img class="logoPagina" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
                 <h1 class="pagina__titulo">infocryptos</h1>
             </div>
+            <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
             <nav >
                 <ul>
                     <li ><a  href="/index_grid.html">INICIO</a></li>
@@ -40,46 +46,53 @@
                 </ul>
             </nav>
         </header>
+        <!-- section de la pagina donde va a estar todo el contenido de la misma -->
         <section >
+            <!-- banner con efecto parallax del tema de la pagina -->
             <div id="bannerTamaño"class="criptosBanner efectoParallax">
                 <h2 class="estiloTituloBannerBlanco">monedas digitales</h2>
             </div>
+            <!-- definimos el article con las criptos que elegimos para que seleccione y vean info -->
             <article class="tarjetas">
-                <div class="tarjetaForma">
+                <!-- criptomoneda: Bitcoin  -->
+                <div >
                     <div class="orden__tarjeta">
                         <img class="estilo__icono" src="../iconos/btc-icon.png" alt="btc">
                         <button class="estiloBoton"><a class="reset" href="#btc">conocer</a></button>
                     </div>
                 </div>
-                <div class="tarjetaForma">
+                <!-- criptomoneda: Ethereum  -->
+                <div >
                     <div class="orden__tarjeta">
-                    <img class="estilo__icono" src="../iconos/eth-icon.png" alt="btc">
+                    <img class="estilo__icono" src="../iconos/eth-icon.png" alt="eth">
                     <button class="estiloBoton"><a class="reset"href="#eth">conocer</a></button>
                     </div>
                 </div>
-                <div class="tarjetaForma">
+                <!-- criptomoneda: Tether  -->
+                <div >
                     <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/tether-icon.png" alt="btc">
+                        <img class="estilo__icono" src="../iconos/tether-icon.png" alt="tusd">
                         <button class="estiloBoton"><a class="reset"href="#tusd">conocer</a></button> 
                     </div>
-    
                 </div>
-                <div class="tarjetaForma">
+                <!-- criptomoneda: Bnb  -->
+                <div >
                     <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/bnb-icon.png.png" alt="btc">
+                        <img class="estilo__icono" src="../iconos/bnb-icon.png.png" alt="bnb">
                         <button class="estiloBoton"><a class="reset" href="#binance">conocer</a></button> 
                     </div>
-    
                 </div>
-                <div class="tarjetaForma">
+                <!-- criptomoneda: Usdc  -->
+                <div >
                     <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/usdc-icon.png" alt="btc">
+                        <img class="estilo__icono" src="../iconos/usdc-icon.png" alt="usdc">
                         <button class="estiloBoton"><a class="reset"href="#usdC">conocer</a></button> 
                     </div>
-    
                 </div>
             </article>
+            <!-- definimos el article con las descripcion de las criptos junto a video informativo -->
             <article class="monedas">
+                <!-- informacion de Bitcoin, video +  descripcion informativa -->
                 <div class="videoIzq" id="btc">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ZtPYPZCaLAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -90,6 +103,7 @@
                             Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
                         </div>
                 </div>
+                <!-- informacion de Ethereum, video +  descripcion informativa -->
                 <div class="videoDer" id="eth">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/WVF2szEtpMw?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -100,6 +114,7 @@
                             Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
                         </div>
                 </div>
+                <!-- informacion de Theter, video +  descripcion informativa -->
                 <div class="videoIzq" id="tusd">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ROxA3QPTqL8?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -110,7 +125,7 @@
                             Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
                         </div>
                 </div>
-    
+                <!-- informacion de Bnb, video +  descripcion informativa -->
                 <div class="videoDer" id="binance">
                     <div>
                         <iframe class="tamañoVideo" src="https://www.youtube.com/embed/19kniFdfnHA?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -121,7 +136,7 @@
                         Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
                     </div>
                 </div>
-    
+                <!-- informacion de Usdc, video +  descripcion informativa -->
                 <div class="videoIzq" id="usdC">
                     <div>
                         <iframe class="tamañoVideo" src="https://www.youtube.com/embed/-7EgUb9kwyU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,12 +149,14 @@
                 </div>
             </article>  
         </section>
-
+        <!-- footer de la pagina -->
         <footer>
+            <!-- datos del autor de la pagina -->
             <div class="piePagina_Autor">
                 <h4 class="estiloAutor" >Autor</h4>
                 <p class="estiloTxtAutor">Fernando Tamone</p>
             </div>
+            <!-- las redes de la pagina, con sus iconos y enlaces al sitio -->
             <div class="piePagina_redes">
                 <h4 class="estiloRedes">Encontranos en</h4>
                 <div>
@@ -151,8 +168,6 @@
                 </div>
             </div>
         </footer>
-        
     </div>
-    
 </body>
 </html>
