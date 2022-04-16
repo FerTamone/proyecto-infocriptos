@@ -196,19 +196,28 @@ footer{
 .paginaDer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: #5B7DB1;
 }
 
 .paginaIzq{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    background-color: #5B7DB1;
 }
 
+.tituloYparrafo{
+    width: 50%;
+    height: auto;
+}
 
+.imgLink{
+    /* margin-left: 20rem; */
+    width: 50%;
+    height: 100%;
+}
 
 .img__mercados--secciones{
-    width: 70rem;
+    width: 80rem;
     height: 100%;
 }
 
@@ -224,14 +233,15 @@ footer{
     font-size: 3rem;
     line-height: 0.9;
     font-weight: bold;
-    margin: 1rem;
+    margin: 2rem;
+    text-align: justify;
 }
 
 #mercados__article{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 200rem;
+    justify-content: space-evenly;
+    height: 240rem;
 }
 
 
@@ -278,7 +288,7 @@ footer{
 
 #blockchain__flujo{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     align-items:flex-start;
     margin-top: 5rem;
 }
@@ -342,7 +352,7 @@ td,th {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 #fondo__ayuda{
@@ -362,8 +372,11 @@ td,th {
 }
 
 .formulario__size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 form{
@@ -512,14 +525,6 @@ form{
 
 }
 
-.tarjetaForma{
-    border: solid 1px black;
-    border-radius: 25px;
-    background-color: #1A132F;
-    width: 15%;
-    
-}
-
 
 .estilo__icono{
     width: 23rem;
@@ -579,6 +584,266 @@ form{
     height: 200rem;
 }
 
+@media screen and (max-width:768px){
+    
+    #grilla {
+
+        grid-template-areas:
+        "header header "
+        "section section "
+        "footer footer ";
+        grid-template-rows: auto auto; 
+        grid-template-columns: auto auto;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    .subheader{
+        width: 100%;
+        justify-content: center;
+    }
+
+    section{
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+    .pagina__titulo{
+        font-size: 7rem;
+    }
+
+
+
+    .estiloTxt{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1.7rem;
+        text-align: justify;
+    }
+    .estiloTituloBannerNegro{
+        font-size: 9rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 9rem;
+        text-align: center;
+    }
+
+    #bannerTamaño{
+        width: 99.7%;
+    }
+
+
+    .tarjetaForma{
+        border-radius: 0px;
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .tarjetas{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin: 5rem 0rem 5rem 0rem;
+        align-items: center;
+    }    
+
+    .estilo__icono{
+        width: 13rem;
+        height: 13rem;
+        margin: 1rem;
+    }
+
+    .estiloBoton{
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .orden__descripcion{
+        align-items: center;
+    }
+
+    .descripcionTitulo{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .tamañoVideo{
+        height: 100%;
+        width: 45rem;
+    }
+
+    .monedas{
+        justify-content:space-evenly ;
+        height: 200rem;
+    }
+
+    .videoIzq{
+        height: auto;
+    } 
+    
+    .videoDer{
+        height: auto;
+    } 
+
+    #blockchain__info{
+        flex-direction: column;
+        height: 170rem;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .videoBlock{
+        width: 76rem;
+        height: 35rem;
+        margin: 1rem;
+    }
+
+    .titulos__blockchain{
+        font-size: 5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    #blockchain__tabla{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .estiloTabla{
+        width: 100%;
+        height: 40rem;
+    }
+
+    td,th { 
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+    #blockchain__video{
+        margin: 0px;
+    }
+
+    #blockchain__flujo{
+        align-items:center;
+        margin: 0rem;
+        height: 45rem;
+    }
+    
+    .blockchain__flujo--descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .img__blockchain--flujo{
+        width: 55rem;
+        height: 50rem;
+        border: solid 1px black;
+        margin-left: 1rem;
+    }
+
+    .estiloTxtParrafo{
+        margin: 0.5rem;
+        font-size: 1.7rem;
+        padding: 0.5rem;
+        text-align: justify;
+    }
+
+    .titulos__blockchain{
+        font-size: 3.5rem;
+        font-family: "bebas";
+        text-decoration: underline;
+        margin: 0rem;
+    }
+
+
+
+    .img__mercados--secciones{
+        width: 100%;
+        height: 100%;
+    }
+
+    .estiloTxtDescripciones{
+        font-size: 1.7rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: justify;
+    }
+
+    .tituloYparrafo{
+        width: 40%;
+        height: auto;
+    }
+
+    .imgLink{
+        width: 60%;
+        height: auto;
+    }
+
+    .paginaDer{
+        background-color: #5B7DB1;
+    }
+    
+    .paginaIzq{
+        background-color: #5B7DB1;
+    }
+
+    .ubicacionTitulo{
+        padding: 2rem;
+    }
+    .formularios{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 150rem;
+        justify-content:space-around;
+    }
+
+    .formulario__size{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65rem;
+    
+    }
+    form{
+        width: auto;
+        height: 50rem;
+    }
+
+
+    #form1 {
+        padding: 2rem;
+        margin-left: 1.5rem;
+        width: 80%;
+        height: auto;
+
+    }
+
+    #form2 {
+        padding: 2rem;
+        margin: 3rem;
+        width: auto ;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
 
 @media screen and (max-width:368px) {
     #grilla{
@@ -635,6 +900,10 @@ form{
         margin: 2rem 0rem 5rem 0rem;
     }
 
+    .monedas{
+        height: 180rem;
+    }
+
     .tarjetaForma{
         border-radius: 0px;
         background-color: transparent;
@@ -656,8 +925,16 @@ form{
         display: none;
     }
     .tamañoVideo{
-        height: 100%;
+        height: 30rem;
         width: 100vw;
+    }
+
+    .videoIzq{
+        background-color: transparent;
+    }
+    
+    .videoDer{
+        background-color: transparent;
     }
 
     #blockchain__info{
@@ -715,15 +992,28 @@ form{
 
     .paginaDer{
         flex-direction: column;
+        height: 25rem;
     }
     
     .paginaIzq{
         flex-direction: column;
+        height: 25rem;
     }
 
+    .tituloYparrafo{
+        width: 100%;
+        height: auto;
+    }
+    
+    .imgLink{
+        width: 100%;
+        height: 100%;
+    }
+
+
     #mercados__article{
-        justify-content: space-around;
-        height: 135rem;
+        justify-content: space-evenly;
+        height: 145rem;
     }
 
     .ubicacionTitulo{
