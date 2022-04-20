@@ -892,19 +892,19 @@ form{
     }
 
     .videoIzq{
-        flex-direction: column;
+        flex-direction: column-reverse;
         background-color: transparent;
     }
     
     .videoDer{
-        flex-direction: column;
+        flex-direction: column-reverse;
         background-color: transparent;
     }
 
     .descripcionTitulo{
         font-size: 4rem;
     }
-
+    
     .orden__descripcion--parrafo{
         display:none;
     }
