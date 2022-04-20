@@ -380,7 +380,7 @@ td,th {
 
 
 .imgMercados{
-    background-image: url(/imagenes/exchangeBanner-img.jpg);
+    background-image: url(../imagenes/exchangeBanner-img.jpg);
     background-color: #5B7DB1;
 }
 
@@ -433,7 +433,7 @@ td,th {
 /* --------------------------------------------- SECCION AYUDA ------------------------------------------------------------------ */
 
 #fondo__ayuda{
-    background-image:url(/imagenes/fondo_ayuda.jpg);
+    background-image:url(../imagenes/fondo_ayuda.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
