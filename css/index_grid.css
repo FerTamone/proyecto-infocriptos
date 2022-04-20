@@ -892,16 +892,24 @@ form{
     }
 
     .videoIzq{
+        flex-direction: column;
         background-color: transparent;
     }
     
     .videoDer{
+        flex-direction: column;
         background-color: transparent;
     }
 
-    .orden__descripcion{
-        display: none;
+    .descripcionTitulo{
+        font-size: 4rem;
     }
+
+    .orden__descripcion--parrafo{
+        display:none;
+    }
+
+
 
     .tamañoVideo{
         height: 30rem;
