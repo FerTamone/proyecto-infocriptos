@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="../css/index_grid.css">
     <title>Criptomonedas</title>
@@ -16,7 +18,7 @@
         <!-- seccion HEADER de la pagina -->
         <header class="header">
             <div class="subheader">
-                <a href="../index.html"><img class="logoPagina" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
+                <a href="../index.html"><img class="tamanioIcono animate__animated animate__flip animate__infinite" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
                 <h1 class="pagina__titulo">infocryptos</h1>
             </div>
             <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
@@ -50,7 +52,7 @@
         <section >
             <!-- banner con efecto parallax del tema de la pagina -->
             <div id="bannerTamaño"class="criptosBanner efectoParallax">
-                <h2 class="estiloTituloBannerBlanco">monedas digitales</h2>
+                <h2 class="estiloTituloBannerBlanco animate__animated animate__rubberBand animate__repeat-3">monedas digitales</h2>
             </div>
             <!-- definimos el article con las criptos que elegimos para que seleccione y vean info -->
             <article class="tarjetas">
@@ -93,7 +95,7 @@
             <!-- definimos el article con las descripcion de las criptos junto a video informativo -->
             <article class="monedas">
                 <!-- informacion de Bitcoin, video +  descripcion informativa -->
-                <div class="videoIzq" id="btc">
+                <div data-aos="fade-right" class="videoIzq" id="btc">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ZtPYPZCaLAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -106,7 +108,7 @@
                         </div>
                 </div>
                 <!-- informacion de Ethereum, video +  descripcion informativa -->
-                <div class="videoDer" id="eth">
+                <div data-aos="fade-left" class="videoDer" id="eth">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/WVF2szEtpMw?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -119,7 +121,7 @@
                         </div>
                 </div>
                 <!-- informacion de Theter, video +  descripcion informativa -->
-                <div class="videoIzq" id="tusd">
+                <div data-aos="fade-right" class="videoIzq" id="tusd">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ROxA3QPTqL8?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -132,7 +134,7 @@
                         </div>
                 </div>
                 <!-- informacion de Bnb, video +  descripcion informativa -->
-                <div class="videoDer" id="binance">
+                <div data-aos="fade-left" class="videoDer" id="binance">
                     <div>
                         <iframe class="tamañoVideo" src="https://www.youtube.com/embed/19kniFdfnHA?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -145,7 +147,7 @@
                     </div>
                 </div>
                 <!-- informacion de Usdc, video +  descripcion informativa -->
-                <div class="videoIzq" id="usdC">
+                <div data-aos="fade-right" class="videoIzq" id="usdC">
                     <div>
                         <iframe class="tamañoVideo" src="https://www.youtube.com/embed/-7EgUb9kwyU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -179,5 +181,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

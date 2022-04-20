@@ -67,6 +67,12 @@ footer{
     align-items: center;
 }
 
+.tamanioIcono{
+    width: 50%;
+    height: 50%;
+    margin-left: 2rem;
+}
+
 .header nav{
     align-self: center;
 }
@@ -78,6 +84,9 @@ footer{
 
 .header nav ul li{
     margin: 10px;
+    transition: 0.3s;
+    padding: 1.5rem;
+
 }
 
 .header nav ul li a{
@@ -86,7 +95,10 @@ footer{
     font-family: "bebas";
     color: white;
     text-shadow: none;
+}
 
+.header nav ul li:hover {
+    transform: translateY(-8px);
 }
 
 .header nav ul ul{
@@ -100,6 +112,12 @@ footer{
 .header nav ul li:hover ul{
     display: block;
 }
+
+.header nav ul li ul li{
+    padding: 0rem;
+    margin: 0.5rem;
+}
+
 
 
 .pagina__titulo{
@@ -232,13 +250,19 @@ footer{
 .estiloBoton{
     font-family: "bebas";
     font-size: 2rem;
-    background-color: white;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
     border: solid 1px black;
-    border-radius: 15px;
-    padding: 4px;
+    padding: 0.5rem;
+    transition-duration: 0.3s;
 }
+
+.estiloBoton:hover{
+    border-radius: 2rem;
+}
+
 .reset{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -518,8 +542,9 @@ form{
 }
 #form1 input.btn {
     padding:0.5rem;
-    color:black;
-    background-color:#5B7DB1;
+    color:white;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border:1px solid #000000;
     margin: 0.4rem;
 }
@@ -558,10 +583,11 @@ form{
 }
 #form2 input.btn {
     padding:0.5rem;
-    color: black;;
-    background-color:#5B7DB1;
+    color:white;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border:1px solid #000000;
-    margin:0.4rem;
+    margin: 0.4rem;
 }
 #form2 input[type=radio]{
     margin: 0.5rem 0rem 1rem 2rem;
