@@ -7,6 +7,8 @@
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="../css/index_grid.css">
     <title>Blockchain</title>
@@ -58,12 +60,12 @@
                 <!-- secotirzamos el article en 2 partes. PT1 -->
                 <div class="blockchain__info--videTabla">
                     <!-- video con informacion de la pagina junto a su titulo -->
-                    <div id="blockchain__video">
+                    <div data-aos="fade-down-right" data-aos-delay="500" id="blockchain__video">
                         <h3 class="titulos__blockchain">¿que es una blockchain?</h3>
                         <iframe class="videoBlock" src="https://www.youtube.com/embed/70asKwy15Ds?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!-- tabla con informacion de la pagina -->
-                    <div id="blockchain__tabla">
+                    <div data-aos="fade-up-right"data-aos-delay="700" id="blockchain__tabla">
                         <h3 class="titulos__blockchain">blockchains y sus caracteristicas</h3>
                         <table class="estiloTabla" >
                             <tr>
@@ -174,7 +176,7 @@
                     </div>
                 </div>
                 <!-- article PT2 -->
-                <div id="blockchain__flujo">
+                <div data-aos="fade-up-left" data-aos-delay="900" id="blockchain__flujo">
                     <!-- imagen junto a su titulo y descripcion de la misma -->
                     <div>
                         <img class="img__blockchain--flujo" src="../imagenes/block2-img.jpg" alt="funcionamiento">
@@ -198,15 +200,18 @@
             <div class="piePagina_redes">
                 <h4 class="estiloRedes">Encontranos en</h4>
                 <div>
-                    <a href="https://www.facebook.com/"><img
-                        src="../iconos/face-icon.png" alt="face-icon" ></a>
-                    <a href="https://www.instagram.com/?hl=es-la"><img src="../iconos/insta-icon.png" alt="instagram-icon"></a>
-                    <a href="https://twitter.com/?lang=es"><img src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
-                    <a href="https://web.telegram.org/z/"><img src="../iconos/tele-icon.png" alt="tele-icon"></a>
+                    <a href="https://www.facebook.com/" ><img class="vibrar sizeIconSocial" src="../iconos/face-icon.png" alt="face-icon" ></a>
+                    <a href="https://www.instagram.com/?hl=es-la"><img class="vibrar sizeIconSocial" src="../iconos/ig-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/?lang=es"><img class="vibrar sizeIconSocial" src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
+                    <a href="https://web.telegram.org/z/"><img class="vibrar sizeIconSocial" src="../iconos/telegram-icon.png" alt="tele-icon"></a>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

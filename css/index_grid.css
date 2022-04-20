@@ -128,6 +128,23 @@ footer{
 
 /* --------------------------------------------- DEFINICION DE FOOTER Y SUS HIJOS ------------------------------------------------------------------ */
 
+@keyframes vibrar {
+    50% {
+    transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+    transform: translateX(-3px) rotate(-2deg);
+    }
+}
+.vibrar {
+    transform: perspective(1px) translateZ(0);
+}
+.vibrar:hover{
+    animation-name: vibrar;
+    animation-duration: 0.20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 .piePagina_Autor{
     display: flex;
@@ -164,6 +181,12 @@ footer{
     color: black;
     text-decoration: underline;
 }
+
+.sizeIconSocial{
+    width: 45px;
+    height: 45px;
+}
+
 
 /* --------------------------------------------- CLASES QUE SE USAN EN TODO EL PROYECTO ---------------------------------------------------------- */
 
@@ -224,6 +247,9 @@ footer{
 .criptosBanner{
     background-image: url(../imagenes/background-img.jpg);
 }
+/* Buzz */
+
+
 
 .tarjetas{
     display: flex;

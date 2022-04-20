@@ -7,6 +7,7 @@
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="../css/index_grid.css">
     <title>Mercados</title>
@@ -55,7 +56,7 @@
         <!-- article divido en div -->
         <article id="mercados__article">
             <!-- primer div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
-            <div class="paginaDer" id="binance">
+            <div  data-aos="fade-down-right" data-aos-delay="500" class="paginaDer" id="binance">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">binance</h3>
                     <p class="estiloTxtDescripciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus odio labore rem in quo deserunt, magnam quia minus dolores nihil quod. Nostrum veniam soluta assumenda cumque hic inventore placeat?
@@ -67,7 +68,7 @@
                 </div>
             </div>
             <!-- segundo div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
-            <div class="paginaIzq" id="coinbase">
+            <div data-aos="fade-left" data-aos-delay="300" class="paginaIzq" id="coinbase">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">coinbase</h3>
                     <p class="estiloTxtDescripciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus odio labore rem in quo deserunt, magnam quia minus dolores nihil quod. Nostrum veniam soluta assumenda cumque hic inventore placeat?
@@ -80,7 +81,7 @@
                 
             </div>
             <!-- tercer div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
-            <div class="paginaDer" id="ftx">
+            <div  data-aos="fade-right" data-aos-delay="300" class="paginaDer" id="ftx">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">ftx</h3>
                     <p class="estiloTxtDescripciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus odio labore rem in quo deserunt, magnam quia minus dolores nihil quod. Nostrum veniam soluta assumenda cumque hic inventore placeat?
@@ -92,7 +93,7 @@
                 </div>
             </div>
             <!-- cuarto div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
-            <div class="paginaIzq" id="kraken">
+            <div data-aos="fade-left" data-aos-delay="300" class="paginaIzq" id="kraken">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">kraken</h3>
                     <p class="estiloTxtDescripciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus odio labore rem in quo deserunt, magnam quia minus dolores nihil quod. Nostrum veniam soluta assumenda cumque hic inventore placeat?
@@ -105,7 +106,7 @@
                 
             </div>
             <!-- quinto div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
-            <div class="paginaDer" id="kucoin">
+            <div  data-aos="fade-right" data-aos-delay="300" class="paginaDer" id="kucoin">
                 <div class="tituloYparrafo"> 
                     <h3 class="descripcionTitulo">kucoin</h3>
                     <p class="estiloTxtDescripciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus odio labore rem in quo deserunt, magnam quia minus dolores nihil quod. Nostrum veniam soluta assumenda cumque hic inventore placeat?
@@ -129,14 +130,17 @@
         <div class="piePagina_redes">
             <h4 class="estiloRedes">Encontranos en</h4>
             <div>
-                <a href="https://www.facebook.com/"><img
-                    src="../iconos/face-icon.png" alt="face-icon" ></a>
-                <a href="https://www.instagram.com/?hl=es-la"><img src="../iconos/insta-icon.png" alt="instagram-icon"></a>
-                <a href="https://twitter.com/?lang=es"><img src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
-                <a href="https://web.telegram.org/z/"><img src="../iconos/tele-icon.png" alt="tele-icon"></a>
+                <a href="https://www.facebook.com/" ><img class="vibrar sizeIconSocial" src="../iconos/face-icon.png" alt="face-icon" ></a>
+                <a href="https://www.instagram.com/?hl=es-la"><img class="vibrar sizeIconSocial" src="../iconos/ig-icon.png" alt="instagram-icon"></a>
+                <a href="https://twitter.com/?lang=es"><img class="vibrar sizeIconSocial" src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
+                <a href="https://web.telegram.org/z/"><img class="vibrar sizeIconSocial" src="../iconos/telegram-icon.png" alt="tele-icon"></a>
             </div>
         </div>
     </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

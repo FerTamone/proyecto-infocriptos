@@ -7,6 +7,7 @@
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="../css/index_grid.css">
     <title>Contacto</title>
@@ -56,7 +57,7 @@
             <!-- definimos el article, dividido en 2 div los cuales c/u tendra 1 formulario -->
             <article class="formularios">
                 <!-- definicion del primer formulario, tamaño, estilo y contenido -->
-                <div class="formulario__size">
+                <div data-aos="flip-right" data-aos-delay="450" class="formulario__size">
                     <form >
                         <fieldset id="form1">
                         <legend>consultas</legend>
@@ -86,7 +87,7 @@
                     </form>
                 </div>
                 <!-- definicion del segundo formulario, tamaño, estilo y contenido -->
-                <div class="formulario__size">
+                <div data-aos="flip-left" data-aos-delay="700" class="formulario__size">
                     <form >
                         <fieldset id="form2">
                             <legend>encuesta</legend>
@@ -158,15 +159,18 @@
             <div class="piePagina_redes">
                 <h4 class="estiloRedes">Encontranos en</h4>
                 <div>
-                    <a href="https://www.facebook.com/"><img
-                        src="../iconos/face-icon.png" alt="face-icon" ></a>
-                    <a href="https://www.instagram.com/?hl=es-la"><img src="../iconos/insta-icon.png" alt="instagram-icon"></a>
-                    <a href="https://twitter.com/?lang=es"><img src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
-                    <a href="https://web.telegram.org/z/"><img src="../iconos/tele-icon.png" alt="tele-icon"></a>
+                    <a href="https://www.facebook.com/" ><img class="vibrar sizeIconSocial" src="../iconos/face-icon.png" alt="face-icon" ></a>
+                    <a href="https://www.instagram.com/?hl=es-la"><img class="vibrar sizeIconSocial" src="../iconos/ig-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/?lang=es"><img class="vibrar sizeIconSocial" src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
+                    <a href="https://web.telegram.org/z/"><img class="vibrar sizeIconSocial" src="../iconos/telegram-icon.png" alt="tele-icon"></a>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
