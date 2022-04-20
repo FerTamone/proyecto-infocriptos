@@ -603,7 +603,7 @@ form{
     /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
     section{
         flex-wrap: nowrap;
-        width: 100vw;
+        width: 100%;
     }
 
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-------------------------------------- */
