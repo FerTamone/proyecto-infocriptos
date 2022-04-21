@@ -12,7 +12,7 @@ Para conocer este hace click en el  [link](https://fertamone.github.io/proyecto-
 
 ## Lenguajes utilizados 🧰
 
-* Html 5
+* HTML 5
 * CSS 3
 
 
