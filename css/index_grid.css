@@ -94,7 +94,6 @@ footer{
     font-size: 3rem;
     font-family: "bebas";
     color: white;
-    text-shadow: none;
 }
 
 .header nav ul li:hover {
@@ -650,10 +649,30 @@ form{
         width: 100%;
         justify-content: center;
     }
+
+    .header nav ul li{
+        margin: 1rem;
+        transition:none;
+        padding: 0rem;
+    }
+
+    .header nav ul li:hover {
+        transform:none;
+    }
+
+
     /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
     section{
         flex-wrap: nowrap;
         width: 100%;
+    }
+
+    /* ------------------- MODIFICACIONES A FOOTER-------------------------- */
+    .vibrar:hover{
+        animation-name:"" ;
+        animation-duration: 0s;
+        animation-timing-function:none;
+        animation-iteration-count: none;
     }
 
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-------------------------------------- */
@@ -677,7 +696,7 @@ form{
         text-align: center;
     }
 
-    #bannerTamaño{
+    #bannerSize{
         width: 99.7%;
     }
 
@@ -697,9 +716,11 @@ form{
 
     .estiloBoton{
         font-size: 1.5rem;
-        border-radius: 1.5rem;
     }
 
+    .estiloBoton:hover{
+        border-radius: 0rem;
+    }
     .monedas{
         justify-content:space-evenly ;
         height: 200rem;
@@ -724,7 +745,7 @@ form{
     .videoDer{
         height: auto;
     } 
-
+    
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------- */
     .titulos__blockchain{
         font-size: 3.5rem;
@@ -894,6 +915,11 @@ form{
     .pagina__titulo{
         font-size: 5rem;
     }
+    
+    .header nav ul li:hover {
+        transform:none;
+    }
+
     /* --------------------------------------------- MODIFICACIONES A SECTION--------------------------------------------------------- */
     section{
         flex-wrap: nowrap;
