@@ -1,4 +1,4 @@
-![esto es una imagen](https://github.com/FerTamone/proyecto-infocriptos-coderhouse/blob/grid+flexbox+mediaquery/iconos/shiba-icon.png?raw=true)
+![esto es una imagen](https://github.com/FerTamone/proyecto-infocriptos-coderhouse/blob/grid+flexbox+mediaquery/iconos/shiba-icon.png?raw=true) 
 
 # InfoCryptos 🪙
 
@@ -17,4 +17,4 @@ Para conocer este hace click en el  [link](https://fertamone.github.io/proyecto-
 
 
 ## Autor 🖋️
-Fernando Tamone 
+*Fernando Tamone*
