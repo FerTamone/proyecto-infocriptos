@@ -67,7 +67,7 @@ footer{
     align-items: center;
 }
 
-.tamanioIcono{
+.sizeIcono{
     width: 50%;
     height: 50%;
     margin-left: 2rem;
@@ -128,6 +128,7 @@ footer{
 
 /* --------------------------------------------- DEFINICION DE FOOTER Y SUS HIJOS ------------------------------------------------------------------ */
 
+/* --------------- DEFINICION DE ANIMACION PARA ICONOS DE REDES---------- */
 @keyframes vibrar {
     50% {
     transform: translateX(3px) rotate(2deg);
@@ -221,7 +222,7 @@ footer{
     text-shadow: 0px 0px 5px black;
 }
 
-#bannerTamaño{
+#bannerSize{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,9 +248,6 @@ footer{
 .criptosBanner{
     background-image: url(../imagenes/background-img.jpg);
 }
-/* Buzz */
-
-
 
 .tarjetas{
     display: flex;

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <!-- exporto de diferentes librerias efectos que luego utilizo en la pagina -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <!-- exportamos los estilos definidos en nuestro archivo css -->
     <link rel="stylesheet" href="../css/index_grid.css">
     <title>Criptomonedas</title>
@@ -18,7 +19,8 @@
         <!-- seccion HEADER de la pagina -->
         <header class="header">
             <div class="subheader">
-                <a href="../index.html"><img class="tamanioIcono animate__animated animate__flip animate__infinite" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
+                <!-- utilizo en el icono una clase de animate.css para hacerlo girar constantemente sumandole parametros que ofrece la libreria -->
+                <a href="../index.html"><img class="sizeIcono animate__animated animate__flip animate__infinite" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
                 <h1 class="pagina__titulo">infocryptos</h1>
             </div>
             <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
@@ -51,8 +53,9 @@
         <!-- section de la pagina donde va a estar todo el contenido de la misma -->
         <section >
             <!-- banner con efecto parallax del tema de la pagina -->
-            <div id="bannerTamaño"class="criptosBanner efectoParallax">
-                <h2 class="estiloTituloBannerBlanco animate__animated animate__rubberBand animate__repeat-3">monedas digitales</h2>
+            <div id="bannerSize"class="criptosBanner efectoParallax">
+                <!-- efecto agregado desde libreria externa al titulo del banner -->
+                <h2 class="estiloTituloBannerBlanco animate__animated animate__rubberBand ">monedas digitales</h2>
             </div>
             <!-- definimos el article con las criptos que elegimos para que seleccione y vean info -->
             <article class="tarjetas">
@@ -95,6 +98,7 @@
             <!-- definimos el article con las descripcion de las criptos junto a video informativo -->
             <article class="monedas">
                 <!-- informacion de Bitcoin, video +  descripcion informativa -->
+                <!-- agregada animacion al div, con la libreria de animate.css -->
                 <div data-aos="fade-right" data-aos-delay="300" class="videoIzq" id="btc">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ZtPYPZCaLAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,6 +112,7 @@
                         </div>
                 </div>
                 <!-- informacion de Ethereum, video +  descripcion informativa -->
+                <!-- agregada animacion al div, con la libreria de animate.css -->
                 <div data-aos="fade-left" data-aos-delay="300" class="videoDer" id="eth">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/WVF2szEtpMw?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -121,6 +126,7 @@
                         </div>
                 </div>
                 <!-- informacion de Theter, video +  descripcion informativa -->
+                <!-- agregada animacion al div, con la libreria de animate.css -->
                 <div data-aos="fade-right" data-aos-delay="300" class="videoIzq" id="tusd">
                         <div>
                             <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ROxA3QPTqL8?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,6 +140,7 @@
                         </div>
                 </div>
                 <!-- informacion de Bnb, video +  descripcion informativa -->
+                <!-- agregada animacion al div, con la libreria de animate.css -->
                 <div data-aos="fade-left" data-aos-delay="300" class="videoDer" id="binance">
                     <div>
                         <iframe class="tamañoVideo" src="https://www.youtube.com/embed/19kniFdfnHA?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -147,6 +154,7 @@
                     </div>
                 </div>
                 <!-- informacion de Usdc, video +  descripcion informativa -->
+                <!-- agregada animacion al div, con la libreria de animate.css -->
                 <div data-aos="fade-right" data-aos-delay="300" class="videoIzq" id="usdC">
                     <div>
                         <iframe class="tamañoVideo" src="https://www.youtube.com/embed/-7EgUb9kwyU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -172,6 +180,7 @@
             <div class="piePagina_redes">
                 <h4 class="estiloRedes">Encontranos en</h4>
                 <div>
+                    <!-- le agrego animacion a los iconos de las redes definiendola en el css propio del proyecto -->
                     <a href="https://www.facebook.com/" ><img class="vibrar sizeIconSocial" src="../iconos/face-icon.png" alt="face-icon" ></a>
                     <a href="https://www.instagram.com/?hl=es-la"><img class="vibrar sizeIconSocial" src="../iconos/ig-icon.png" alt="instagram-icon"></a>
                     <a href="https://twitter.com/?lang=es"><img class="vibrar sizeIconSocial" src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
@@ -180,6 +189,7 @@
             </div>
         </footer>
     </div>
+    <!-- se suma al codigo, scripts para el funcionamiento de los efectos que vienen de la 2da libreria utilizada  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

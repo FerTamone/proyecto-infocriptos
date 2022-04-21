@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <!-- exporto de diferentes librerias efectos que luego utilizo en la pagina -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- exportamos los estilos definidos en nuestro archivo css -->
@@ -18,7 +19,8 @@
     <!-- seccion HEADER de la pagina -->
     <header class="header">
         <div class="subheader">
-            <a href="../index.html"><img class="tamanioIcono animate__animated animate__flip animate__infinite" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
+            <!-- utilizo en el icono una clase de animate.css para hacerlo girar constantemente sumandole parametros que ofrece la libreria -->
+            <a href="../index.html"><img class="sizeIcono animate__animated animate__flip animate__infinite" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
             <h1 class="pagina__titulo">infocryptos</h1>        </div>
         <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
         <nav>
@@ -50,12 +52,14 @@
     <!-- section de la pagina donde va a estar todo el contenido de la misma -->
     <section>
         <!-- banner con efecto parallax sobre el contenido de la pagina -->
-        <div id="bannerTamaño" class="imgMercados efectoParallax ">
+        <div id="bannerSize" class="imgMercados efectoParallax ">
+            <!-- efecto agregado desde libreria externa al titulo del banner -->
             <h2 class="estiloTituloBannerNegro animate__animated animate__rubberBand animate__repeat-3">mercados</h2>
         </div>
         <!-- article divido en div -->
         <article id="mercados__article">
             <!-- primer div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
+            <!-- agregada animacion al div, con la libreria de animate.css -->
             <div  data-aos="fade-down-right" data-aos-delay="500" class="paginaDer" id="binance">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">binance</h3>
@@ -68,6 +72,7 @@
                 </div>
             </div>
             <!-- segundo div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
+            <!-- agregada animacion al div, con la libreria de animate.css -->
             <div data-aos="fade-left" data-aos-delay="300" class="paginaIzq" id="coinbase">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">coinbase</h3>
@@ -81,6 +86,7 @@
                 
             </div>
             <!-- tercer div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
+            <!-- agregada animacion al div, con la libreria de animate.css -->
             <div  data-aos="fade-right" data-aos-delay="300" class="paginaDer" id="ftx">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">ftx</h3>
@@ -93,6 +99,7 @@
                 </div>
             </div>
             <!-- cuarto div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
+            <!-- agregada animacion al div, con la libreria de animate.css -->
             <div data-aos="fade-left" data-aos-delay="300" class="paginaIzq" id="kraken">
                 <div class="tituloYparrafo">
                     <h3 class="descripcionTitulo">kraken</h3>
@@ -106,6 +113,7 @@
                 
             </div>
             <!-- quinto div informativo, que posee una descripcion e imagen, la cual esta linkeada a la pagina de lo que se informa -->
+            <!-- agregada animacion al div, con la libreria de animate.css -->
             <div  data-aos="fade-right" data-aos-delay="300" class="paginaDer" id="kucoin">
                 <div class="tituloYparrafo"> 
                     <h3 class="descripcionTitulo">kucoin</h3>
@@ -130,6 +138,7 @@
         <div class="piePagina_redes">
             <h4 class="estiloRedes">Encontranos en</h4>
             <div>
+                <!-- le agrego animacion a los iconos de las redes definiendola en el css propio del proyecto -->
                 <a href="https://www.facebook.com/" ><img class="vibrar sizeIconSocial" src="../iconos/face-icon.png" alt="face-icon" ></a>
                 <a href="https://www.instagram.com/?hl=es-la"><img class="vibrar sizeIconSocial" src="../iconos/ig-icon.png" alt="instagram-icon"></a>
                 <a href="https://twitter.com/?lang=es"><img class="vibrar sizeIconSocial" src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
@@ -138,6 +147,7 @@
         </div>
     </footer>
     </div>
+    <!-- se suma al codigo, scripts para el funcionamiento de los efectos que vienen de la 2da libreria utilizada  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
