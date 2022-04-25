@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "bebas";
+    src: url(../fuentes/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family:"flowers" ;
+    src: url(../fuentes/SendFlowers-Regular.ttf);
+}
+
+
+#logoNavbar__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1A132F;
+    padding: 0;
+}
+
+.sizeIcono{
+    width: 40px;
+    height: 40px;
+}
+.pagina__titulo{
+    font-size: 3rem;
+    color: white;
+    font-family:"bebas";
+}
+
+
+#iconosRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+
+#art1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#art2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:5rem 0rem 15rem 0rem;
+}
+
+.efectoParallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bannerSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    margin-top: 1rem;
+    border: solid 1px black;
+}
+
+.centrarTituloBanner{
+    margin-top: 2rem;
+}
+
+.img_finanzas{
+    background-image: url(../imagenes/finanzas-img.jpg);
+    height: 15rem;
+    border: solid 1px black;
+}
+.img_criptos{
+    background-image: url(../imagenes/banner-index.jpg);
+    height: 15rem;
+    border: solid 1px black;
+}
+
+.estiloTxt{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "flowers";
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.estiloTituloBannerNegro{
+    text-align: center;
+    font-family: "bebas";
+    font-size: 10rem;
+    text-shadow: 0px 0px 2px white;
+}
+
+.estiloTituloBannerBlanco{
+    color: white;
+    font-family: "bebas";
+    font-size: 10rem;
+    text-shadow: 0px 0px 5px black;
+}
+
+
+section{
+    background-color: #F7E2E2;
+}
+
+footer{
+    background-color: #5B7DB1;
+    
+}
+
+.estiloAutor{
+    color: black;
+    font-size: 2rem;
+    font-family: "bebas";
+    text-decoration: underline;
+}
+
+.estiloTxtAutor{
+    color: black;
+    font-size: 1.9rem;
+    font-family: "bebas";
+    margin: 0;
+}
+
+.estiloRedes{
+    font-size: 2rem;
+    font-family: "bebas";
+    color: black;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: #F7E2E2;
+}
+
+.criptosBanner{
+    background-image: url(../imagenes/background-img.jpg);
+    height: 15rem;
+    border: solid 1px black;
+}
+
+.cardsColor{
+    background-color: #5B7DB1
+}
+
+.tamañoVideo{
+    height: 30rem;
+    width: 40rem;
+}
+
+.titleTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disposicionElementos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.disposicionElementosReverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.descripcionTitulo{
+    font-family: "bebas";
+    font-size: 5rem;
+    text-decoration: underline;
+}
