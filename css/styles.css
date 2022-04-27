@@ -183,3 +183,163 @@ nav{
     font-size: 5rem;
     text-decoration: underline;
 }
+
+.colorFondo{
+    background-color: #5B7DB1;
+}
+
+@media screen and (min-width:368px) and (max-width:575px){
+    
+    
+    /* HEADER */
+    #logoNavbar__flex{
+        flex-direction: column;
+    }
+
+    .sizeIcono{
+        width: 25px;
+        height: 25px;
+    }
+
+    .pagina__titulo{
+        font-size: 3rem;
+    }
+    
+    /* SECTION */
+    .estiloTxt{
+        font-size: 1rem;
+        text-align: justify;
+        margin: 1px;
+    }
+
+    .estiloTituloBannerNegro{
+        font-size: 3.5rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 3.5rem;
+    }
+
+    .centrarTituloBanner{
+        margin-top: 3rem;
+    }
+
+    .img_finanzas{
+        height: 10rem;
+    }
+    .img_criptos{
+        height: 10rem;
+    }
+
+    /* FOOTER */
+
+    .estiloTxtAutor{
+        font-size: 1rem;
+    }
+
+    .estiloAutor{
+        font-size: 1.2rem;
+        margin:0px;
+        padding:1px;
+    }
+    
+    .estiloRedes{
+        font-size: 1.1rem;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    
+    /* HEADER */
+    #logoNavbar__flex{
+        flex-direction: column;
+    }
+    .pagina__titulo{
+        font-size: 4rem;
+    }
+
+    /* SECTION */
+    .estiloTituloBannerNegro{
+        font-size: 5rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 5.5rem;
+    }
+    
+
+    .centrarTituloBanner{
+        margin-top: 5rem;
+    }
+
+    .estiloTxt{
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    /* FOOTER */
+    .estiloTxtAutor{
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .estiloAutor{
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    
+    .estiloRedes{
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    .sizeIcono{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    /* SECTION */
+    .estiloTituloBannerNegro{
+        font-size: 6rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 6rem;
+    }
+
+
+    .centrarTituloBanner{
+        margin-top: 5rem;
+    }
+
+    .estiloTxt{
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    /* FOOTER */
+    .estiloTxtAutor{
+        font-size: 1.2rem;
+        margin: 0px;
+
+    }
+
+    .estiloAutor{
+        font-size: 1.5rem;
+        margin: 0px;
+
+    }
+    
+    .estiloRedes{
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    .sizeIcono{
+        width: 30px;
+        height: 30px;
+    }
+}
