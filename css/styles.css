@@ -266,6 +266,36 @@ footer{
         font-size: 5rem;
         text-decoration: underline;
         }
+    /* CRIPTOMONEDAS SECTION */
+    #tarjetas{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cardsColor{
+        margin-bottom: 1rem;
+    }
+
+    .tamañoVideo{
+        height: 30rem;
+        width: 100%;
+    }
+
+    .disposicionElementos{
+        flex-direction: column;
+    }
+
+    .disposicionElementosReverse{
+        flex-direction: column;
+    }
+
+    .descripcionTitulo{
+        font-size: 2.5rem;
+    }
+
+    #descripciones p{
+        display: none;
+    }
 
 }
 
@@ -319,37 +349,36 @@ footer{
         height: 30px;
     }
 
+    /* CRIPTOMONEDAS SECTION */
+    #tarjetas{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .cardsColor{
-        background-color: #5B7DB1
-        }
+        margin-bottom: 1rem;
+    }
 
     .tamañoVideo{
         height: 30rem;
-        width: 40rem;
-        }
-
-    .titleTxt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
+        width: 100%;
+    }
 
     .disposicionElementos{
-        display: flex;
-        justify-content: space-between;
-        }
+        flex-direction: column;
+    }
 
     .disposicionElementosReverse{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        }
+        flex-direction: column;
+    }
 
     .descripcionTitulo{
-        font-family: "bebas";
-        font-size: 5rem;
-        text-decoration: underline;
-        }
+        font-size: 2.5rem;
+    }
+
+    #descripciones p{
+        display: none;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -398,13 +427,13 @@ footer{
         height: 30px;
     }
 
+    /* CRIPTOMONEDAS SECTION */
     #tarjetas{
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .cardsColor{
-        background-color: #5B7DB1;
         margin-bottom: 1rem;
     }
 
