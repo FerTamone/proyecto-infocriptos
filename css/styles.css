@@ -361,7 +361,7 @@ footer{
 
 @media screen and (min-width:768px) and (max-width:991px) {
     
-    /* HEADER MODIFICATIONS */
+    /* HEADER  */
     .pagina__titulo{
         font-size: 4rem;
     }
@@ -412,6 +412,7 @@ footer{
     }
 
     /* CRIPTOMONEDAS SECTION */
+    
     #tarjetas{
         flex-direction: row;
         flex-wrap: wrap;
