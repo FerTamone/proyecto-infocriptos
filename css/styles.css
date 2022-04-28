@@ -139,8 +139,9 @@ footer{
     border: solid 1px black;
 }
 
-.cardsColor{
-    background-color: #5B7DB1
+.cardsSpecs{
+    background-color: #5B7DB1;
+    width: 18rem;
 }
 
 .tamañoVideo{
@@ -170,6 +171,7 @@ footer{
     font-size: 5rem;
     text-decoration: underline;
 }
+
 
 .colorFondo{
     background-color: #5B7DB1;
@@ -217,6 +219,10 @@ footer{
         height: 10rem;
     }
 
+    .criptosBanner{
+        height: 10rem;
+    }
+
     /* FOOTER */
 
     .estiloTxtAutor{
@@ -234,50 +240,20 @@ footer{
         margin: 0px;
     }
 
-    
-    .cardsColor{
-        background-color: #5B7DB1
-        }
 
-    .tamañoVideo{
-        height: 30rem;
-        width: 40rem;
-        }
-
-    .titleTxt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-
-    .disposicionElementos{
-        display: flex;
-        justify-content: space-between;
-        }
-
-    .disposicionElementosReverse{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        }
-
-    .descripcionTitulo{
-        font-family: "bebas";
-        font-size: 5rem;
-        text-decoration: underline;
-        }
     /* CRIPTOMONEDAS SECTION */
     #tarjetas{
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .cardsColor{
+    .cardsSpecs{
+        width: 10rem;
         margin-bottom: 1rem;
     }
-
+    
     .tamañoVideo{
-        height: 30rem;
+        height: 20rem;
         width: 100%;
     }
 
@@ -354,13 +330,14 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
     }
-
-    .cardsColor{
+    .cardsSpecs{
+        width: 13rem;
         margin-bottom: 1rem;
     }
+    
 
     .tamañoVideo{
-        height: 30rem;
+        height: 20rem;
         width: 100%;
     }
 
@@ -379,9 +356,16 @@ footer{
     #descripciones p{
         display: none;
     }
+
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+    
+    /* HEADER MODIFICATIONS */
+    .pagina__titulo{
+        font-size: 4rem;
+    }
+    
     /* SECTION */
     #logoNavbar__flex{
         flex-direction: column;
@@ -432,13 +416,13 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
     }
-
-    .cardsColor{
+    .cardsSpecs{
+        width: 15rem;
         margin-bottom: 1rem;
     }
 
     .tamañoVideo{
-        height: 30rem;
+        height: 25rem;
         width: 100%;
     }
 
