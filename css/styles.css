@@ -1,3 +1,5 @@
+/* FUENTES  */
+
 @font-face {
     font-family: "bebas";
     src: url(../fuentes/BebasNeue-Regular.ttf);
@@ -8,7 +10,7 @@
     src: url(../fuentes/SendFlowers-Regular.ttf);
 }
 
-
+/* HEADER  */
 #logoNavbar__flex{
     display: flex;
     flex-direction: row;
@@ -21,39 +23,45 @@
     width: 40px;
     height: 40px;
 }
+
+
 .pagina__titulo{
     font-size: 3rem;
     color: white;
     font-family:"bebas";
 }
 
-
+/* FOOTER */
 #iconosRedes{
     display: flex;
     flex-direction: row;
     justify-content: stretch;
 }
 
-
-#art1{
-    display: flex;
-    flex-direction: column;
-    
+.estiloAutor{
+    color: black;
+    font-size: 2rem;
+    font-family: "bebas";
+    text-decoration: underline;
+    margin: 0px;
 }
 
-#art2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.estiloTxtAutor{
+    color: black;
+    font-size: 1.9rem;
+    font-family: "bebas";
+    margin: 0px;
 }
 
-#tarjetas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:5rem 0rem 15rem 0rem;
+.estiloRedes{
+    font-size: 2rem;
+    font-family: "bebas";
+    color: black;
+    text-decoration: underline;
+    margin: 0px;
 }
 
+/* CLASES GLOBALES */
 .efectoParallax{
     background-attachment: fixed;
     background-position: center;
@@ -66,17 +74,6 @@
     margin-top: 2rem;
 }
 
-.img_finanzas{
-    background-image: url(../imagenes/finanzas-img.jpg);
-    height: 15rem;
-    border: solid 1px black;
-}
-.img_criptos{
-    background-image: url(../imagenes/banner-index.jpg);
-    height: 15rem;
-    border: solid 1px black;
-}
-
 .estiloTxt{
     margin: 1rem;
     padding: 1rem;
@@ -85,7 +82,6 @@
     text-align: center;
     font-weight: bold;
 }
-
 
 .estiloTituloBannerNegro{
     text-align: center;
@@ -108,30 +104,44 @@ section{
 
 footer{
     background-color: #5B7DB1;
+}
+
+
+.colorFondo{
+    background-color: #F7E2E2;
+}
+
+/* SECTION INDEX */
+#art1{
+    display: flex;
+    flex-direction: column;
     
 }
 
-.estiloAutor{
-    color: black;
-    font-size: 2rem;
-    font-family: "bebas";
-    text-decoration: underline;
+#art2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.estiloTxtAutor{
-    color: black;
-    font-size: 1.9rem;
-    font-family: "bebas";
-    margin: 0;
+.img_finanzas{
+    background-image: url(../imagenes/finanzas-img.jpg);
+    height: 15rem;
+    border: solid 1px black;
+}
+.img_criptos{
+    background-image: url(../imagenes/banner-index.jpg);
+    height: 15rem;
+    border: solid 1px black;
 }
 
-.estiloRedes{
-    font-size: 2rem;
-    font-family: "bebas";
-    color: black;
-    text-decoration: underline;
+/* SECTION CRIPTOMONEDAS */
+#tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:5rem 0rem 15rem 0rem;
 }
-
 
 .criptosBanner{
     background-image: url(../imagenes/background-img.jpg);
@@ -170,11 +180,6 @@ footer{
     font-family: "bebas";
     font-size: 5rem;
     text-decoration: underline;
-}
-
-
-.colorFondo{
-    background-color: #F7E2E2;
 }
 
 @media screen and (min-width:368px) and (max-width:575px){
@@ -412,7 +417,7 @@ footer{
     }
 
     /* CRIPTOMONEDAS SECTION */
-    
+
     #tarjetas{
         flex-direction: row;
         flex-wrap: wrap;
