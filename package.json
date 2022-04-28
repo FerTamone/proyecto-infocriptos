@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-infocryptos",
+  "version": "1.0.0",
+  "description": "![esto es una imagen](https://github.com/FerTamone/proyecto-infocriptos-coderhouse/blob/grid+flexbox+mediaquery/iconos/shiba-icon.png?raw=true)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerTamone/proyecto-infocriptos-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerTamone/proyecto-infocriptos-coderhouse/issues"
+  },
+  "homepage": "https://github.com/FerTamone/proyecto-infocriptos-coderhouse#readme"
+}
