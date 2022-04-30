@@ -1,198 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- definimos el viewport para poder ver el contenido en todas las vistas posibles -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
-    <link rel="shortcut icon" href="../iconos/shiba-icon.png">
+    <link rel="shortcut icon" href="../iconos/shiba-icon.png" />
     <!-- exporto de diferentes librerias efectos que luego utilizo en la pagina -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <!-- exportamos los estilos definidos en nuestro archivo css -->
-    <link rel="stylesheet" href="../css/index_grid.css">
+    <link rel="stylesheet" href="../css/index_grid.css" />
     <title>Criptomonedas</title>
-</head>
-<body >
+  </head>
+  <body>
     <!-- definimos un "contenedor" de todas las de la pagina -->
     <div id="grilla">
-        <!-- seccion HEADER de la pagina -->
-        <header class="header">
-            <div class="subheader">
-                <!-- utilizo en el icono una clase de animate.css para hacerlo girar constantemente sumandole parametros que ofrece la libreria -->
-                <a href="../index.html"><img class="sizeIcono animate__animated animate__flip animate__infinite" src="../iconos/pagina-icon.png" alt="pag-icon"></a> 
-                <h1 class="pagina__titulo">infocryptos</h1>
+      <!-- seccion HEADER de la pagina -->
+      <header class="header">
+        <div class="subheader">
+          <!-- utilizo en el icono una clase de animate.css para hacerlo girar constantemente sumandole parametros que ofrece la libreria -->
+          <a href="../index.html"
+            ><img
+              class="sizeIcono animate__animated animate__flip animate__infinite"
+              src="../iconos/pagina-icon.png"
+              alt="pag-icon"
+          /></a>
+          <h1 class="pagina__titulo">infocryptos</h1>
+        </div>
+        <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
+        <nav>
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li>
+              <a href="criptomonedas.html">CRIPTOMONEDAS</a>
+              <ul>
+                <li><a href="#btc">BITCOIN</a></li>
+                <li><a href="#eth">ETHEREUM</a></li>
+                <li><a href="#tusd">TETHER</a></li>
+                <li><a href="#binance">BINANCE COIN</a></li>
+                <li><a href="#usdC">USD COIN</a></li>
+              </ul>
+            </li>
+            <li><a href="blockchain.html">BLOCKCHAIN</a></li>
+            <li>
+              <a href="mercados.html">MERCADOS</a>
+              <ul>
+                <li><a href="mercados.html#binance">BINANCE</a></li>
+                <li><a href="mercados.html#coinbase">COINBASE</a></li>
+                <li><a href="mercados.html#ftx">FTX</a></li>
+                <li><a href="mercados.html#kraken">KRAKEN</a></li>
+                <li><a href="mercados.html#kucoin">KUCOIN</a></li>
+              </ul>
+            </li>
+            <li><a href="contactanos.html">AYUDA</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- section de la pagina donde va a estar todo el contenido de la misma -->
+      <section>
+        <!-- banner con efecto parallax del tema de la pagina -->
+        <div id="bannerSize" class="criptosBanner efectoParallax">
+          <!-- efecto agregado desde libreria externa al titulo del banner -->
+          <h2
+            class="estiloTituloBannerBlanco animate__animated animate__rubberBand"
+          >
+            monedas digitales
+          </h2>
+        </div>
+        <!-- definimos el article con las criptos que elegimos para que seleccione y vean info -->
+        <article class="tarjetas">
+          <!-- criptomoneda: Bitcoin  -->
+          <div>
+            <div class="orden__tarjeta">
+              <img
+                class="estilo__icono"
+                src="../iconos/btc-icon.png"
+                alt="btc"
+              />
+              <button class="estiloBoton">
+                <a class="reset" href="#btc">conocer</a>
+              </button>
             </div>
-            <!-- nuestro menu de navegacion por la pagina, con menus expandible -->
-            <nav >
-                <ul>
-                    <li ><a  href="../index.html">INICIO</a></li>
-                    <li><a  href="criptomonedas.html">CRIPTOMONEDAS</a>
-                        <ul>
-                            <li><a href="#btc">BITCOIN</a></li>
-                            <li><a href="#eth">ETHEREUM</a></li>
-                            <li><a href="#tusd">TETHER</a></li>
-                            <li><a href="#binance">BINANCE COIN</a></li>
-                            <li><a href="#usdC">USD COIN</a></li>
-                        </ul>
-                    </li>
-                    <li><a  href="blockchain.html">BLOCKCHAIN</a></li>
-                    <li><a  href="mercados.html">MERCADOS</a>
-                        <ul>
-                            <li><a href="mercados.html#binance">BINANCE</a></li>
-                            <li><a href="mercados.html#coinbase">COINBASE</a></li>
-                            <li><a href="mercados.html#ftx">FTX</a></li>
-                            <li><a href="mercados.html#kraken">KRAKEN</a></li>
-                            <li><a href="mercados.html#kucoin">KUCOIN</a></li>
-                        </ul>
-                    </li>
-                    <li><a  href="contactanos.html">AYUDA</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- section de la pagina donde va a estar todo el contenido de la misma -->
-        <section >
-            <!-- banner con efecto parallax del tema de la pagina -->
-            <div id="bannerSize"class="criptosBanner efectoParallax">
-                <!-- efecto agregado desde libreria externa al titulo del banner -->
-                <h2 class="estiloTituloBannerBlanco animate__animated animate__rubberBand ">monedas digitales</h2>
+          </div>
+          <!-- criptomoneda: Ethereum  -->
+          <div>
+            <div class="orden__tarjeta">
+              <img
+                class="estilo__icono"
+                src="../iconos/eth-icon.png"
+                alt="eth"
+              />
+              <button class="estiloBoton">
+                <a class="reset" href="#eth">conocer</a>
+              </button>
             </div>
-            <!-- definimos el article con las criptos que elegimos para que seleccione y vean info -->
-            <article class="tarjetas">
-                <!-- criptomoneda: Bitcoin  -->
-                <div >
-                    <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/btc-icon.png" alt="btc">
-                        <button class="estiloBoton"><a class="reset" href="#btc">conocer</a></button>
-                    </div>
-                </div>
-                <!-- criptomoneda: Ethereum  -->
-                <div >
-                    <div class="orden__tarjeta">
-                    <img class="estilo__icono" src="../iconos/eth-icon.png" alt="eth">
-                    <button class="estiloBoton"><a class="reset"href="#eth">conocer</a></button>
-                    </div>
-                </div>
-                <!-- criptomoneda: Tether  -->
-                <div >
-                    <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/tether-icon.png" alt="tusd">
-                        <button class="estiloBoton"><a class="reset"href="#tusd">conocer</a></button> 
-                    </div>
-                </div>
-                <!-- criptomoneda: Bnb  -->
-                <div >
-                    <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/bnb-icon.png.png" alt="bnb">
-                        <button class="estiloBoton"><a class="reset" href="#binance">conocer</a></button> 
-                    </div>
-                </div>
-                <!-- criptomoneda: Usdc  -->
-                <div >
-                    <div class="orden__tarjeta">
-                        <img class="estilo__icono" src="../iconos/usdc-icon.png" alt="usdc">
-                        <button class="estiloBoton"><a class="reset"href="#usdC">conocer</a></button> 
-                    </div>
-                </div>
-            </article>
-            <!-- definimos el article con las descripcion de las criptos junto a video informativo -->
-            <article class="monedas">
-                <!-- informacion de Bitcoin, video +  descripcion informativa -->
-                <!-- agregada animacion al div, con la libreria de animate.css -->
-                <div data-aos="fade-right" data-aos-delay="300" class="videoIzq" id="btc">
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ZtPYPZCaLAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="orden__descripcion">
-                            <h3 class="descripcionTitulo">bitcoin</h3>
-                            <div class="orden__descripcion--parrafo">
-                                <p class="estiloTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum at ipsa fugiat incidunt delectus animi possimus quasi eaque cupiditate placeat quo iste blanditiis, dolores hic nobis perferendis. Sint, cum.
-                                Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
-                            </div>
-                        </div>
-                </div>
-                <!-- informacion de Ethereum, video +  descripcion informativa -->
-                <!-- agregada animacion al div, con la libreria de animate.css -->
-                <div data-aos="fade-left" data-aos-delay="300" class="videoDer" id="eth">
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/WVF2szEtpMw?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="orden__descripcion">
-                            <h3 class="descripcionTitulo">ethereum</h3>
-                            <div class="orden__descripcion--parrafo">
-                                <p class="estiloTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum at ipsa fugiat incidunt delectus animi possimus quasi eaque cupiditate placeat quo iste blanditiis, dolores hic nobis perferendis. Sint, cum.
-                                Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
-                            </div>
-                        </div>
-                </div>
-                <!-- informacion de Theter, video +  descripcion informativa -->
-                <!-- agregada animacion al div, con la libreria de animate.css -->
-                <div data-aos="fade-right" data-aos-delay="300" class="videoIzq" id="tusd">
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ROxA3QPTqL8?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="orden__descripcion">
-                            <h3 class="descripcionTitulo">tether</h3>
-                            <div class="orden__descripcion--parrafo">
-                                <p class="estiloTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum at ipsa fugiat incidunt delectus animi possimus quasi eaque cupiditate placeat quo iste blanditiis, dolores hic nobis perferendis. Sint, cum.
-                                Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
-                            </div>
-                        </div>
-                </div>
-                <!-- informacion de Bnb, video +  descripcion informativa -->
-                <!-- agregada animacion al div, con la libreria de animate.css -->
-                <div data-aos="fade-left" data-aos-delay="300" class="videoDer" id="binance">
-                    <div>
-                        <iframe class="tamañoVideo" src="https://www.youtube.com/embed/19kniFdfnHA?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="orden__descripcion">
-                        <h3 class="descripcionTitulo">bnb</h3>
-                        <div class="orden__descripcion--parrafo">
-                            <p class="estiloTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum at ipsa fugiat incidunt delectus animi possimus quasi eaque cupiditate placeat quo iste blanditiis, dolores hic nobis perferendis. Sint, cum.
-                            Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- informacion de Usdc, video +  descripcion informativa -->
-                <!-- agregada animacion al div, con la libreria de animate.css -->
-                <div data-aos="fade-right" data-aos-delay="300" class="videoIzq" id="usdC">
-                    <div>
-                        <iframe class="tamañoVideo" src="https://www.youtube.com/embed/-7EgUb9kwyU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="orden__descripcion">
-                        <h3 class="descripcionTitulo">usdc</h3>
-                        <div class="orden__descripcion--parrafo">
-                            <p class="estiloTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum at ipsa fugiat incidunt delectus animi possimus quasi eaque cupiditate placeat quo iste blanditiis, dolores hic nobis perferendis. Sint, cum.
-                            Ab dolore totam quibusdam fuga incidunt animi quod praesentium, delectus eaque asperiores ratione soluta voluptates, at corrupti consequuntur illum quasi esse sunt tenetur odit inventore dignissimos nobis! Libero, amet facere.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>  
-        </section>
-        <!-- footer de la pagina -->
-        <footer>
-            <!-- datos del autor de la pagina -->
-            <div class="piePagina_Autor">
-                <h4 class="estiloAutor" >Autor</h4>
-                <p class="estiloTxtAutor">Fernando Tamone</p>
+          </div>
+          <!-- criptomoneda: Tether  -->
+          <div>
+            <div class="orden__tarjeta">
+              <img
+                class="estilo__icono"
+                src="../iconos/tether-icon.png"
+                alt="tusd"
+              />
+              <button class="estiloBoton">
+                <a class="reset" href="#tusd">conocer</a>
+              </button>
             </div>
-            <!-- las redes de la pagina, con sus iconos y enlaces al sitio -->
-            <div class="piePagina_redes">
-                <h4 class="estiloRedes">Encontranos en</h4>
-                <div>
-                    <!-- le agrego animacion a los iconos de las redes definiendola en el css propio del proyecto -->
-                    <a href="https://www.facebook.com/" ><img class="vibrar sizeIconSocial" src="../iconos/face-icon.png" alt="face-icon" ></a>
-                    <a href="https://www.instagram.com/?hl=es-la"><img class="vibrar sizeIconSocial" src="../iconos/ig-icon.png" alt="instagram-icon"></a>
-                    <a href="https://twitter.com/?lang=es"><img class="vibrar sizeIconSocial" src="../iconos/twitter-icon.png" alt="tweet-icon"></a>
-                    <a href="https://web.telegram.org/z/"><img class="vibrar sizeIconSocial" src="../iconos/telegram-icon.png" alt="tele-icon"></a>
-                </div>
+          </div>
+          <!-- criptomoneda: Bnb  -->
+          <div>
+            <div class="orden__tarjeta">
+              <img
+                class="estilo__icono"
+                src="../iconos/bnb-icon.png.png"
+                alt="bnb"
+              />
+              <button class="estiloBoton">
+                <a class="reset" href="#binance">conocer</a>
+              </button>
             </div>
-        </footer>
+          </div>
+          <!-- criptomoneda: Usdc  -->
+          <div>
+            <div class="orden__tarjeta">
+              <img
+                class="estilo__icono"
+                src="../iconos/usdc-icon.png"
+                alt="usdc"
+              />
+              <button class="estiloBoton">
+                <a class="reset" href="#usdC">conocer</a>
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-- definimos el article con las descripcion de las criptos junto a video informativo -->
+        <article class="monedas">
+          <!-- informacion de Bitcoin, video +  descripcion informativa -->
+          <!-- agregada animacion al div, con la libreria de animate.css -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="videoIzq"
+            id="btc"
+          >
+            <div>
+              <iframe
+                class="tamañoVideo"
+                src="https://www.youtube.com/embed/ZtPYPZCaLAw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="orden__descripcion">
+              <h3 class="descripcionTitulo">bitcoin</h3>
+              <div class="orden__descripcion--parrafo">
+                <p class="estiloTxt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Numquam dolorum at ipsa fugiat incidunt delectus animi
+                  possimus quasi eaque cupiditate placeat quo iste blanditiis,
+                  dolores hic nobis perferendis. Sint, cum. Ab dolore totam
+                  quibusdam fuga incidunt animi quod praesentium, delectus eaque
+                  asperiores ratione soluta voluptates, at corrupti consequuntur
+                  illum quasi esse sunt tenetur odit inventore dignissimos
+                  nobis! Libero, amet facere.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- informacion de Ethereum, video +  descripcion informativa -->
+          <!-- agregada animacion al div, con la libreria de animate.css -->
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            class="videoDer"
+            id="eth"
+          >
+            <div>
+              <iframe
+                class="tamañoVideo"
+                src="https://www.youtube.com/embed/WVF2szEtpMw?start=64"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="orden__descripcion">
+              <h3 class="descripcionTitulo">ethereum</h3>
+              <div class="orden__descripcion--parrafo">
+                <p class="estiloTxt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Numquam dolorum at ipsa fugiat incidunt delectus animi
+                  possimus quasi eaque cupiditate placeat quo iste blanditiis,
+                  dolores hic nobis perferendis. Sint, cum. Ab dolore totam
+                  quibusdam fuga incidunt animi quod praesentium, delectus eaque
+                  asperiores ratione soluta voluptates, at corrupti consequuntur
+                  illum quasi esse sunt tenetur odit inventore dignissimos
+                  nobis! Libero, amet facere.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- informacion de Theter, video +  descripcion informativa -->
+          <!-- agregada animacion al div, con la libreria de animate.css -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="videoIzq"
+            id="tusd"
+          >
+            <div>
+              <iframe
+                class="tamañoVideo"
+                src="https://www.youtube.com/embed/ROxA3QPTqL8?start=64"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="orden__descripcion">
+              <h3 class="descripcionTitulo">tether</h3>
+              <div class="orden__descripcion--parrafo">
+                <p class="estiloTxt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Numquam dolorum at ipsa fugiat incidunt delectus animi
+                  possimus quasi eaque cupiditate placeat quo iste blanditiis,
+                  dolores hic nobis perferendis. Sint, cum. Ab dolore totam
+                  quibusdam fuga incidunt animi quod praesentium, delectus eaque
+                  asperiores ratione soluta voluptates, at corrupti consequuntur
+                  illum quasi esse sunt tenetur odit inventore dignissimos
+                  nobis! Libero, amet facere.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- informacion de Bnb, video +  descripcion informativa -->
+          <!-- agregada animacion al div, con la libreria de animate.css -->
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            class="videoDer"
+            id="binance"
+          >
+            <div>
+              <iframe
+                class="tamañoVideo"
+                src="https://www.youtube.com/embed/19kniFdfnHA?start=8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="orden__descripcion">
+              <h3 class="descripcionTitulo">bnb</h3>
+              <div class="orden__descripcion--parrafo">
+                <p class="estiloTxt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Numquam dolorum at ipsa fugiat incidunt delectus animi
+                  possimus quasi eaque cupiditate placeat quo iste blanditiis,
+                  dolores hic nobis perferendis. Sint, cum. Ab dolore totam
+                  quibusdam fuga incidunt animi quod praesentium, delectus eaque
+                  asperiores ratione soluta voluptates, at corrupti consequuntur
+                  illum quasi esse sunt tenetur odit inventore dignissimos
+                  nobis! Libero, amet facere.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- informacion de Usdc, video +  descripcion informativa -->
+          <!-- agregada animacion al div, con la libreria de animate.css -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="videoIzq"
+            id="usdC"
+          >
+            <div>
+              <iframe
+                class="tamañoVideo"
+                src="https://www.youtube.com/embed/-7EgUb9kwyU?start=8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="orden__descripcion">
+              <h3 class="descripcionTitulo">usdc</h3>
+              <div class="orden__descripcion--parrafo">
+                <p class="estiloTxt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Numquam dolorum at ipsa fugiat incidunt delectus animi
+                  possimus quasi eaque cupiditate placeat quo iste blanditiis,
+                  dolores hic nobis perferendis. Sint, cum. Ab dolore totam
+                  quibusdam fuga incidunt animi quod praesentium, delectus eaque
+                  asperiores ratione soluta voluptates, at corrupti consequuntur
+                  illum quasi esse sunt tenetur odit inventore dignissimos
+                  nobis! Libero, amet facere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- footer de la pagina -->
+      <footer>
+        <!-- datos del autor de la pagina -->
+        <div class="piePagina_Autor">
+          <h4 class="estiloAutor">Autor</h4>
+          <p class="estiloTxtAutor">Fernando Tamone</p>
+        </div>
+        <!-- las redes de la pagina, con sus iconos y enlaces al sitio -->
+        <div class="piePagina_redes">
+          <h4 class="estiloRedes">Encontranos en</h4>
+          <div>
+            <!-- le agrego animacion a los iconos de las redes definiendola en el css propio del proyecto -->
+            <a href="https://www.facebook.com/"
+              ><img
+                class="vibrar sizeIconSocial"
+                src="../iconos/face-icon.png"
+                alt="face-icon"
+            /></a>
+            <a href="https://www.instagram.com/?hl=es-la"
+              ><img
+                class="vibrar sizeIconSocial"
+                src="../iconos/ig-icon.png"
+                alt="instagram-icon"
+            /></a>
+            <a href="https://twitter.com/?lang=es"
+              ><img
+                class="vibrar sizeIconSocial"
+                src="../iconos/twitter-icon.png"
+                alt="tweet-icon"
+            /></a>
+            <a href="https://web.telegram.org/z/"
+              ><img
+                class="vibrar sizeIconSocial"
+                src="../iconos/telegram-icon.png"
+                alt="tele-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- se suma al codigo, scripts para el funcionamiento de los efectos que vienen de la 2da libreria utilizada  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>
