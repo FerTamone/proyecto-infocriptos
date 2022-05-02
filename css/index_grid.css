@@ -681,12 +681,32 @@ form{
     }
 
     /* ------------------- MODIFICACIONES A FOOTER-------------------------- */
-    .vibrar:hover{
-        animation-name:"" ;
-        animation-duration: 0s;
-        animation-timing-function:none;
-        animation-iteration-count: none;
+    .vibrar {
+        transform: none;
     }
+
+    .vibrar:hover{
+        animation-play-state: paused;
+    }
+        
+    .estiloAutor{
+        font-size: 2.5rem;
+    }
+    
+    .estiloTxtAutor{
+        font-size: 2.2rem;
+    }
+    
+    
+    .estiloRedes{
+        font-size: 2.5rem;
+    }
+    
+    .sizeIconSocial{
+        width: 35px;
+        height: 35px;
+    }
+
 
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-------------------------------------- */
     .pagina__titulo{
@@ -721,6 +741,13 @@ form{
         align-items: center;
     } 
 
+    .txtStyleDescrip{
+        font-size: 1.7rem;
+        padding: 0rem;
+        margin-left: 1rem;
+    }
+
+
     .estilo__icono{
         width: 13rem;
         height: 13rem;
@@ -735,8 +762,8 @@ form{
         border-radius: 0rem;
     }
     .monedas{
-        justify-content:space-evenly ;
-        height: 200rem;
+        justify-content:space-around ;
+        height: 220rem;
     }
     .orden__descripcion{
         align-items: center;
@@ -749,14 +776,14 @@ form{
 
     .tamañoVideo{
         height: 100%;
-        width: 45rem;
+        width: 40rem;
     }
     .videoIzq{
-        height: auto;
+        height: 40rem;
     } 
     
     .videoDer{
-        height: auto;
+        height: 40rem;
     } 
     
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------- */
@@ -818,40 +845,45 @@ form{
 
     .estiloTxtParrafo{
         margin: 0.5rem;
-        font-size: 1.7rem;
-        padding: 0.5rem;
+        font-size: 1.4rem;
+        padding: 0rem;
         text-align: justify;
     }
 
     /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------- */
+    #mercados__article{
+        height: 250rem;
+    }
+
     .img__mercados--secciones{
         width: 100%;
         height: 100%;
     }
 
     .estiloTxtDescripciones{
-        font-size: 1.7rem;
-        padding: 0.5rem;
-        margin: 0.5rem;
-        text-align: justify;
+        display: none;
     }
 
     .tituloYparrafo{
-        width: 40%;
+        width: 100%;
         height: auto;
     }
 
     .imgLink{
-        width: 60%;
+        width: 100%;
         height: auto;
     }
 
     .paginaDer{
-        background-color: #5B7DB1;
+        flex-direction: column;
+        background-color: #1A132F;
+        height: 40rem;
     }
     
     .paginaIzq{
-        background-color: #5B7DB1;
+        flex-direction: column;
+        background-color: #1A132F;
+        height: 40rem;
     }
 
     /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------- */
@@ -929,6 +961,10 @@ form{
         font-size: 5rem;
     }
     
+    .header nav ul li{
+        margin:0rem;
+        padding:1rem;
+    }
     .header nav ul li:hover {
         transform:none;
     }
@@ -938,12 +974,40 @@ form{
         flex-wrap: nowrap;
     }
 
+    /* MODIFICACIONES A FOOTER */
+
+    .vibrar {
+        transform: none;
+    }
+
+    .vibrar:hover{
+        animation-play-state: paused;
+    }
+        
+    .estiloAutor{
+        font-size: 2.5rem;
+    }
+    
+    .estiloTxtAutor{
+        font-size: 2.2rem;
+    }
+    
+    
+    .estiloRedes{
+        font-size: 2.5rem;
+    }
+    
+    .sizeIconSocial{
+        width: 35px;
+        height: 35px;
+    }
+
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-----------------------------*/
     .estiloTxt{
         margin: 0.5rem;
         padding: 1rem;
-        font-size: 2rem;
-        text-align: center;
+        font-size: 1.8rem;
+        text-align: justify;
     }
     .estiloTituloBannerNegro{
         font-size: 7rem;
@@ -966,7 +1030,8 @@ form{
     }
 
     .monedas{
-        height: 180rem;
+        height: 200rem;
+        justify-content: space-around;
     }
 
     .estilo__icono{
@@ -982,12 +1047,12 @@ form{
 
     .videoIzq{
         flex-direction: column-reverse;
-        background-color: transparent;
+        height: auto;
     }
     
     .videoDer{
         flex-direction: column-reverse;
-        background-color: transparent;
+        height: auto;
     }
 
     .descripcionTitulo{
