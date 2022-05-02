@@ -1,0 +1,41 @@
+@import url(../utilities/_variables.scss);
+
+.piePagina_Autor{
+    display: flex;
+    flex-direction: column;
+    align-items: $alinTxt;
+    margin: 10px;
+}
+
+.estiloAutor{
+    text-align: $alinTxt;
+    color: $letraBlanca;
+    font-size: 3rem;
+    font-family: $fuenteTitulos;
+    text-decoration: underline;
+}
+
+.estiloTxtAutor{
+    color: $letraBlanca;
+    font-size: 2.5rem;
+    font-family: $fuenteTitulos;
+}
+
+.piePagina_redes{
+    display: flex;
+    flex-direction: column;
+    align-items: $alinTxt;
+}
+
+.estiloRedes{
+    font-size: 3rem;
+    font-family: $fuenteTitulos;
+    color:$letraBlanca;
+    text-decoration: $subrayado;
+}
+
+.sizeIconSocial{
+    width: 40px;
+    height: 40px;
+}
+

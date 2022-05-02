@@ -1,0 +1,45 @@
+.img_finanzas{
+    background-image: url(../../imagenes/finanzas-img.jpg);
+}
+.img_criptos{
+    background-image: url(../../imagenes/banner-index.jpg);
+}
+
+.efectoParallax{
+    background-attachment: fixed;
+    background-position: $alinTxt;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.estiloTxt{
+    padding: 3rem;
+    font-size: 2.8rem;
+    font-family: $fuenteTxt;
+    text-align: left;
+}
+
+.estiloTituloBannerNegro{
+    text-align: $alinTxt;
+    font-family: $fuenteTitulos;
+    font-size: 12rem;
+    text-shadow: $sombraBlanca;
+}
+
+.estiloTituloBannerBlanco{
+    color: $letraBlanca;
+    font-family: $fuenteTitulos;
+    font-size: 12rem;
+    text-shadow: $sombraNegra;
+}
+
+#bannerSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: $alinTxt;
+    align-items: $alinTxt;
+    width: 100%;
+    height: 23rem;
+    margin-top: 1rem;
+    border: $borde;
+}

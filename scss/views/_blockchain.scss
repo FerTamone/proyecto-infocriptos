@@ -1,0 +1,90 @@
+.bannerBlockchain{
+    background-image: url(../../imagenes/blockchain-img.jpg);
+    border: $bordeTabla;
+}
+
+.titulos__blockchain{
+    color: $letraNegra;
+    font-size: 4rem;
+    font-family: $fuenteTitulos;
+    text-decoration: $subrayado;
+    margin: 1rem;
+}
+
+#blockchain__info{
+    display: flex;
+    flex-direction: row;
+}
+
+.blockchain__info--videTabla{
+    display: flex;
+    flex-direction: column;
+    height: 110rem;
+    justify-content: $elementosSeparados;
+}
+
+#blockchain__video{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: $alinTxt;
+}
+
+.videoBlock{
+    width: 80rem;
+    height: 40rem;
+}
+
+#blockchain__tabla{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: $alinTxt;
+}
+
+.estiloTabla{
+    margin: 5px;
+    width: 80rem;
+    height: 40rem;
+    background-image: url(../../imagenes/tabla-img.jpg);
+    background-size: cover;
+    background-position: $alinTxt;
+    border-collapse: collapse; 
+}
+
+td,th { 
+    font-size: 12px;
+    font-family:$fuenteTabla;
+    border: $bordeTabla;
+    text-shadow: $sombraNegra; 
+    color: $letraBlanca;
+    padding: 2px 5px 2px 5px;
+}
+
+
+#blockchain__flujo{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin-top: 5rem;
+}
+
+.estiloTxtParrafo{
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: $alinJusti;
+    font-family: $fuenteTxt;
+    font-weight: $negrita;
+}
+
+.img__blockchain--flujo{
+    width: 68rem;
+    height: 81rem;
+    border: $borde;
+}
+
+.blockchain__flujo--descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

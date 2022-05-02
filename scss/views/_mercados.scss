@@ -1,0 +1,59 @@
+#mercados__article{
+    display: flex;
+    flex-direction: column;
+    justify-content: $elementosSeparados;
+    height: 240rem;
+}
+
+
+.imgMercados{
+    background-image: url(../../imagenes/exchangeBanner-img.jpg);
+}
+
+.paginaDer{
+    display: flex;
+    flex-direction: row;
+    background-color: $colorNav_Footer;
+    height: 45rem;
+}
+
+.paginaIzq{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: $colorNav_Footer;
+    height: 45rem;
+}
+
+.tituloYparrafo{
+    width: 50%;
+    height: auto;
+}
+
+.imgLink{
+    display: flex;
+    justify-content: $alinTxt;
+    width: 50%;
+    height: 100%;
+}
+
+.img__mercados--secciones{
+    width: 80rem;
+    height: 100%;
+}
+
+.descripcionTitulo{
+    font-family: $fuenteTitulos;
+    font-size: 7rem;
+    text-decoration: $subrayado;
+    text-align: $alinTxt;
+    color: $letraBlanca;
+}
+
+.estiloTxtDescripciones{
+    font-family: $fuenteTxt;
+    font-size: 2.7rem;
+    line-height: 0.9;
+    margin: 2rem;
+    text-align: $alinJusti;
+    color: $letraBlanca;
+}

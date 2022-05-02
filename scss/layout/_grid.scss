@@ -1,0 +1,38 @@
+@import url(../utilities/_variables.scss);
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "section section section"
+    "footer footer footer";
+    grid-template-rows: 6rem auto  8rem; 
+    grid-template-columns: 15% auto 30%;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    background-color: $colorNav_Footer;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+    background-color: $colorSection;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: $alinTxt;
+    grid-area: footer;
+    background-color: $colorNav_Footer;
+    border: $borde;
+}
+

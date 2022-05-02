@@ -1,0 +1,84 @@
+.criptosBanner{
+    background-image: url(../../imagenes/background-img.jpg);
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 30rem;
+    justify-content: $elementosEspaciados;
+    margin: 15rem 0rem 15rem 0rem;
+}
+
+.orden__tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: $alinTxt;
+}
+
+.estilo__icono{
+    width: 23rem;
+    height: 23rem;
+    margin: 1rem;
+    
+}
+
+.estiloBoton{
+    font-family: $fuenteTitulos;
+    font-size: 2rem;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
+    border: $borde;
+    padding: 0.5rem;
+    transition-duration: 0.3s;
+}
+
+.estiloBoton:hover{
+    border-radius: 2rem;
+}
+
+.reset{
+    color: $letraBlanca;
+    text-decoration: none;
+}
+
+.monedas{
+    display: flex;
+    flex-direction: column;
+    justify-content:$elementosEspaciados ;
+    height: 250rem;
+}
+
+.videoIzq{
+    display: flex;
+    flex-direction: row;
+    height: 45rem ;
+    background-color: $colorNav_Footer;
+}
+
+.videoDer{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 45rem ;
+    background-color: $colorNav_Footer;
+}
+
+.tamañoVideo{
+    height: 100%;
+    width: 60rem;
+}
+
+.orden__descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: $alinTxt;
+}
+
+.txtStyleDescrip{
+    color: $letraBlanca;
+    padding: 3rem;
+    font-size: 2.8rem;
+    font-family: $fuenteTxt;
+    text-align: left;
+}
