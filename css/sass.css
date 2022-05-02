@@ -1,2 +1,609 @@
-@import url(base/_reset.scss);
-@import url(base/_tipografias.scss);
+@charset "UTF-8";
+@import url(../utilities/_variables.scss);
+@import url(../utilities/_variables.scss);
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: "bebas";
+  src: url(../../fuentes/BebasNeue-Regular.ttf); }
+
+@font-face {
+  font-family: "profesional";
+  src: url(../../fuentes/RobotoMono-Italic-VariableFont_wght.ttf); }
+
+#grilla {
+  display: grid;
+  grid-template-areas: "header header header" "section section section" "footer footer footer";
+  grid-template-rows: 6rem auto  8rem;
+  grid-template-columns: 15% auto 30%; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  background-color: #1A132F; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  grid-area: section;
+  background-color: #B1D0E0; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: footer;
+  background-color: #1A132F;
+  border: solid 1px black; }
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.sizeIcono {
+  width: 50%;
+  height: 50%;
+  margin-left: 2rem; }
+
+.header nav {
+  align-self: center; }
+
+.header nav ul {
+  display: flex;
+  list-style: none; }
+
+.header nav ul li {
+  margin: 10px;
+  transition: 0.3s;
+  padding: 1.5rem; }
+
+.header nav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "bebas";
+  color: white; }
+
+.header nav ul li:hover {
+  transform: translateY(-8px); }
+
+.header nav ul ul {
+  position: absolute;
+  display: none;
+  background-color: #1A132F;
+  border: solid 1px black;
+  z-index: 2; }
+
+.header nav ul li:hover ul {
+  display: block; }
+
+.header nav ul li ul li {
+  padding: 0rem;
+  margin: 0.5rem; }
+
+.pagina__titulo {
+  font-size: 6rem;
+  color: white;
+  font-family: "bebas"; }
+
+.piePagina_Autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; }
+
+.estiloAutor {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: "bebas";
+  text-decoration: underline; }
+
+.estiloTxtAutor {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "bebas"; }
+
+.piePagina_redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.estiloRedes {
+  font-size: 3rem;
+  font-family: "bebas";
+  color: white;
+  text-decoration: underline; }
+
+.sizeIconSocial {
+  width: 40px;
+  height: 40px; }
+
+form {
+  width: 60rem;
+  height: 50rem; }
+
+#form1 {
+  border: 1px solid #5B7DB1;
+  background-color: #F9F7F7;
+  padding: 5rem;
+  margin: 1rem;
+  width: 70%;
+  height: 80%; }
+
+#form1 legend {
+  font-size: 2.5rem;
+  font-family: "bebas";
+  text-align: center;
+  text-decoration: underline;
+  background-color: #F9F7F7; }
+
+#form1 ol {
+  list-style: none; }
+
+#form1 ol li {
+  padding: 0.5rem; }
+
+#form1 ol li label {
+  font-size: 2rem;
+  font-family: "bebas"; }
+
+#form1 input[name=nombre] {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 1.9rem; }
+
+#form1 input[name=apellido] {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 1.3rem; }
+
+#form1 input[type=email] {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 2.7rem; }
+
+#form1 textarea {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 1rem; }
+
+#form1 input.btn {
+  padding: 0.5rem;
+  color: white;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  border: solid 1px black;
+  margin: 0.4rem; }
+
+#form2 {
+  border: 1px solid #5B7DB1;
+  background-color: #F9F7F7;
+  padding: 4rem;
+  margin: 1rem;
+  width: 70%;
+  height: 100%; }
+
+#form2 legend {
+  font-size: 2.5rem;
+  font-family: "bebas";
+  text-align: center;
+  text-decoration: underline;
+  background-color: #F9F7F7; }
+
+#form2 ol {
+  list-style: none; }
+
+#form2 ol li {
+  font-size: 1.5rem;
+  font-family: "bebas";
+  letter-spacing: 0.1rem; }
+
+#form2 ol li label {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 2rem;
+  font-family: "bebas";
+  text-decoration: underline; }
+
+#form2 input.btn {
+  padding: 0.5rem;
+  color: white;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  border: solid 1px black;
+  margin: 0.4rem; }
+
+#form2 input[type=radio] {
+  margin: 0.5rem 0rem 1rem 2rem; }
+
+#form2 input[type=checkbox] {
+  margin: 0.5rem 0rem 0rem 2rem; }
+
+#form2 select {
+  margin: 1rem 0rem 1rem 2rem; }
+
+#form2 li label {
+  margin: 1rem; }
+
+#form2 ol li ul li {
+  list-style: none; }
+
+.img_finanzas {
+  background-image: url(../../imagenes/finanzas-img.jpg); }
+
+.img_criptos {
+  background-image: url(../../imagenes/banner-index.jpg); }
+
+.efectoParallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.estiloTxt {
+  padding: 3rem;
+  font-size: 2.8rem;
+  font-family: "profesional";
+  text-align: left; }
+
+.estiloTituloBannerNegro {
+  text-align: center;
+  font-family: "bebas";
+  font-size: 12rem;
+  text-shadow: 0px 0px 2px white; }
+
+.estiloTituloBannerBlanco {
+  color: white;
+  font-family: "bebas";
+  font-size: 12rem;
+  text-shadow: 0px 0px 5px black; }
+
+#bannerSize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23rem;
+  margin-top: 1rem;
+  border: solid 1px black; }
+
+.criptosBanner {
+  background-image: url(../../imagenes/background-img.jpg); }
+
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 30rem;
+  justify-content: space-around;
+  margin: 15rem 0rem 15rem 0rem; }
+
+.orden__tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.estilo__icono {
+  width: 23rem;
+  height: 23rem;
+  margin: 1rem; }
+
+.estiloBoton {
+  font-family: "bebas";
+  font-size: 2rem;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 33%, #00d4ff 100%);
+  border: solid 1px black;
+  padding: 0.5rem;
+  transition-duration: 0.3s; }
+
+.estiloBoton:hover {
+  border-radius: 2rem; }
+
+.reset {
+  color: white;
+  text-decoration: none; }
+
+.monedas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250rem; }
+
+.videoIzq {
+  display: flex;
+  flex-direction: row;
+  height: 45rem;
+  background-color: #1A132F; }
+
+.videoDer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 45rem;
+  background-color: #1A132F; }
+
+.tamañoVideo {
+  height: 100%;
+  width: 60rem; }
+
+.orden__descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.txtStyleDescrip {
+  color: white;
+  padding: 3rem;
+  font-size: 2.8rem;
+  font-family: "profesional";
+  text-align: left; }
+
+.bannerBlockchain {
+  background-image: url(../../imagenes/blockchain-img.jpg);
+  border: 1px solid white; }
+
+.titulos__blockchain {
+  color: black;
+  font-size: 4rem;
+  font-family: "bebas";
+  text-decoration: underline;
+  margin: 1rem; }
+
+#blockchain__info {
+  display: flex;
+  flex-direction: row; }
+
+.blockchain__info--videTabla {
+  display: flex;
+  flex-direction: column;
+  height: 110rem;
+  justify-content: space-evenly; }
+
+#blockchain__video {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center; }
+
+.videoBlock {
+  width: 80rem;
+  height: 40rem; }
+
+#blockchain__tabla {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center; }
+
+.estiloTabla {
+  margin: 5px;
+  width: 80rem;
+  height: 40rem;
+  background-image: url(../../imagenes/tabla-img.jpg);
+  background-size: cover;
+  background-position: center;
+  border-collapse: collapse; }
+
+td, th {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid white;
+  text-shadow: 0px 0px 5px black;
+  color: white;
+  padding: 2px 5px 2px 5px; }
+
+#blockchain__flujo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 5rem; }
+
+.estiloTxtParrafo {
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: justify;
+  font-family: "profesional";
+  font-weight: bold; }
+
+.img__blockchain--flujo {
+  width: 68rem;
+  height: 81rem;
+  border: solid 1px black; }
+
+.blockchain__flujo--descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+#mercados__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 240rem; }
+
+.imgMercados {
+  background-image: url(../../imagenes/exchangeBanner-img.jpg); }
+
+.paginaDer {
+  display: flex;
+  flex-direction: row;
+  background-color: #1A132F;
+  height: 45rem; }
+
+.paginaIzq {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #1A132F;
+  height: 45rem; }
+
+.tituloYparrafo {
+  width: 50%;
+  height: auto; }
+
+.imgLink {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%; }
+
+.img__mercados--secciones {
+  width: 80rem;
+  height: 100%; }
+
+.descripcionTitulo {
+  font-family: "bebas";
+  font-size: 7rem;
+  text-decoration: underline;
+  text-align: center;
+  color: white; }
+
+.estiloTxtDescripciones {
+  font-family: "profesional";
+  font-size: 2.7rem;
+  line-height: 0.9;
+  margin: 2rem;
+  text-align: justify;
+  color: white; }
+
+#fondo__ayuda {
+  background-image: url(../../imagenes/fondo_ayuda.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.ubicacionTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem; }
+
+.formularios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 80rem; }
+
+.formulario__size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%; }
+
+.ubicacionBotones {
+  text-align: center; }
+
+form {
+  width: 60rem;
+  height: 50rem; }
+
+#form1 {
+  border: 1px solid #5B7DB1;
+  background-color: #F9F7F7;
+  padding: 5rem;
+  margin: 1rem;
+  width: 70%;
+  height: 80%; }
+
+#form1 legend {
+  font-size: 2.5rem;
+  font-family: "bebas";
+  text-align: center;
+  text-decoration: underline;
+  background-color: #F9F7F7; }
+
+#form1 ol {
+  list-style: none; }
+
+#form1 ol li {
+  padding: 0.5rem; }
+
+#form1 ol li label {
+  font-size: 2rem;
+  font-family: "bebas"; }
+
+#form1 input[name=nombre] {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 1.9rem; }
+
+#form1 input[name=apellido] {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 1.3rem; }
+
+#form1 input[type=email] {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 2.7rem; }
+
+#form1 textarea {
+  border: solid 1px black;
+  margin: 0rem 0rem 0rem 1rem; }
+
+#form1 input.btn {
+  padding: 0.5rem;
+  color: white;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  border: solid 1px black;
+  margin: 0.4rem; }
+
+#form2 {
+  border: 1px solid #5B7DB1;
+  background-color: #F9F7F7;
+  padding: 4rem;
+  margin: 1rem;
+  width: 70%;
+  height: 100%; }
+
+#form2 legend {
+  font-size: 2.5rem;
+  font-family: "bebas";
+  text-align: center;
+  text-decoration: underline;
+  background-color: #F9F7F7; }
+
+#form2 ol {
+  list-style: none; }
+
+#form2 ol li {
+  font-size: 1.5rem;
+  font-family: "bebas";
+  letter-spacing: 0.1rem; }
+
+#form2 ol li label {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 2rem;
+  font-family: "bebas";
+  text-decoration: underline; }
+
+#form2 input.btn {
+  padding: 0.5rem;
+  color: white;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  border: solid 1px black;
+  margin: 0.4rem; }
+
+#form2 input[type=radio] {
+  margin: 0.5rem 0rem 1rem 2rem; }
+
+#form2 input[type=checkbox] {
+  margin: 0.5rem 0rem 0rem 2rem; }
+
+#form2 select {
+  margin: 1rem 0rem 1rem 2rem; }
+
+#form2 li label {
+  margin: 1rem; }
+
+#form2 ol li ul li {
+  list-style: none; }

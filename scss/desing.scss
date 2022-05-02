@@ -1,2 +1,15 @@
-@import url(base/_reset.scss);
-@import url(base/_tipografias.scss);
+@import "base/reset";
+@import "base/tipografias";
+@import "utilities/variables";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/formularios";
+@import "views/index";
+@import "views/criptomonedas";
+@import "views/blockchain";
+@import "views/mercados";
+@import "views/ayuda";
+
+
+
