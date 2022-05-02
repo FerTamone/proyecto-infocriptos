@@ -1,0 +1,252 @@
+@media screen and (min-width:368px) and (max-width:767px) {
+    /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
+    #grilla{
+        grid-template-areas:
+            "header"
+            "header"
+            "section"
+            "section"
+            "footer";
+        grid-template-rows: auto auto auto auto auto ; 
+        grid-template-columns: 100%;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A HEADER Y SUS HIJOS--------------------------------------------------------- */
+    .header{
+        flex-wrap: wrap;
+    }
+    .subheader{
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .header nav ul{
+        flex-wrap: wrap;
+        justify-content:center ;
+    }
+    .pagina__titulo{
+        font-size: 5rem;
+    }
+    
+    .header nav ul li{
+        margin:0rem;
+        padding:1rem;
+    }
+    .header nav ul li:hover {
+        transform:none;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECTION--------------------------------------------------------- */
+    section{
+        flex-wrap: nowrap;
+    }
+
+    /* MODIFICACIONES A FOOTER */
+
+    .vibrar {
+        transform: none;
+    }
+
+    .vibrar:hover{
+        animation-play-state: paused;
+    }
+        
+    .estiloAutor{
+        font-size: 2.5rem;
+    }
+    
+    .estiloTxtAutor{
+        font-size: 2.2rem;
+    }
+    
+    
+    .estiloRedes{
+        font-size: 2.5rem;
+    }
+    
+    .sizeIconSocial{
+        width: 35px;
+        height: 35px;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-----------------------------*/
+    .estiloTxt{
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+    .estiloTituloBannerNegro{
+        font-size: 7rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    #bannerTamaño{
+        width: 99.4%;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------------- */
+    .tarjetas{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin: 2rem 0rem 5rem 0rem;
+    }
+
+    .monedas{
+        height: 200rem;
+        justify-content: space-around;
+    }
+
+    .estilo__icono{
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+    }
+
+    .estiloBoton{
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .videoIzq{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    
+    .videoDer{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .descripcionTitulo{
+        font-size: 4rem;
+    }
+    
+    .orden__descripcion--parrafo{
+        display:none;
+    }
+
+
+
+    .tamañoVideo{
+        height: 30rem;
+        width: 100vw;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------------- */
+    #blockchain__info{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .titulos__blockchain{
+        font-size: 3rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    #blockchain__flujo{
+        display: none;
+    }
+    .blockchain__flujo--descripcion{
+        display: none;
+    }
+
+    .videoBlock{
+        width: 100%;
+        height: 35rem;
+    }
+    
+    #blockchain__tabla{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .estiloTabla{
+        width: 100vw;
+        height: 40rem;
+    }
+
+    td,th { 
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------------- */
+    #mercados__article{
+        justify-content: space-evenly;
+        height: 145rem;
+    }
+    .paginaDer{
+        flex-direction: column;
+        height: 25rem;
+    }
+    
+    .paginaIzq{
+        flex-direction: column;
+        height: 25rem;
+    }
+
+    .tituloYparrafo{
+        width: 100%;
+        height: auto;
+    }
+    
+    .imgLink{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img__mercados--secciones{
+        width: 100%;
+        height: 100%;
+    }
+
+    .estiloTxtDescripciones{
+        display: none;
+    }
+
+    .descripcionTitulo{
+        font-size: 4rem;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------------- */
+    .ubicacionTitulo{
+        padding: 3rem;
+    }
+
+    .formularios{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+    }
+
+    #form1 {
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+        height: auto;
+    }
+
+    #form1 textarea{
+        border:1px solid black;
+        margin: 0rem 0rem 0rem 7.7rem;
+    
+    }
+    #form2 {
+        padding: 2rem;
+        margin: 3rem;
+        width: auto ;
+        height: auto;
+    }
+} 
