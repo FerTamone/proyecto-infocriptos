@@ -17,12 +17,12 @@
     }
     .subheader{
         width: 100%;
-        justify-content: center;
+        justify-content: $alinTxt;
         
     }
     .header nav ul{
         flex-wrap: wrap;
-        justify-content:center ;
+        justify-content:$alinTxt ;
     }
     .pagina__titulo{
         font-size: 5rem;
@@ -74,7 +74,7 @@
         margin: 0.5rem;
         padding: 1rem;
         font-size: 1.8rem;
-        text-align: justify;
+        text-align: $elementosEspaciados;
     }
     .estiloTituloBannerNegro{
         font-size: 7rem;
@@ -82,7 +82,7 @@
     
     .estiloTituloBannerBlanco{
         font-size: 7rem;
-        text-align: center;
+        text-align: $alinTxt;
     }
 
     #bannerTamaño{
@@ -98,7 +98,7 @@
 
     .monedas{
         height: 200rem;
-        justify-content: space-around;
+        justify-content: $elementosEspaciados;
     }
 
     .estilo__icono{
@@ -140,14 +140,14 @@
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------------- */
     #blockchain__info{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: $entreElementos;
         height: 100%;
     }
 
     .titulos__blockchain{
         font-size: 3rem;
         margin: 1rem;
-        text-align: center;
+        text-align: $alinTxt;
     }
 
     #blockchain__flujo{
@@ -179,7 +179,7 @@
 
     /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------------- */
     #mercados__article{
-        justify-content: space-evenly;
+        justify-content: $elementosSeparados;
         height: 145rem;
     }
     .paginaDer{
@@ -239,7 +239,7 @@
     }
 
     #form1 textarea{
-        border:1px solid black;
+        border:$borde;
         margin: 0rem 0rem 0rem 7.7rem;
     
     }
