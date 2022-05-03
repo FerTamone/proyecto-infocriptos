@@ -1,15 +1,15 @@
 /* --------------------------------------------------- FORMATEO HTML ------------------------------------------------------------ */
-* {
+/* * {
     margin:0;
     padding:0;
 }
 
 html{
     font-size: 62.5%;
-}
+} */
 
 /* --------------------------------------------------- FUENTES EXPORTADAS ------------------------------------------------------------ */
-@font-face {
+/* @font-face {
     font-family: "bebas";
     src: url(../fuentes/BebasNeue-Regular.ttf);
 }
@@ -22,12 +22,12 @@ html{
 @font-face {
     font-family: "profesional";
     src: url(../fuentes/RobotoMono-Italic-VariableFont_wght.ttf);
-}
+} */
 
 
 /* --------------------------------------------- DEFINICION DE GRILLA Y ASIGNACION DE LAS AREAS -------------------------------------------------- */
 
-#grilla {
+/* #grilla {
     display: grid;
     grid-template-areas:
     "header header header"
@@ -61,12 +61,12 @@ footer{
     grid-area: footer;
     background-color: #1A132F;
     border: solid 1px black;
-}
+} */
 
 
 /* --------------------------------------------- DEFINICION DE HEADER Y SUS HIJOS ------------------------------------------------------------------ */
 
-.subheader{
+/* .subheader{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,12 +128,12 @@ footer{
     font-size: 6rem;
     color: white;
     font-family:"bebas";
-}
+} */
 
 /* --------------------------------------------- DEFINICION DE FOOTER Y SUS HIJOS ------------------------------------------------------------------ */
 
 /* --------------- DEFINICION DE ANIMACION PARA ICONOS DE REDES---------- */
-@keyframes vibrar {
+/* @keyframes vibrar {
     50% {
     transform: translateX(3px) rotate(2deg);
     }
@@ -189,12 +189,12 @@ footer{
     width: 40px;
     height: 40px;
 }
-
+ */
 
 /* --------------------------------------------- CLASES QUE SE USAN EN TODO EL PROYECTO ---------------------------------------------------------- */
 
 
-.efectoParallax{
+/* .efectoParallax{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,21 +231,21 @@ footer{
     height: 23rem;
     margin-top: 1rem;
     border: solid 1px black;
-}
+} */
 
 /* --------------------------------------------- SECCION INDEX ------------------------------------------------------------------ */
 
 
-.img_finanzas{
+/* .img_finanzas{
     background-image: url(../imagenes/finanzas-img.jpg);
 }
 .img_criptos{
     background-image: url(../imagenes/banner-index.jpg);
-}
+} */
 
 /* --------------------------------------------- SECCION CRIPTOMONEDAS ------------------------------------------------------------------ */
 
-.criptosBanner{
+/* .criptosBanner{
     background-image: url(../imagenes/background-img.jpg);
 }
 
@@ -328,11 +328,11 @@ footer{
     font-size: 2.8rem;
     font-family: "profesional";
     text-align: left;
-}
+} */
 
 /* --------------------------------------------- SECCION BLOCKCHAIN ------------------------------------------------------------------ */
 
-.bannerBlockchain{
+/* .bannerBlockchain{
     background-image: url(../imagenes/blockchain-img.jpg);
     border: solid 1px white;
 }
@@ -421,12 +421,12 @@ td,th {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
+} */
 
 /* --------------------------------------------- SECCION MERCADOS ------------------------------------------------------------------ */
 
 
-#mercados__article{
+/* #mercados__article{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -484,14 +484,14 @@ td,th {
     margin: 2rem;
     text-align: justify;
     color: white;
-}
+} */
 
 
 
 
 /* --------------------------------------------- SECCION AYUDA ------------------------------------------------------------------ */
 
-#fondo__ayuda{
+/* #fondo__ayuda{
     background-image:url(../imagenes/fondo_ayuda.jpg);
     background-position: center;
     background-size: cover;
@@ -638,13 +638,13 @@ form{
 }
 #form2 ol li ul li{
     list-style:none ;
-}
+} */
 
 /* --------------------------------------------- MEDIAQUERY VISTA TABLET ------------------------------------------------------------------ */
 
-@media screen and (min-width:768px) and (max-width:1024px){
+/* @media screen and (min-width:768px) and (max-width:1024px){ */
     /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
-    #grilla {
+    /* #grilla {
 
         grid-template-areas:
         "header header "
@@ -652,9 +652,9 @@ form{
         "footer footer ";
         grid-template-rows: auto auto; 
         grid-template-columns: auto auto;
-    }
+    } */
     /* --------------------------------------------- MODIFICACIONES A HEADER E HIJOS ---------------------------------------------------------- */
-    .header{
+    /* .header{
         flex-direction: column;
     }
     .subheader{
@@ -670,17 +670,17 @@ form{
 
     .header nav ul li:hover {
         transform:none;
-    }
+    } */
 
 
     /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
-    section{
+    /* section{
         flex-wrap: nowrap;
         width: 100%;
-    }
+    } */
 
     /* ------------------- MODIFICACIONES A FOOTER-------------------------- */
-    .vibrar {
+    /* .vibrar {
         transform: none;
     }
 
@@ -704,11 +704,11 @@ form{
     .sizeIconSocial{
         width: 35px;
         height: 35px;
-    }
+    } */
 
 
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-------------------------------------- */
-    .pagina__titulo{
+    /* .pagina__titulo{
         font-size: 7rem;
     }
 
@@ -730,10 +730,10 @@ form{
 
     #bannerSize{
         width: 99.7%;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------- */
-    .tarjetas{
+    /* .tarjetas{
         flex-direction: row-reverse;
         flex-wrap: wrap;
         margin: 5rem 0rem 5rem 0rem;
@@ -783,10 +783,10 @@ form{
     
     .videoDer{
         height: 40rem;
-    } 
+    }  */
     
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------- */
-    .titulos__blockchain{
+    /* .titulos__blockchain{
         font-size: 3.5rem;
         margin: 0rem;
     }
@@ -847,10 +847,10 @@ form{
         font-size: 1.4rem;
         padding: 0rem;
         text-align: justify;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------- */
-    #mercados__article{
+    /* #mercados__article{
         height: 250rem;
     }
 
@@ -883,10 +883,10 @@ form{
         flex-direction: column;
         background-color: #1A132F;
         height: 40rem;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------- */
-    .ubicacionTitulo{
+    /* .ubicacionTitulo{
         padding: 2rem;
     }
     .formularios{
@@ -924,15 +924,15 @@ form{
         height: auto;
     }
 
-}
+} */
 
 
 
 /* --------------------------------------------- MEDIAQUERY VISTA MOBILE ------------------------------------------------------------------ */
 
-@media screen and (min-width:368px) and (max-width:767px) {
+/* @media screen and (min-width:368px) and (max-width:767px) { */
     /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
-    #grilla{
+    /* #grilla{
         grid-template-areas:
             "header"
             "header"
@@ -941,10 +941,10 @@ form{
             "footer";
         grid-template-rows: auto auto auto auto auto ; 
         grid-template-columns: 100%;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A HEADER Y SUS HIJOS--------------------------------------------------------- */
-    .header{
+    /* .header{
         flex-wrap: wrap;
     }
     .subheader{
@@ -966,16 +966,16 @@ form{
     }
     .header nav ul li:hover {
         transform:none;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECTION--------------------------------------------------------- */
-    section{
+    /* section{
         flex-wrap: nowrap;
-    }
+    } */
 
     /* MODIFICACIONES A FOOTER */
 
-    .vibrar {
+    /* .vibrar {
         transform: none;
     }
 
@@ -999,10 +999,10 @@ form{
     .sizeIconSocial{
         width: 35px;
         height: 35px;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-----------------------------*/
-    .estiloTxt{
+    /* .estiloTxt{
         margin: 0.5rem;
         padding: 1rem;
         font-size: 1.8rem;
@@ -1019,10 +1019,10 @@ form{
 
     #bannerTamaño{
         width: 99.4%;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------------- */
-    .tarjetas{
+    /* .tarjetas{
         flex-direction: row-reverse;
         flex-wrap: wrap;
         margin: 2rem 0rem 5rem 0rem;
@@ -1067,10 +1067,10 @@ form{
     .tamañoVideo{
         height: 30rem;
         width: 100vw;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------------- */
-    #blockchain__info{
+    /* #blockchain__info{
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
@@ -1107,10 +1107,10 @@ form{
     td,th { 
         font-size: 1rem;
         padding: 2px;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------------- */
-    #mercados__article{
+    /* #mercados__article{
         justify-content: space-evenly;
         height: 145rem;
     }
@@ -1145,10 +1145,10 @@ form{
 
     .descripcionTitulo{
         font-size: 4rem;
-    }
+    } */
 
     /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------------- */
-    .ubicacionTitulo{
+    /* .ubicacionTitulo{
         padding: 3rem;
     }
 
@@ -1185,4 +1185,4 @@ form{
 
 
 
-} 
+}  */
