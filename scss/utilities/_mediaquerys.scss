@@ -1,3 +1,287 @@
+@media screen and (min-width:768px) and (max-width:1024px){
+    /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
+    #grilla {
+
+        grid-template-areas:
+        "header header "
+        "section section "
+        "footer footer ";
+        grid-template-rows: auto auto; 
+        grid-template-columns: auto auto;
+    }
+    /* --------------------------------------------- MODIFICACIONES A HEADER E HIJOS ---------------------------------------------------------- */
+    .header{
+        flex-direction: column;
+    }
+    .subheader{
+        width: 100%;
+        justify-content: $alinTxt;
+    }
+
+    .header nav ul li{
+        margin: 1rem;
+        transition:none;
+        padding: 0rem;
+    }
+
+    .header nav ul li:hover {
+        transform:none;
+    }
+
+
+    /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
+    section{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    /* ------------------- MODIFICACIONES A FOOTER-------------------------- */
+    .vibrar {
+        transform: none;
+    }
+
+    .vibrar:hover{
+        animation-play-state: paused;
+    }
+        
+    .estiloAutor{
+        font-size: 2.5rem;
+    }
+    
+    .estiloTxtAutor{
+        font-size: 2.2rem;
+    }
+    
+    
+    .estiloRedes{
+        font-size: 2.5rem;
+    }
+    
+    .sizeIconSocial{
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-------------------------------------- */
+    .pagina__titulo{
+        font-size: 7rem;
+    }
+
+    .estiloTxt{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1.7rem;
+        text-align: $alinJusti;
+    }
+    
+    .estiloTituloBannerNegro{
+        font-size: 9rem;
+    }
+    
+    .estiloTituloBannerBlanco{
+        font-size: 9rem;
+        text-align: $alinTxt;
+    }
+
+    #bannerSize{
+        width: 99.7%;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------- */
+    .tarjetas{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin: 5rem 0rem 5rem 0rem;
+        align-items: $alinTxt;
+    } 
+
+    .txtStyleDescrip{
+        font-size: 1.7rem;
+        padding: 0rem;
+        margin-left: 1rem;
+    }
+
+
+    .estilo__icono{
+        width: 13rem;
+        height: 13rem;
+        margin: 1rem;
+    }
+
+    .estiloBoton{
+        font-size: 1.5rem;
+    }
+
+    .estiloBoton:hover{
+        border-radius: 0rem;
+    }
+    .monedas{
+        justify-content:$elementosEspaciados ;
+        height: 220rem;
+    }
+    .orden__descripcion{
+        align-items: $alinTxt;
+    }
+
+    .descripcionTitulo{
+        font-size: 4rem;
+        text-align: $alinTxt;
+    }
+
+    .tamañoVideo{
+        height: 100%;
+        width: 40rem;
+    }
+    .videoIzq{
+        height: 40rem;
+    } 
+    
+    .videoDer{
+        height: 40rem;
+    } 
+    
+    /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------- */
+    .titulos__blockchain{
+        font-size: 3.5rem;
+        margin: 0rem;
+    }
+
+    #blockchain__info{
+        flex-direction: column;
+        height: 170rem;
+        width: 100%;
+        justify-content: $elementosEspaciados;
+    }
+
+    #blockchain__video{
+        margin: 0px;
+    }
+
+    .videoBlock{
+        width: 76rem;
+        height: 35rem;
+        margin: 1rem;
+    }
+
+    #blockchain__tabla{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .estiloTabla{
+        width: 100%;
+        height: 40rem;
+    }
+
+    td,th { 
+        font-size: 1rem;
+        padding: 2px;
+    }
+    
+    #blockchain__flujo{
+        align-items:$alinTxt;
+        margin: 0rem;
+        height: 45rem;
+    }
+    
+    .blockchain__flujo--descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .img__blockchain--flujo{
+        width: 55rem;
+        height: 50rem;
+        border: $borde;
+        margin-left: 1rem;
+    }
+
+    .estiloTxtParrafo{
+        margin: 0.5rem;
+        font-size: 1.4rem;
+        padding: 0rem;
+        text-align: $alinJusti;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------- */
+    #mercados__article{
+        height: 250rem;
+    }
+
+    .img__mercados--secciones{
+        width: 100%;
+        height: 100%;
+    }
+
+    .estiloTxtDescripciones{
+        display: none;
+    }
+
+    .tituloYparrafo{
+        width: 100%;
+        height: auto;
+    }
+
+    .imgLink{
+        width: 100%;
+        height: auto;
+    }
+
+    .paginaDer{
+        flex-direction: column;
+        background-color:$colorNav_Footer;
+        height: 40rem;
+    }
+    
+    .paginaIzq{
+        flex-direction: column;
+        background-color:$colorNav_Footer;
+        height: 40rem;
+    }
+
+    /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------- */
+    .ubicacionTitulo{
+        padding: 2rem;
+    }
+    .formularios{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 150rem;
+        justify-content:$elementosEspaciados;
+    }
+
+    .formulario__size{
+        display: flex;
+        justify-content: $alinTxt;
+        align-items: $alinTxt;
+        height: 65rem;
+    
+    }
+    form{
+        width: auto;
+        height: 50rem;
+    }
+
+
+    #form1 {
+        padding: 2rem;
+        margin-left: 1.5rem;
+        width: 80%;
+        height: auto;
+
+    }
+
+    #form2 {
+        padding: 2rem;
+        margin: 3rem;
+        width: auto ;
+        height: auto;
+    }
+
+}
+
 @media screen and (min-width:368px) and (max-width:767px) {
     /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
     #grilla{
