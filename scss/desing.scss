@@ -1,10 +1,12 @@
 @import "base/reset";
 @import "base/tipografias";
+@import "base/mediaquerys";
 @import "utilities/variables";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/formularios";
+@import "utilities/keyframes";
 @import "views/index";
 @import "views/criptomonedas";
 @import "views/blockchain";
