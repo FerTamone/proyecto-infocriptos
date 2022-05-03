@@ -8,11 +8,10 @@
 }
 .vibrar {
     transform: perspective(1px) translateZ(0);
+    &:hover{
+        animation-name: vibrar;
+        animation-duration: 0.20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
 }
-.vibrar:hover{
-    animation-name: vibrar;
-    animation-duration: 0.20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-

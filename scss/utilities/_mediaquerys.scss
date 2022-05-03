@@ -22,12 +22,10 @@
         margin: 1rem;
         transition:none;
         padding: 0rem;
+        &:hover{
+            transform:none;
+        }
     }
-
-    .header nav ul li:hover {
-        transform:none;
-    }
-
 
     /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
     section{
@@ -111,11 +109,11 @@
 
     .estiloBoton{
         font-size: 1.5rem;
+        &:hover{
+            border-radius: 0rem;
+        }
     }
 
-    .estiloBoton:hover{
-        border-radius: 0rem;
-    }
     .monedas{
         justify-content:$elementosEspaciados ;
         height: 220rem;
@@ -315,11 +313,11 @@
     .header nav ul li{
         margin:0rem;
         padding:1rem;
+        &:hover{
+            transform:none;
+        }
     }
-    .header nav ul li:hover {
-        transform:none;
-    }
-
+    
     /* --------------------------------------------- MODIFICACIONES A SECTION--------------------------------------------------------- */
     section{
         flex-wrap: nowrap;
@@ -329,12 +327,11 @@
 
     .vibrar {
         transform: none;
+        &:hover{
+            animation-play-state: paused;
+        }
     }
 
-    .vibrar:hover{
-        animation-play-state: paused;
-    }
-        
     .estiloAutor{
         font-size: 2.5rem;
     }

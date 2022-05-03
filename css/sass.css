@@ -241,12 +241,11 @@ form {
 
 .vibrar {
   transform: perspective(1px) translateZ(0); }
-
-.vibrar:hover {
-  animation-name: vibrar;
-  animation-duration: 0.20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; }
+  .vibrar:hover {
+    animation-name: vibrar;
+    animation-duration: 0.20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
 
 .img_finanzas {
   background-image: url(../../imagenes/finanzas-img.jpg); }
@@ -317,9 +316,8 @@ form {
   border: solid 1px black;
   padding: 0.5rem;
   transition-duration: 0.3s; }
-
-.estiloBoton:hover {
-  border-radius: 2rem; }
+  .estiloBoton:hover {
+    border-radius: 2rem; }
 
 .reset {
   color: white;
@@ -639,8 +637,8 @@ form {
     margin: 1rem;
     transition: none;
     padding: 0rem; }
-  .header nav ul li:hover {
-    transform: none; }
+    .header nav ul li:hover {
+      transform: none; }
   /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
   section {
     flex-wrap: nowrap;
@@ -690,8 +688,8 @@ form {
     margin: 1rem; }
   .estiloBoton {
     font-size: 1.5rem; }
-  .estiloBoton:hover {
-    border-radius: 0rem; }
+    .estiloBoton:hover {
+      border-radius: 0rem; }
   .monedas {
     justify-content: space-around;
     height: 220rem; }
@@ -818,16 +816,16 @@ form {
   .header nav ul li {
     margin: 0rem;
     padding: 1rem; }
-  .header nav ul li:hover {
-    transform: none; }
+    .header nav ul li:hover {
+      transform: none; }
   /* --------------------------------------------- MODIFICACIONES A SECTION--------------------------------------------------------- */
   section {
     flex-wrap: nowrap; }
   /* MODIFICACIONES A FOOTER */
   .vibrar {
     transform: none; }
-  .vibrar:hover {
-    animation-play-state: paused; }
+    .vibrar:hover {
+      animation-play-state: paused; }
   .estiloAutor {
     font-size: 2.5rem; }
   .estiloTxtAutor {

@@ -32,11 +32,11 @@
     border: $borde;
     padding: 0.5rem;
     transition-duration: 0.3s;
+    &:hover{
+        border-radius: 2rem;
+    }
 }
 
-.estiloBoton:hover{
-    border-radius: 2rem;
-}
 
 .reset{
     color: $letraBlanca;
