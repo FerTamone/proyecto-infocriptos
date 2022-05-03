@@ -1,6 +1,5 @@
 @import "base/reset";
 @import "base/tipografias";
-@import "base/mediaquerys";
 @import "utilities/variables";
 @import "layout/grid";
 @import "layout/header";
@@ -12,6 +11,7 @@
 @import "views/blockchain";
 @import "views/mercados";
 @import "views/ayuda";
+@import "utilities/mediaquerys";
 
 
 
