@@ -9,11 +9,11 @@ html {
   font-size: 62.5%; }
 
 @font-face {
-  font-family: "bebas";
+  font-family: bebas;
   src: url(../../fuentes/BebasNeue-Regular.ttf); }
 
 @font-face {
-  font-family: "profesional";
+  font-family: profesional;
   src: url(../../fuentes/RobotoMono-Italic-VariableFont_wght.ttf); }
 
 #grilla {

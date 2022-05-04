@@ -48,7 +48,7 @@ form{
 }
 #form1 legend{
     font-size: 2.5rem;
-    font-family: $fuenteTitulos;
+    font-family: bebas;
     text-align: $alinTxt;
     text-decoration: $subrayado;
     background-color:$fondoFormulario;
@@ -63,7 +63,7 @@ form{
 }
 #form1 ol li label{
     font-size: 2rem;
-    font-family: $fuenteTitulos;
+    font-family: bebas;
     
 }
 #form1 input[name=nombre] {
@@ -101,7 +101,7 @@ form{
 }
 #form2 legend{
     font-size: 2.5rem;
-    font-family:$fuenteTitulos;
+    font-family:bebas;
     text-align: $alinTxt;
     text-decoration: $subrayado;
     background-color:$fondoFormulario;
@@ -111,7 +111,7 @@ form{
 }
 #form2 ol li{
     font-size: 1.5rem;
-    font-family:$fuenteTitulos;
+    font-family:bebas;
     letter-spacing: 0.1rem;
 }
 #form2 ol li label{
@@ -119,7 +119,7 @@ form{
     float:left;
     text-align:left;
     font-size: 2rem;
-    font-family: $fuenteTitulos;
+    font-family: bebas;
     text-decoration: $subrayado;
 
 }
