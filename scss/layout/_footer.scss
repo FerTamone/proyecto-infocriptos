@@ -1,41 +1,28 @@
 @import url(../utilities/_variables.scss);
 
-.piePagina_Autor{
+.piePagina{
     display: flex;
     flex-direction: column;
     align-items: $alinTxt;
-    margin: 10px;
 }
 
-.estiloAutor{
+.estilo{
     text-align: $alinTxt;
     color: $letraBlanca;
-    font-size: 3rem;
     font-family: bebas;
-    text-decoration: underline;
+    font-size: 3rem;
+    text-decoration: $subrayado
 }
 
-.estiloTxtAutor{
-    color: $letraBlanca;
+
+.estilo--autor{
+    @extend .estilo;
     font-size: 2.5rem;
-    font-family:bebas;
+    text-decoration: none;
 }
 
-.piePagina_redes{
-    display: flex;
-    flex-direction: column;
-    align-items: $alinTxt;
-}
-
-.estiloRedes{
-    font-size: 3rem;
-    font-family: bebas;
-    color:$letraBlanca;
-    text-decoration: $subrayado;
-}
 
 .sizeIconSocial{
-    width: 40px;
-    height: 40px;
+    @include sizes(40px,40px)
 }
 

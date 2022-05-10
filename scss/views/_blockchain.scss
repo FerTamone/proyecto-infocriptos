@@ -12,40 +12,34 @@
 }
 
 #blockchain__info{
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
 }
 
 .blockchain__info--videTabla{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     height: 110rem;
     justify-content: $elementosSeparados;
 }
 
 #blockchain__video{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     margin: 5px;
     align-items: $alinTxt;
 }
 
 .videoBlock{
-    width: 80rem;
-    height: 40rem;
+    @include sizes(80rem,40rem);
 }
 
 #blockchain__tabla{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     margin: 5px;
     align-items: $alinTxt;
 }
 
 .estiloTabla{
     margin: 5px;
-    width: 80rem;
-    height: 40rem;
+    @include sizes(80rem,40rem);
     background-image: url(../../imagenes/tabla-img.jpg);
     background-size: cover;
     background-position: $alinTxt;
@@ -63,8 +57,7 @@ td,th {
 
 
 #blockchain__flujo{
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
     align-items:flex-start;
     margin-top: 5rem;
 }
@@ -78,13 +71,11 @@ td,th {
 }
 
 .img__blockchain--flujo{
-    width: 68rem;
-    height: 81rem;
+    @include sizes(68rem, 81rem);
     border: $borde;
 }
 
 .blockchain__flujo--descripcion{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     justify-content: flex-start;
 }

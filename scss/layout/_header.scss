@@ -1,63 +1,58 @@
 .subheader{
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
     align-items: $alinTxt;
 }
 
 .sizeIcono{
-    width: 50%;
-    height: 50%;
+    @include sizes(50%,50%);
     margin-left: 2rem;
 }
 
-.header nav{
-    align-self: $alinTxt;
-}
-
-.header nav ul{
-    display: flex;
-    list-style: none;
-}
-
-.header nav ul li{
-    margin: 10px;
-    transition: 0.3s;
-    padding: 1.5rem;
-
-}
-
-.header nav ul li a{
-    text-decoration: none;
-    font-size: 3rem;
+.style{
     font-family: bebas;
     color: $letraBlanca;
 }
 
-.header nav ul li:hover {
-    transform: translateY(-8px);
-}
-
-.header nav ul ul{
-    position: absolute;
-    display:none;
-    background-color: $colorNav_Footer;
-    border: $borde;
-    z-index: 2;
-}
-
-.header nav ul li:hover ul{
-    display: block;
-}
-
-.header nav ul li ul li{
-    padding: 0rem;
-    margin: 0.5rem;
-}
-
-
+.header{
+    nav{
+        align-self: $alinTxt;
+        ul{
+            @extend .flex-row;
+            list-style: none;
+            ul{
+                position: absolute;
+                display:none;
+                background-color: $colorNav_Footer;
+                border: $borde;
+                z-index: 2;
+            }
+            li{
+                margin: 10px;
+                transition: 0.3s;
+                padding: 1.5rem;
+                &:hover{
+                    transform: translateY(-8px);
+                    ul{
+                        display: block;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 3rem;
+                    @extend .style;
+                }
+                ul{
+                    li{
+                        padding: 0rem;
+                        margin: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+} 
 
 .pagina__titulo{
     font-size: 6rem;
-    color: $letraBlanca;
-    font-family:bebas;
+    @extend .style;
 }

@@ -16,17 +16,28 @@ html {
   font-family: profesional;
   src: url(../../fuentes/RobotoMono-Italic-VariableFont_wght.ttf); }
 
+.flex-row, .subheader, .header nav ul, #blockchain__info, #blockchain__flujo, .ubi--Titulo, .formularios {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column, .blockchain__info--videTabla, #blockchain__video, #blockchain__tabla, .blockchain__flujo--descripcion {
+  display: flex;
+  flex-direction: column; }
+
 #grilla {
   display: grid;
   grid-template-areas: "header header header" "section section section" "footer footer footer";
   grid-template-rows: 6rem auto  8rem;
   grid-template-columns: 15% auto 30%; }
 
-.header {
+.parameters, .header, footer {
   display: flex;
-  justify-content: space-between;
-  grid-area: header;
+  flex-direction: row;
   background-color: #1A132F; }
+
+.header {
+  justify-content: space-between;
+  grid-area: header; }
 
 section {
   display: flex;
@@ -35,17 +46,12 @@ section {
   background-color: #B1D0E0; }
 
 footer {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   grid-area: footer;
-  background-color: #1A132F;
   border: solid 1px black; }
 
 .subheader {
-  display: flex;
-  flex-direction: row;
   align-items: center; }
 
 .sizeIcono {
@@ -53,185 +59,114 @@ footer {
   height: 50%;
   margin-left: 2rem; }
 
-.header nav {
-  align-self: center; }
-
-.header nav ul {
-  display: flex;
-  list-style: none; }
-
-.header nav ul li {
-  margin: 10px;
-  transition: 0.3s;
-  padding: 1.5rem; }
-
-.header nav ul li a {
-  text-decoration: none;
-  font-size: 3rem;
+.style, .header nav ul li a, .pagina__titulo {
   font-family: bebas;
   color: white; }
 
-.header nav ul li:hover {
-  transform: translateY(-8px); }
-
-.header nav ul ul {
-  position: absolute;
-  display: none;
-  background-color: #1A132F;
-  border: solid 1px black;
-  z-index: 2; }
-
-.header nav ul li:hover ul {
-  display: block; }
-
-.header nav ul li ul li {
-  padding: 0rem;
-  margin: 0.5rem; }
+.header nav {
+  align-self: center; }
+  .header nav ul {
+    list-style: none; }
+    .header nav ul ul {
+      position: absolute;
+      display: none;
+      background-color: #1A132F;
+      border: solid 1px black;
+      z-index: 2; }
+    .header nav ul li {
+      margin: 10px;
+      transition: 0.3s;
+      padding: 1.5rem; }
+      .header nav ul li:hover {
+        transform: translateY(-8px); }
+        .header nav ul li:hover ul {
+          display: block; }
+      .header nav ul li a {
+        text-decoration: none;
+        font-size: 3rem; }
+      .header nav ul li ul li {
+        padding: 0rem;
+        margin: 0.5rem; }
 
 .pagina__titulo {
-  font-size: 6rem;
-  color: white;
-  font-family: bebas; }
+  font-size: 6rem; }
 
-.piePagina_Autor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px; }
-
-.estiloAutor {
-  text-align: center;
-  color: white;
-  font-size: 3rem;
-  font-family: bebas;
-  text-decoration: underline; }
-
-.estiloTxtAutor {
-  color: white;
-  font-size: 2.5rem;
-  font-family: bebas; }
-
-.piePagina_redes {
+.piePagina {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.estiloRedes {
-  font-size: 3rem;
-  font-family: bebas;
+.estilo, .estilo--autor {
+  text-align: center;
   color: white;
+  font-family: bebas;
+  font-size: 3rem;
   text-decoration: underline; }
+
+.estilo--autor {
+  font-size: 2.5rem;
+  text-decoration: none; }
 
 .sizeIconSocial {
   width: 40px;
   height: 40px; }
 
+.estiloBtn, fieldset input.btn {
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  color: white;
+  border: solid 1px black; }
+
+.borde, fieldset input[name=nombre], fieldset input[name=apellido], fieldset input[type=email], fieldset textarea {
+  border: solid 1px black; }
+
 form {
   width: 60rem;
   height: 50rem; }
 
-#form1 {
+fieldset {
   border: 1px solid #5B7DB1;
   background-color: #F9F7F7;
   padding: 5rem;
-  margin: 1rem;
   width: 70%;
   height: 80%; }
-
-#form1 legend {
-  font-size: 2.5rem;
-  font-family: bebas;
-  text-align: center;
-  text-decoration: underline;
-  background-color: #F9F7F7; }
-
-#form1 ol {
-  list-style: none; }
-
-#form1 ol li {
-  padding: 0.5rem; }
-
-#form1 ol li label {
-  font-size: 2rem;
-  font-family: bebas; }
-
-#form1 input[name=nombre] {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 1.9rem; }
-
-#form1 input[name=apellido] {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 1.3rem; }
-
-#form1 input[type=email] {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 2.7rem; }
-
-#form1 textarea {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 1rem; }
-
-#form1 input.btn {
-  padding: 0.5rem;
-  color: white;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
-  border: solid 1px black;
-  margin: 0.4rem; }
-
-#form2 {
-  border: 1px solid #5B7DB1;
-  background-color: #F9F7F7;
-  padding: 4rem;
-  margin: 1rem;
-  width: 70%;
-  height: 100%; }
-
-#form2 legend {
-  font-size: 2.5rem;
-  font-family: bebas;
-  text-align: center;
-  text-decoration: underline;
-  background-color: #F9F7F7; }
-
-#form2 ol {
-  list-style: none; }
-
-#form2 ol li {
-  font-size: 1.5rem;
-  font-family: bebas;
-  letter-spacing: 0.1rem; }
-
-#form2 ol li label {
-  width: 100%;
-  float: left;
-  text-align: left;
-  font-size: 2rem;
-  font-family: bebas;
-  text-decoration: underline; }
-
-#form2 input.btn {
-  padding: 0.5rem;
-  color: white;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
-  border: solid 1px black;
-  margin: 0.4rem; }
-
-#form2 input[type=radio] {
-  margin: 0.5rem 0rem 1rem 2rem; }
-
-#form2 input[type=checkbox] {
-  margin: 0.5rem 0rem 0rem 2rem; }
-
-#form2 select {
-  margin: 1rem 0rem 1rem 2rem; }
-
-#form2 li label {
-  margin: 1rem; }
-
-#form2 ol li ul li {
-  list-style: none; }
+  fieldset legend {
+    font-size: 2.5rem;
+    font-family: bebas;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #F9F7F7; }
+  fieldset ol {
+    list-style: none; }
+    fieldset ol li {
+      padding: 0.5rem;
+      font-size: 1.2rem; }
+      fieldset ol li label {
+        font-size: 2rem;
+        font-family: bebas;
+        margin: 1rem; }
+      fieldset ol li ul li {
+        list-style: none;
+        font-size: 1.5rem;
+        font-family: profesional;
+        text-align: justify; }
+  fieldset input.btn {
+    padding: 0.5rem;
+    margin: 0.4rem; }
+  fieldset input[name=nombre] {
+    margin: 0rem 0rem 0rem 1.9rem; }
+  fieldset input[name=apellido] {
+    margin: 0rem 0rem 0rem 1.3rem; }
+  fieldset input[type=email] {
+    margin: 0rem 0rem 0rem 2.7rem; }
+  fieldset input[type=radio] {
+    margin: 0.5rem 0.5rem 1rem 2rem; }
+  fieldset input[type=checkbox] {
+    margin: 0.5rem 0.5rem 0rem 2rem; }
+  fieldset textarea {
+    margin: 0rem 0rem 0rem 1rem; }
+  fieldset select {
+    margin: 1rem 0rem 1rem 2rem; }
 
 @keyframes vibrar {
   50% {
@@ -368,19 +303,11 @@ form {
   text-decoration: underline;
   margin: 1rem; }
 
-#blockchain__info {
-  display: flex;
-  flex-direction: row; }
-
 .blockchain__info--videTabla {
-  display: flex;
-  flex-direction: column;
   height: 110rem;
   justify-content: space-evenly; }
 
 #blockchain__video {
-  display: flex;
-  flex-direction: column;
   margin: 5px;
   align-items: center; }
 
@@ -389,8 +316,6 @@ form {
   height: 40rem; }
 
 #blockchain__tabla {
-  display: flex;
-  flex-direction: column;
   margin: 5px;
   align-items: center; }
 
@@ -412,8 +337,6 @@ td, th {
   padding: 2px 5px 2px 5px; }
 
 #blockchain__flujo {
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
   margin-top: 5rem; }
 
@@ -430,8 +353,6 @@ td, th {
   border: solid 1px black; }
 
 .blockchain__flujo--descripcion {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start; }
 
 #mercados__article {
@@ -491,135 +412,21 @@ td, th {
   width: 100%;
   height: 100%; }
 
-.ubicacionTitulo {
-  display: flex;
+.ubi, .ubi--Titulo {
   justify-content: center;
-  align-items: center;
+  align-items: center; }
+
+.ubi--Titulo {
   padding: 3rem; }
 
 .formularios {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
+  width: auto;
   height: 80rem; }
-
-.formulario__size {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80%; }
 
 .ubicacionBotones {
   text-align: center; }
-
-form {
-  width: 60rem;
-  height: 50rem; }
-
-#form1 {
-  border: 1px solid #5B7DB1;
-  background-color: #F9F7F7;
-  padding: 5rem;
-  margin: 1rem;
-  width: 70%;
-  height: 80%; }
-
-#form1 legend {
-  font-size: 2.5rem;
-  font-family: bebas;
-  text-align: center;
-  text-decoration: underline;
-  background-color: #F9F7F7; }
-
-#form1 ol {
-  list-style: none; }
-
-#form1 ol li {
-  padding: 0.5rem; }
-
-#form1 ol li label {
-  font-size: 2rem;
-  font-family: bebas; }
-
-#form1 input[name=nombre] {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 1.9rem; }
-
-#form1 input[name=apellido] {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 1.3rem; }
-
-#form1 input[type=email] {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 2.7rem; }
-
-#form1 textarea {
-  border: solid 1px black;
-  margin: 0rem 0rem 0rem 1rem; }
-
-#form1 input.btn {
-  padding: 0.5rem;
-  color: white;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
-  border: solid 1px black;
-  margin: 0.4rem; }
-
-#form2 {
-  border: 1px solid #5B7DB1;
-  background-color: #F9F7F7;
-  padding: 4rem;
-  margin: 1rem;
-  width: 70%;
-  height: 100%; }
-
-#form2 legend {
-  font-size: 2.5rem;
-  font-family: bebas;
-  text-align: center;
-  text-decoration: underline;
-  background-color: #F9F7F7; }
-
-#form2 ol {
-  list-style: none; }
-
-#form2 ol li {
-  font-size: 1.5rem;
-  font-family: bebas;
-  letter-spacing: 0.1rem; }
-
-#form2 ol li label {
-  width: 100%;
-  float: left;
-  text-align: left;
-  font-size: 2rem;
-  font-family: bebas;
-  text-decoration: underline; }
-
-#form2 input.btn {
-  padding: 0.5rem;
-  color: white;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
-  border: solid 1px black;
-  margin: 0.4rem; }
-
-#form2 input[type=radio] {
-  margin: 0.5rem 0rem 1rem 2rem; }
-
-#form2 input[type=checkbox] {
-  margin: 0.5rem 0rem 0rem 2rem; }
-
-#form2 select {
-  margin: 1rem 0rem 1rem 2rem; }
-
-#form2 li label {
-  margin: 1rem; }
-
-#form2 ol li ul li {
-  list-style: none; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */

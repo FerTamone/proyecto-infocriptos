@@ -17,5 +17,17 @@ $fondoFormulario: #F9F7F7;
 $sombraBlanca: 0px 0px 2px white;
 $sombraNegra: 0px 0px 5px black;
 
+@mixin sizes($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
 
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
 
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}

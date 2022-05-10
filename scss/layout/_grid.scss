@@ -10,12 +10,16 @@
     grid-template-columns: 15% auto 30%;
 }
 
+.parameters{
+    display: flex;
+    flex-direction: row;
+    background-color: $colorNav_Footer;
+}
 
 .header{
-    display: flex;
+    @extend .parameters;
     justify-content: space-between;
-    grid-area: header;
-    background-color: $colorNav_Footer;
+    grid-area: header ;
 }
 
 section{
@@ -27,12 +31,10 @@ section{
 }
 
 footer{
-    display: flex;
-    flex-direction: row;
+    @extend .parameters;    
     justify-content: space-around;
     align-items: $alinTxt;
     grid-area: footer;
-    background-color: $colorNav_Footer;
     border: $borde;
 }
 

@@ -2,147 +2,27 @@
     background-image:url(../../imagenes/fondo_ayuda.jpg);
     background-position: $alinTxt;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    @include sizes(100%,100%)
 }
 
-.ubicacionTitulo{
-    display: flex;
+.ubi{
     justify-content: $alinTxt;
     align-items: $alinTxt;
+}
+
+.ubi--Titulo{
+    @extend .flex-row, .ubi;
     padding: 3rem;
 }
 
 .formularios{
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
     justify-content: $elementosSeparados;
     align-items: flex-start;
-    height: 80rem;
-}
-
-.formulario__size{
-    display: flex;
-    justify-content: $alinTxt;
-    align-items: $alinTxt;
-    width: 100%;
-    height: 80%;
+    @include sizes(auto,80rem);
 }
 
 .ubicacionBotones{
     text-align: $alinTxt;
 }
 
-form{
-    width: 60rem;
-    height: 50rem;
-}
-
-#form1 {
-    border:$bordeFormulario;
-    background-color:$fondoFormulario ;
-    padding: 5rem;
-    margin: 1rem;
-    width: 70%;
-    height: 80%;
-}
-#form1 legend{
-    font-size: 2.5rem;
-    font-family: bebas;
-    text-align: $alinTxt;
-    text-decoration: $subrayado;
-    background-color:$fondoFormulario;
-    
-}
-#form1 ol{
-    list-style:none;
-}
-#form1 ol li{
-    padding: 0.5rem;
-
-}
-#form1 ol li label{
-    font-size: 2rem;
-    font-family: bebas;
-    
-}
-#form1 input[name=nombre] {
-    border:$borde;
-    margin: 0rem 0rem 0rem 1.9rem;
-}
-#form1 input[name=apellido] {
-    border:$borde;
-    margin: 0rem 0rem 0rem 1.3rem;
-}
-#form1 input[type=email] {
-    border:$borde;
-    margin: 0rem 0rem 0rem 2.7rem;
-}
-#form1 textarea{
-    border:$borde;
-    margin: 0rem 0rem 0rem 1rem;
-}
-#form1 input.btn {
-    padding:0.5rem;
-    color:$letraBlanca;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    border: $borde;
-    margin: 0.4rem;
-}
-
-#form2 {
-    border:$bordeFormulario;
-    background-color: $fondoFormulario;
-    padding: 4rem;
-    margin: 1rem;
-    width: 70% ;
-    height: 100%;
-}
-#form2 legend{
-    font-size: 2.5rem;
-    font-family:bebas;
-    text-align: $alinTxt;
-    text-decoration: $subrayado;
-    background-color:$fondoFormulario;
-}
-#form2 ol{
-    list-style:none;
-}
-#form2 ol li{
-    font-size: 1.5rem;
-    font-family:bebas;
-    letter-spacing: 0.1rem;
-}
-#form2 ol li label{
-    width:100%;
-    float:left;
-    text-align:left;
-    font-size: 2rem;
-    font-family: bebas;
-    text-decoration: $subrayado;
-
-}
-#form2 input.btn {
-    padding:0.5rem;
-    color:$letraBlanca;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    border:$borde;
-    margin: 0.4rem;
-}
-#form2 input[type=radio]{
-    margin: 0.5rem 0rem 1rem 2rem;
-}
-#form2 input[type=checkbox]{
-    margin: 0.5rem 0rem 0rem 2rem;    
-}
-#form2 select{
-    margin: 1rem 0rem 1rem 2rem;
-}
-#form2 li label{
-    margin: 1rem;
-}
-#form2 ol li ul li{
-    list-style:none ;
-}
