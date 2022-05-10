@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(../utilities/_variables.scss);
-@import url(../utilities/_variables.scss);
 * {
   margin: 0px;
   padding: 0px; }
@@ -16,13 +15,19 @@ html {
   font-family: profesional;
   src: url(../../fuentes/RobotoMono-Italic-VariableFont_wght.ttf); }
 
-.flex-row, .subheader, .header nav ul, #blockchain__info, #blockchain__flujo, .ubi--Titulo, .formularios {
+.flex-row, .subheader, .header nav ul, .tarjetas, .video, .video--Izq, .video--Der, #blockchain__info, #blockchain__flujo, .pagina, .pagina--Der, .pagina--Izq, .imgLink, .ubi--Titulo, .formularios {
   display: flex;
   flex-direction: row; }
 
-.flex-column, .blockchain__info--videTabla, #blockchain__video, #blockchain__tabla, .blockchain__flujo--descripcion {
+.flex-column, #bannerSize, .orden__tarjeta, .monedas, .orden__descripcion, .blockchain__info--videTabla, #blockchain__video, #blockchain__tabla, .blockchain__flujo--descripcion, #mercados__article {
   display: flex;
   flex-direction: column; }
+
+.Btn--gradient, fieldset input.btn, .estiloBoton {
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  color: white;
+  border: solid 1px black; }
 
 #grilla {
   display: grid;
@@ -59,7 +64,7 @@ footer {
   height: 50%;
   margin-left: 2rem; }
 
-.style, .header nav ul li a, .pagina__titulo {
+.style, .header nav ul li a, .pagina__titulo, #blockchain__video, #blockchain__tabla {
   font-family: bebas;
   color: white; }
 
@@ -110,12 +115,6 @@ footer {
 .sizeIconSocial {
   width: 40px;
   height: 40px; }
-
-.estiloBtn, fieldset input.btn {
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
-  color: white;
-  border: solid 1px black; }
 
 .borde, fieldset input[name=nombre], fieldset input[name=apellido], fieldset input[type=email], fieldset textarea {
   border: solid 1px black; }
@@ -188,6 +187,10 @@ fieldset {
 .img_criptos {
   background-image: url(../../imagenes/banner-index.jpg); }
 
+.bannerStyle, .bannerStyle--Negro, .bannerStyle--Blanco {
+  font-family: bebas;
+  font-size: 12rem; }
+
 .efectoParallax {
   background-attachment: fixed;
   background-position: center;
@@ -200,25 +203,18 @@ fieldset {
   font-family: profesional;
   text-align: left; }
 
-.estiloTituloBannerNegro {
-  text-align: center;
-  font-family: bebas;
-  font-size: 12rem;
+.bannerStyle--Negro {
   text-shadow: 0px 0px 2px white; }
 
-.estiloTituloBannerBlanco {
+.bannerStyle--Blanco {
   color: white;
-  font-family: bebas;
-  font-size: 12rem;
   text-shadow: 0px 0px 5px black; }
 
 #bannerSize {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 23rem;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   border: solid 1px black; }
 
@@ -226,16 +222,13 @@ fieldset {
   background-image: url(../../imagenes/background-img.jpg); }
 
 .tarjetas {
-  display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
+  width: auto;
   height: 30rem;
   justify-content: space-around;
   margin: 15rem 0rem 15rem 0rem; }
 
 .orden__tarjeta {
-  display: flex;
-  flex-direction: column;
   align-items: center; }
 
 .estilo__icono {
@@ -246,43 +239,32 @@ fieldset {
 .estiloBoton {
   font-family: bebas;
   font-size: 2rem;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #090979 33%, #00d4ff 100%);
-  border: solid 1px black;
   padding: 0.5rem;
   transition-duration: 0.3s; }
   .estiloBoton:hover {
     border-radius: 2rem; }
+  .estiloBoton a {
+    color: white;
+    text-decoration: none; }
 
-.reset {
-  color: white;
-  text-decoration: none; }
+.video, .video--Izq, .video--Der {
+  width: auto;
+  height: 45rem;
+  background-color: #1A132F; }
 
 .monedas {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 250rem; }
+  width: auto;
+  height: 250rem;
+  justify-content: space-around; }
 
-.videoIzq {
-  display: flex;
-  flex-direction: row;
-  height: 45rem;
-  background-color: #1A132F; }
-
-.videoDer {
-  display: flex;
-  flex-direction: row-reverse;
-  height: 45rem;
-  background-color: #1A132F; }
+.video--Der {
+  flex-direction: row-reverse; }
 
 .tamañoVideo {
-  height: 100%;
-  width: 60rem; }
+  width: 60rem;
+  height: 100%; }
 
 .orden__descripcion {
-  display: flex;
-  flex-direction: column;
   align-items: center; }
 
 .txtStyleDescrip {
@@ -291,6 +273,10 @@ fieldset {
   font-size: 2.8rem;
   font-family: profesional;
   text-align: left; }
+
+.style, .header nav ul li a, .pagina__titulo, #blockchain__video, #blockchain__tabla {
+  margin: 5px;
+  align-items: center; }
 
 .bannerBlockchain {
   background-image: url(../../imagenes/blockchain-img.jpg);
@@ -307,17 +293,9 @@ fieldset {
   height: 110rem;
   justify-content: space-evenly; }
 
-#blockchain__video {
-  margin: 5px;
-  align-items: center; }
-
 .videoBlock {
   width: 80rem;
   height: 40rem; }
-
-#blockchain__tabla {
-  margin: 5px;
-  align-items: center; }
 
 .estiloTabla {
   margin: 5px;
@@ -356,32 +334,26 @@ td, th {
   justify-content: flex-start; }
 
 #mercados__article {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  width: auto;
   height: 240rem; }
+
+.pagina, .pagina--Der, .pagina--Izq {
+  background-color: #1A132F;
+  width: auto;
+  height: 45rem; }
 
 .imgMercados {
   background-image: url(../../imagenes/exchangeBanner-img.jpg); }
 
-.paginaDer {
-  display: flex;
-  flex-direction: row;
-  background-color: #1A132F;
-  height: 45rem; }
-
-.paginaIzq {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #1A132F;
-  height: 45rem; }
+.pagina--Izq {
+  flex-direction: row-reverse; }
 
 .tituloYparrafo {
   width: 50%;
   height: auto; }
 
 .imgLink {
-  display: flex;
   justify-content: center;
   width: 50%;
   height: 100%; }

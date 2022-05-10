@@ -3,75 +3,65 @@
 }
 
 .tarjetas{
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
     flex-wrap: nowrap;
-    height: 30rem;
+    @include sizes(auto, 30rem);
     justify-content: $elementosEspaciados;
     margin: 15rem 0rem 15rem 0rem;
 }
 
 .orden__tarjeta{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     align-items: $alinTxt;
 }
 
 .estilo__icono{
-    width: 23rem;
-    height: 23rem;
+    @include sizes(23rem,23rem);
     margin: 1rem;
-    
 }
 
 .estiloBoton{
     font-family: bebas;
     font-size: 2rem;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
-    border: $borde;
+    @extend .Btn--gradient;
     padding: 0.5rem;
     transition-duration: 0.3s;
     &:hover{
         border-radius: 2rem;
     }
+    a{
+        color: $letraBlanca;
+        text-decoration: none;
+    }
 }
 
-
-.reset{
-    color: $letraBlanca;
-    text-decoration: none;
+.video{
+    @extend .flex-row;
+    @include sizes(auto, 45rem);
+    background-color: $colorNav_Footer
 }
 
 .monedas{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
+    @include sizes(auto, 250rem);
     justify-content:$elementosEspaciados ;
-    height: 250rem;
 }
 
-.videoIzq{
-    display: flex;
-    flex-direction: row;
-    height: 45rem ;
-    background-color: $colorNav_Footer;
+.video--Izq{
+    @extend .video;
 }
 
-.videoDer{
-    display: flex;
+.video--Der{
+    @extend .video;
     flex-direction: row-reverse;
-    height: 45rem ;
-    background-color: $colorNav_Footer;
 }
 
 .tamañoVideo{
-    height: 100%;
-    width: 60rem;
+    @include sizes(60rem,100%);
 }
 
 .orden__descripcion{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     align-items: $alinTxt;
 }
 

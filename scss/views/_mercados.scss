@@ -1,44 +1,40 @@
 #mercados__article{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     justify-content: $elementosSeparados;
-    height: 240rem;
+    @include sizes(auto,240rem);
 }
 
+.pagina{
+    @extend .flex-row;
+    background-color: $colorNav_Footer;
+    @include sizes(auto, 45rem);
+}
 
 .imgMercados{
     background-image: url(../../imagenes/exchangeBanner-img.jpg);
 }
 
-.paginaDer{
-    display: flex;
-    flex-direction: row;
-    background-color: $colorNav_Footer;
-    height: 45rem;
+.pagina--Der{
+    @extend .pagina;
 }
 
-.paginaIzq{
-    display: flex;
+.pagina--Izq{
+    @extend .pagina;
     flex-direction: row-reverse;
-    background-color: $colorNav_Footer;
-    height: 45rem;
 }
 
 .tituloYparrafo{
-    width: 50%;
-    height: auto;
+    @include sizes(50%,auto);
 }
 
 .imgLink{
-    display: flex;
+    @extend .flex-row;
     justify-content: $alinTxt;
-    width: 50%;
-    height: 100%;
+    @include sizes(50%,100%);
 }
 
 .img__mercados--secciones{
-    width: 80rem;
-    height: 100%;
+    @include sizes(80rem,100%);
 }
 
 .descripcionTitulo{

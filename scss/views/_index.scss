@@ -5,6 +5,11 @@
     background-image: url(../../imagenes/banner-index.jpg);
 }
 
+.bannerStyle{
+    font-family: bebas;
+    font-size: 12rem;
+}
+
 .efectoParallax{
     background-attachment: fixed;
     background-position: $alinTxt;
@@ -19,27 +24,22 @@
     text-align: left;
 }
 
-.estiloTituloBannerNegro{
-    text-align: $alinTxt;
-    font-family: bebas;
-    font-size: 12rem;
+.bannerStyle--Negro{
+    @extend .bannerStyle;
     text-shadow: $sombraBlanca;
 }
 
-.estiloTituloBannerBlanco{
+.bannerStyle--Blanco{
+    @extend .bannerStyle;
     color: $letraBlanca;
-    font-family: bebas;
-    font-size: 12rem;
     text-shadow: $sombraNegra;
 }
 
 #bannerSize{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
+    @include sizes(100%, 23rem);
     justify-content: $alinTxt;
     align-items: $alinTxt;
-    width: 100%;
-    height: 23rem;
     margin-top: 1rem;
     border: $borde;
 }

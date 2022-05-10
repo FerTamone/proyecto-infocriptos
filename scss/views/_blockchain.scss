@@ -1,3 +1,8 @@
+.style{
+    margin: 5px;
+    align-items: $alinTxt;
+}
+
 .bannerBlockchain{
     background-image: url(../../imagenes/blockchain-img.jpg);
     border: $bordeTabla;
@@ -22,9 +27,7 @@
 }
 
 #blockchain__video{
-    @extend .flex-column;
-    margin: 5px;
-    align-items: $alinTxt;
+    @extend .flex-column, .style;
 }
 
 .videoBlock{
@@ -32,9 +35,7 @@
 }
 
 #blockchain__tabla{
-    @extend .flex-column;
-    margin: 5px;
-    align-items: $alinTxt;
+    @extend .flex-column, .style;
 }
 
 .estiloTabla{
