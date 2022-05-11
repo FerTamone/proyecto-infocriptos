@@ -1,5 +1,5 @@
 .borde{
-    border: $borde;
+    border: map-get($desing , borde);
 }
 
 form{
@@ -7,16 +7,16 @@ form{
 }
 
 fieldset{
-    border: $bordeFormulario;
-    background-color: $fondoFormulario;
+    border: map-get($desing , bordeFormulario );
+    background-color: map-get($desing , fondoFormulario );
     padding: 5rem;
     @include sizes(70%,80%);
     legend{
         font-size: 2.5rem;
         font-family: bebas;
         text-align: center;
-        text-decoration: $subrayado;
-        background-color:$fondoFormulario;
+        text-decoration: map-get($desing , subrayado );
+        background-color:map-get($desing , fondoFormulario );
     }
     ol{
         list-style: none;

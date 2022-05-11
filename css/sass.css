@@ -79,9 +79,9 @@ footer {
       border: solid 1px black;
       z-index: 2; }
     .header nav ul li {
-      margin: 10px;
+      margin: 0.3rem;
       transition: 0.3s;
-      padding: 1.5rem; }
+      padding: 1rem; }
       .header nav ul li:hover {
         transform: translateY(-8px); }
         .header nav ul li:hover ul {
@@ -308,9 +308,9 @@ fieldset {
 
 td, th {
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: profesional;
   border: 1px solid white;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: bold;
   color: white;
   padding: 2px 5px 2px 5px; }
 
@@ -444,7 +444,7 @@ td, th {
     padding: 0.5rem;
     font-size: 1.7rem;
     text-align: justify; }
-  .estiloTituloBannerNegro {
+  a .estiloTituloBannerNegro {
     font-size: 9rem; }
   .estiloTituloBannerBlanco {
     font-size: 9rem;

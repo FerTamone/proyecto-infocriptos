@@ -6,13 +6,13 @@
     @extend .flex-row;
     flex-wrap: nowrap;
     @include sizes(auto, 30rem);
-    justify-content: $elementosEspaciados;
+    justify-content: map-get($desing , espaciadoAround );
     margin: 15rem 0rem 15rem 0rem;
 }
 
 .orden__tarjeta{
     @extend .flex-column;
-    align-items: $alinTxt;
+    align-items: map-get($desing , centrado );
 }
 
 .estilo__icono{
@@ -30,7 +30,7 @@
         border-radius: 2rem;
     }
     a{
-        color: $letraBlanca;
+        color: map-get($desing , letraBlanca );
         text-decoration: none;
     }
 }
@@ -38,13 +38,13 @@
 .video{
     @extend .flex-row;
     @include sizes(auto, 45rem);
-    background-color: $colorNav_Footer
+    background-color: map-get($desing , colorOscuro );
 }
 
 .monedas{
     @extend .flex-column;
     @include sizes(auto, 250rem);
-    justify-content:$elementosEspaciados ;
+    justify-content:map-get($desing , espaciadoAround ) ;
 }
 
 .video--Izq{
@@ -62,11 +62,11 @@
 
 .orden__descripcion{
     @extend .flex-column;
-    align-items: $alinTxt;
+    align-items: map-get($desing , centrado );
 }
 
 .txtStyleDescrip{
-    color: $letraBlanca;
+    color: map-get($desing , letraBlanca );
     padding: 3rem;
     font-size: 2.8rem;
     font-family: profesional;

@@ -1,18 +1,18 @@
 .style{
     margin: 5px;
-    align-items: $alinTxt;
+    align-items: map-get($desing , centrado);
 }
 
 .bannerBlockchain{
     background-image: url(../../imagenes/blockchain-img.jpg);
-    border: $bordeTabla;
+    border: map-get($desing , bordeTabla);
 }
 
 .titulos__blockchain{
-    color: $letraNegra;
+    color: map-get($desing , letraNegra);
     font-size: 4rem;
     font-family: bebas;
-    text-decoration: $subrayado;
+    text-decoration: map-get($desing , subrayado);
     margin: 1rem;
 }
 
@@ -23,7 +23,7 @@
 .blockchain__info--videTabla{
     @extend .flex-column;
     height: 110rem;
-    justify-content: $elementosSeparados;
+    justify-content: map-get($desing , espaciadoEvenly);
 }
 
 #blockchain__video{
@@ -43,16 +43,16 @@
     @include sizes(80rem,40rem);
     background-image: url(../../imagenes/tabla-img.jpg);
     background-size: cover;
-    background-position: $alinTxt;
+    background-position: map-get($desing , centrado);
     border-collapse: collapse; 
 }
 
 td,th { 
     font-size: 12px;
-    font-family:$fuenteTabla;
-    border: $bordeTabla;
-    text-shadow: $sombraNegra; 
-    color: $letraBlanca;
+    font-family: profesional;
+    border: map-get($desing , bordeTabla );
+    text-shadow: map-get($desing , negrita ); 
+    color: map-get($desing , letraBlanca );
     padding: 2px 5px 2px 5px;
 }
 
@@ -66,14 +66,14 @@ td,th {
 .estiloTxtParrafo{
     margin: 1rem;
     font-size: 2rem;
-    text-align: $alinJusti;
+    text-align: map-get($desing , justificado );
     font-family: profesional;
-    font-weight: $negrita;
+    font-weight: map-get($desing , negrita);
 }
 
 .img__blockchain--flujo{
     @include sizes(68rem, 81rem);
-    border: $borde;
+    border: map-get($desing , borde );
 }
 
 .blockchain__flujo--descripcion{

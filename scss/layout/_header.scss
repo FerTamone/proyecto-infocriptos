@@ -1,6 +1,6 @@
 .subheader{
     @extend .flex-row;
-    align-items: $alinTxt;
+    align-items: map-get($desing , centrado );
 }
 
 .sizeIcono{
@@ -10,26 +10,26 @@
 
 .style{
     font-family: bebas;
-    color: $letraBlanca;
+    color: map-get($desing , letraBlanca );
 }
 
 .header{
     nav{
-        align-self: $alinTxt;
+        align-self: map-get($desing , centrado );
         ul{
             @extend .flex-row;
             list-style: none;
             ul{
                 position: absolute;
                 display:none;
-                background-color: $colorNav_Footer;
-                border: $borde;
+                background-color: map-get($desing , colorOscuro );
+                border: map-get($desing , borde );
                 z-index: 2;
             }
             li{
-                margin: 10px;
+                margin: 0.3rem;
                 transition: 0.3s;
-                padding: 1.5rem;
+                padding: 1rem;
                 &:hover{
                     transform: translateY(-8px);
                     ul{

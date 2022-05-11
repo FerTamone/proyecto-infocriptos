@@ -1,15 +1,15 @@
 .piePagina{
     display: flex;
     flex-direction: column;
-    align-items: $alinTxt;
+    align-items: map-get($desing, centrado);
 }
 
 .estilo{
-    text-align: $alinTxt;
-    color: $letraBlanca;
+    text-align: map-get($desing , centrado );
+    color: map-get($desing , letraBlanca );
     font-family: bebas;
     font-size: 3rem;
-    text-decoration: $subrayado
+    text-decoration: map-get($desing , subrayado);
 }
 
 

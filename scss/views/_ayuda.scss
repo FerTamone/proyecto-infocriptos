@@ -1,13 +1,13 @@
 #fondo__ayuda{
     background-image:url(../../imagenes/fondo_ayuda.jpg);
-    background-position: $alinTxt;
+    background-position: map-get($desing , centrado);
     background-size: cover;
     @include sizes(100%,100%)
 }
 
 .ubi{
-    justify-content: $alinTxt;
-    align-items: $alinTxt;
+    justify-content: map-get($desing , centrado);
+    align-items: map-get($desing , centrado);
 }
 
 .ubi--Titulo{
@@ -17,12 +17,12 @@
 
 .formularios{
     @extend .flex-row;
-    justify-content: $elementosSeparados;
+    justify-content: map-get($desing , espaciadoEvenly);
     align-items: flex-start;
     @include sizes(auto,80rem);
 }
 
 .ubicacionBotones{
-    text-align: $alinTxt;
+    text-align: map-get($desing , centrado);
 }
 

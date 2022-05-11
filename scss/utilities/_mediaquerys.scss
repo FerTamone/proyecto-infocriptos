@@ -15,7 +15,7 @@
     }
     .subheader{
         width: 100%;
-        justify-content: $alinTxt;
+        justify-content: map-get($desing , centrado);
     }
 
     .header nav ul li{
@@ -70,16 +70,16 @@
         margin: 0.5rem;
         padding: 0.5rem;
         font-size: 1.7rem;
-        text-align: $alinJusti;
+        text-align: map-get($desing , justificado);
     }
-    
+    a
     .estiloTituloBannerNegro{
         font-size: 9rem;
     }
     
     .estiloTituloBannerBlanco{
         font-size: 9rem;
-        text-align: $alinTxt;
+        text-align: map-get($desing , centrado);
     }
 
     #bannerSize{
@@ -91,7 +91,7 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
         margin: 5rem 0rem 5rem 0rem;
-        align-items: $alinTxt;
+        align-items: map-get($desing , centrado);
     } 
 
     .txtStyleDescrip{
@@ -115,16 +115,16 @@
     }
 
     .monedas{
-        justify-content:$elementosEspaciados ;
+        justify-content:map-get($desing , espaciadoAround);
         height: 220rem;
     }
     .orden__descripcion{
-        align-items: $alinTxt;
+        align-items: map-get($desing , centrado);
     }
 
     .descripcionTitulo{
         font-size: 4rem;
-        text-align: $alinTxt;
+        text-align: map-get($desing , centrado);
     }
 
     .tamañoVideo{
@@ -149,7 +149,7 @@
         flex-direction: column;
         height: 170rem;
         width: 100%;
-        justify-content: $elementosEspaciados;
+        justify-content: map-get($desing , espaciadoAround);
     }
 
     #blockchain__video{
@@ -178,7 +178,7 @@
     }
     
     #blockchain__flujo{
-        align-items:$alinTxt;
+        align-items:map-get($desing , centrado);
         margin: 0rem;
         height: 45rem;
     }
@@ -192,7 +192,7 @@
     .img__blockchain--flujo{
         width: 55rem;
         height: 50rem;
-        border: $borde;
+        border: map-get($desing , borde);
         margin-left: 1rem;
     }
 
@@ -200,7 +200,7 @@
         margin: 0.5rem;
         font-size: 1.4rem;
         padding: 0rem;
-        text-align: $alinJusti;
+        text-align: map-get($desing , justificado);
     }
 
     /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------- */
@@ -229,13 +229,13 @@
 
     .paginaDer{
         flex-direction: column;
-        background-color:$colorNav_Footer;
+        background-color:map-get($desing , colorOscuro);
         height: 40rem;
     }
     
     .paginaIzq{
         flex-direction: column;
-        background-color:$colorNav_Footer;
+        background-color:map-get($desing , colorOscuro);
         height: 40rem;
     }
 
@@ -247,13 +247,13 @@
         flex-direction: column;
         flex-wrap: nowrap;
         height: 150rem;
-        justify-content:$elementosEspaciados;
+        justify-content:map-get($desing , espaciadoAround);
     }
 
     .formulario__size{
         display: flex;
-        justify-content: $alinTxt;
-        align-items: $alinTxt;
+        justify-content: map-get($desing , centrado);
+        align-items: map-get($desing , centrado);
         height: 65rem;
     
     }
@@ -299,12 +299,12 @@
     }
     .subheader{
         width: 100%;
-        justify-content: $alinTxt;
+        justify-content: map-get($desing , centrado);
         
     }
     .header nav ul{
         flex-wrap: wrap;
-        justify-content:$alinTxt ;
+        justify-content:map-get($desing , centrado);
     }
     .pagina__titulo{
         font-size: 5rem;
@@ -355,7 +355,7 @@
         margin: 0.5rem;
         padding: 1rem;
         font-size: 1.8rem;
-        text-align: $elementosEspaciados;
+        text-align: map-get($desing , espaciadoAround);
     }
     .estiloTituloBannerNegro{
         font-size: 7rem;
@@ -363,7 +363,7 @@
     
     .estiloTituloBannerBlanco{
         font-size: 7rem;
-        text-align: $alinTxt;
+        text-align: map-get($desing , centrado);
     }
 
     #bannerTamaño{
@@ -379,7 +379,7 @@
 
     .monedas{
         height: 200rem;
-        justify-content: $elementosEspaciados;
+        justify-content: map-get($desing , espaciadoAround);
     }
 
     .estilo__icono{
@@ -421,14 +421,14 @@
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------------- */
     #blockchain__info{
         flex-direction: column;
-        justify-content: $entreElementos;
+        justify-content: map-get($desing , espaciadoBetween);
         height: 100%;
     }
 
     .titulos__blockchain{
         font-size: 3rem;
         margin: 1rem;
-        text-align: $alinTxt;
+        text-align: map-get($desing , centrado);
     }
 
     #blockchain__flujo{
@@ -460,7 +460,7 @@
 
     /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------------- */
     #mercados__article{
-        justify-content: $elementosSeparados;
+        justify-content: map-get($desing , espaciadoEvenly);
         height: 145rem;
     }
     .paginaDer{
@@ -520,7 +520,7 @@
     }
 
     #form1 textarea{
-        border:$borde;
+        border:map-get($desing , borde);
         margin: 0rem 0rem 0rem 7.7rem;
     
     }

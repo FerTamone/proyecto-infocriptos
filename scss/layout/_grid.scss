@@ -13,12 +13,12 @@
 .parameters{
     display: flex;
     flex-direction: row;
-    background-color: $colorNav_Footer;
+    background-color: map-get($desing , colorOscuro );
 }
 
 .header{
     @extend .parameters;
-    justify-content: space-between;
+    justify-content: map-get($desing , espaciadoBetween );
     grid-area: header ;
 }
 
@@ -26,15 +26,15 @@ section{
     display: flex;
     flex-direction: column;
     grid-area: section;
-    background-color: $colorSection;
+    background-color: map-get($desing , colorClaro );
     
 }
 
 footer{
     @extend .parameters;    
-    justify-content: space-around;
-    align-items: $alinTxt;
+    justify-content: map-get($desing , espaciadoAround );
+    align-items: map-get($desing , centrado );
     grid-area: footer;
-    border: $borde;
+    border: map-get($desing , borde );
 }
 

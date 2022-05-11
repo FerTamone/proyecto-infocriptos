@@ -12,7 +12,7 @@
 
 .efectoParallax{
     background-attachment: fixed;
-    background-position: $alinTxt;
+    background-position: map-get($desing , centrado );
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,20 +26,20 @@
 
 .bannerStyle--Negro{
     @extend .bannerStyle;
-    text-shadow: $sombraBlanca;
+    text-shadow: map-get($desing , sombraBlanca );
 }
 
 .bannerStyle--Blanco{
     @extend .bannerStyle;
-    color: $letraBlanca;
-    text-shadow: $sombraNegra;
+    color: map-get($desing , letraBlanca );
+    text-shadow: map-get($desing , sombraNegra );
 }
 
 #bannerSize{
     @extend .flex-column;
     @include sizes(100%, 23rem);
-    justify-content: $alinTxt;
-    align-items: $alinTxt;
+    justify-content: map-get($desing , centrado );
+    align-items: map-get($desing , centrado );
     margin-top: 1rem;
-    border: $borde;
+    border:map-get($desing , borde );
 }
