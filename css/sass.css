@@ -430,12 +430,12 @@ td, th {
     .vibrar:hover {
       animation-play-state: paused; }
   .estilo, .estilo--autor {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .estilo--autor {
-    font-size: 2.2rem; }
+    font-size: 1.9rem; }
   .sizeIconSocial {
-    width: 35px;
-    height: 35px; }
+    width: 30px;
+    height: 30px; }
   /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-------------------------------------- */
   .pagina__titulo {
     font-size: 7rem; }
@@ -547,12 +547,12 @@ td, th {
   .imgLink {
     width: 100%;
     height: auto; }
-  .paginaDer {
+  .pagina--Der {
     flex-direction: column;
     background-color: #1A132F;
     width: auto;
     height: 40rem; }
-  .paginaIzq {
+  .pagina--Izq {
     flex-direction: column;
     background-color: #1A132F;
     width: auto;
@@ -564,16 +564,21 @@ td, th {
     flex-direction: column;
     flex-wrap: nowrap;
     width: auto;
-    height: 150rem;
-    justify-content: space-around; }
+    height: auto;
+    justify-content: center;
+    align-items: center; }
   form {
     width: auto;
     height: 50rem; }
   fieldset {
-    padding: 2rem;
+    padding: 1.8rem;
     margin-left: 1.5rem;
     width: 80%;
-    height: auto; } }
+    height: auto; }
+    fieldset textarea {
+      margin: 0rem 0rem 0rem 9rem; }
+    fieldset input.btn {
+      font-size: 1.2rem; } }
 
 @media screen and (min-width: 368px) and (max-width: 767px) {
   /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
@@ -607,12 +612,12 @@ td, th {
     .vibrar:hover {
       animation-play-state: paused; }
   .estilo, .estilo--autor {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .estilo--autor {
-    font-size: 2.2rem; }
+    font-size: 1.9rem; }
   .sizeIconSocial {
-    width: 35px;
-    height: 35px; }
+    width: 25px;
+    height: 25px; }
   /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-----------------------------*/
   .estiloTxt {
     margin: 0.5rem;
@@ -626,7 +631,7 @@ td, th {
     text-align: center; }
   #bannerSize {
     width: 99.4%;
-    height: auto; }
+    height: 18rem; }
   /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------------- */
   .tarjetas {
     flex-direction: row-reverse;
@@ -728,4 +733,8 @@ td, th {
     height: auto; }
     fieldset textarea {
       border: solid 1px black;
-      margin: 0rem 0rem 0rem 7.7rem; } }
+      margin: 0rem 0rem 0rem 7.7rem; }
+    fieldset input.btn {
+      font-size: 1.2rem; }
+    fieldset input[type=radio] {
+      margin: 0.5rem 0.5rem 0.5rem 1rem; } }

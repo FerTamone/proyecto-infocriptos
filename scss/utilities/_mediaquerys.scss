@@ -49,16 +49,16 @@
     }
         
     .estilo{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .estilo--autor{
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
     
     
     .sizeIconSocial{
-        @include sizes(35px, 35px);
+        @include sizes(30px, 30px);
     }
 
 
@@ -220,13 +220,13 @@
         @include sizes(100%,auto);
     }
 
-    .paginaDer{
+    .pagina--Der{
         flex-direction: column;
         background-color:map-get($desing , colorOscuro);
         @include sizes(auto,40rem);
     }
     
-    .paginaIzq{
+    .pagina--Izq{
         flex-direction: column;
         background-color:map-get($desing , colorOscuro);
         @include sizes(auto,40rem);
@@ -240,34 +240,28 @@
     .formularios{
         flex-direction: column;
         flex-wrap: nowrap;
-        @include sizes(auto,150rem);
-        justify-content:map-get($desing , espaciadoAround);
+        @include sizes(auto,auto);
+        justify-content: map-get($desing , centrado);
+        align-items: map-get($desing , centrado);
     }
-
-    // .formulario__size{
-    //     display: flex;
-    //     justify-content: map-get($desing , centrado);
-    //     align-items: map-get($desing , centrado);
-    //     height: 65rem;
-    // }
 
     form{
         @include sizes (auto,50rem);
     }
 
     fieldset{
-        padding: 2rem;
+        padding: 1.8rem;
         margin-left: 1.5rem;
         @include sizes(80%,auto);
+        textarea{
+            margin: 0rem 0rem 0rem 9rem;
+        }
+        input{
+            &.btn{
+                font-size: 1.2rem;
+            }
+        }
     }
-
-    // #form2 {
-    //     padding: 2rem;
-    //     margin: 3rem;
-    //     width: auto ;
-    //     height: auto;
-    // }
-
 }
 
 @media screen and (min-width:368px) and (max-width:767px) {
@@ -328,16 +322,16 @@
     }
 
     .estilo{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .estilo--autor{
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
     
     
     .sizeIconSocial{
-        @include sizes(35px,35px);
+        @include sizes(25px,25px);
     }
 
     /* --------------------------------------------- MODIFICACIONES A CLASES UTILIZADAS EN TODO EL PROYECTO-----------------------------*/
@@ -358,7 +352,7 @@
     }
 
     #bannerSize{
-        @include sizes(99.4%,auto);
+        @include sizes(99.4%,18rem);
     }
 
     /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------------- */
@@ -501,6 +495,14 @@
         textarea{
             border:map-get($desing , borde);
             margin: 0rem 0rem 0rem 7.7rem;
+        }
+        input{
+            &.btn{
+                font-size: 1.2rem;
+            }
+            &[type=radio]{
+                margin: 0.5rem 0.5rem 0.5rem 1rem;
+            }
         }
     }
     
