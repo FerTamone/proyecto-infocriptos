@@ -22,7 +22,7 @@
 
 .blockchain__info--videTabla{
     @extend .flex-column;
-    height: 110rem;
+    @include sizes (auto,110rem);
     justify-content: map-get($desing , espaciadoEvenly);
 }
 

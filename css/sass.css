@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../utilities/_variables.scss);
 * {
   margin: 0px;
@@ -260,7 +259,7 @@ fieldset {
 .video--Der {
   flex-direction: row-reverse; }
 
-.tamañoVideo {
+.sizeVideo {
   width: 60rem;
   height: 100%; }
 
@@ -290,6 +289,7 @@ fieldset {
   margin: 1rem; }
 
 .blockchain__info--videTabla {
+  width: auto;
   height: 110rem;
   justify-content: space-evenly; }
 
@@ -411,6 +411,7 @@ td, th {
     flex-direction: column; }
   .subheader {
     width: 100%;
+    height: auto;
     justify-content: center; }
   .header nav ul li {
     margin: 1rem;
@@ -421,18 +422,17 @@ td, th {
   /* --------------------------------------------- MODIFICACIONES A SECTION ----------------------------------------------------------------- */
   section {
     flex-wrap: nowrap;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   /* ------------------- MODIFICACIONES A FOOTER-------------------------- */
   .vibrar {
     transform: none; }
-  .vibrar:hover {
-    animation-play-state: paused; }
-  .estiloAutor {
+    .vibrar:hover {
+      animation-play-state: paused; }
+  .estilo, .estilo--autor {
     font-size: 2.5rem; }
-  .estiloTxtAutor {
+  .estilo--autor {
     font-size: 2.2rem; }
-  .estiloRedes {
-    font-size: 2.5rem; }
   .sizeIconSocial {
     width: 35px;
     height: 35px; }
@@ -444,13 +444,14 @@ td, th {
     padding: 0.5rem;
     font-size: 1.7rem;
     text-align: justify; }
-  a .estiloTituloBannerNegro {
+  a .bannerStyle--Negro {
     font-size: 9rem; }
-  .estiloTituloBannerBlanco {
+  .bannerStyle--Blanco {
     font-size: 9rem;
     text-align: center; }
   #bannerSize {
-    width: 99.7%; }
+    width: 99.7%;
+    height: auto; }
   /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------- */
   .tarjetas {
     flex-direction: row-reverse;
@@ -471,18 +472,21 @@ td, th {
       border-radius: 0rem; }
   .monedas {
     justify-content: space-around;
+    width: auto;
     height: 220rem; }
   .orden__descripcion {
     align-items: center; }
   .descripcionTitulo {
     font-size: 4rem;
     text-align: center; }
-  .tamañoVideo {
-    height: 100%;
-    width: 40rem; }
-  .videoIzq {
+  .sizeVideo {
+    width: 40rem;
+    height: 100%; }
+  .video--Izq {
+    width: auto;
     height: 40rem; }
-  .videoDer {
+  .video--Der {
+    width: auto;
     height: 40rem; }
   /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------- */
   .titulos__blockchain {
@@ -490,8 +494,8 @@ td, th {
     margin: 0rem; }
   #blockchain__info {
     flex-direction: column;
-    height: 170rem;
     width: 100%;
+    height: 170rem;
     justify-content: space-around; }
   #blockchain__video {
     margin: 0px; }
@@ -501,6 +505,7 @@ td, th {
     margin: 1rem; }
   #blockchain__tabla {
     width: 100%;
+    height: auto;
     margin: 0px; }
   .estiloTabla {
     width: 100%;
@@ -511,6 +516,7 @@ td, th {
   #blockchain__flujo {
     align-items: center;
     margin: 0rem;
+    width: auto;
     height: 45rem; }
   .blockchain__flujo--descripcion {
     display: flex;
@@ -528,6 +534,7 @@ td, th {
     text-align: justify; }
   /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------- */
   #mercados__article {
+    width: auto;
     height: 250rem; }
   .img__mercados--secciones {
     width: 100%;
@@ -543,60 +550,54 @@ td, th {
   .paginaDer {
     flex-direction: column;
     background-color: #1A132F;
+    width: auto;
     height: 40rem; }
   .paginaIzq {
     flex-direction: column;
     background-color: #1A132F;
+    width: auto;
     height: 40rem; }
   /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------- */
-  .ubicacionTitulo {
+  .ubi--Titulo {
     padding: 2rem; }
   .formularios {
     flex-direction: column;
     flex-wrap: nowrap;
+    width: auto;
     height: 150rem;
     justify-content: space-around; }
-  .formulario__size {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65rem; }
   form {
     width: auto;
     height: 50rem; }
-  #form1 {
+  fieldset {
     padding: 2rem;
     margin-left: 1.5rem;
     width: 80%;
-    height: auto; }
-  #form2 {
-    padding: 2rem;
-    margin: 3rem;
-    width: auto;
     height: auto; } }
 
 @media screen and (min-width: 368px) and (max-width: 767px) {
   /* --------------------------------------------- MODIFICACIONES A GRILLA ------------------------------------------------------------------ */
   #grilla {
     grid-template-areas: "header" "header" "section" "section" "footer";
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-columns: 100%; }
   /* --------------------------------------------- MODIFICACIONES A HEADER Y SUS HIJOS--------------------------------------------------------- */
   .header {
     flex-wrap: wrap; }
   .subheader {
     width: 100%;
+    height: auto;
     justify-content: center; }
   .header nav ul {
     flex-wrap: wrap;
     justify-content: center; }
+    .header nav ul li {
+      margin: 0rem;
+      padding: 1rem; }
+      .header nav ul li:hover {
+        transform: none; }
   .pagina__titulo {
     font-size: 5rem; }
-  .header nav ul li {
-    margin: 0rem;
-    padding: 1rem; }
-    .header nav ul li:hover {
-      transform: none; }
   /* --------------------------------------------- MODIFICACIONES A SECTION--------------------------------------------------------- */
   section {
     flex-wrap: nowrap; }
@@ -605,12 +606,10 @@ td, th {
     transform: none; }
     .vibrar:hover {
       animation-play-state: paused; }
-  .estiloAutor {
+  .estilo, .estilo--autor {
     font-size: 2.5rem; }
-  .estiloTxtAutor {
+  .estilo--autor {
     font-size: 2.2rem; }
-  .estiloRedes {
-    font-size: 2.5rem; }
   .sizeIconSocial {
     width: 35px;
     height: 35px; }
@@ -620,19 +619,21 @@ td, th {
     padding: 1rem;
     font-size: 1.8rem;
     text-align: space-around; }
-  .estiloTituloBannerNegro {
+  .bannerStyle--Negro {
     font-size: 7rem; }
-  .estiloTituloBannerBlanco {
+  .bannerStyle--Blanco {
     font-size: 7rem;
     text-align: center; }
-  #bannerTamaño {
-    width: 99.4%; }
+  #bannerSize {
+    width: 99.4%;
+    height: auto; }
   /* --------------------------------------------- MODIFICACIONES A SECCION CRIPTOMONEDAS---------------------------------------------- */
   .tarjetas {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     margin: 2rem 0rem 5rem 0rem; }
   .monedas {
+    width: auto;
     height: 200rem;
     justify-content: space-around; }
   .estilo__icono {
@@ -642,19 +643,21 @@ td, th {
   .estiloBoton {
     font-size: 1.5rem;
     border-radius: 1.5rem; }
-  .videoIzq {
+  .video--Izq {
     flex-direction: column-reverse;
+    width: auto;
     height: auto; }
-  .videoDer {
+  .video--Der {
     flex-direction: column-reverse;
+    width: auto;
     height: auto; }
   .descripcionTitulo {
     font-size: 4rem; }
   .orden__descripcion--parrafo {
     display: none; }
-  .tamañoVideo {
-    height: 30rem;
-    width: 100vw; }
+  .sizeVideo {
+    width: 100vw;
+    height: 30rem; }
   /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------------- */
   #blockchain__info {
     flex-direction: column;
@@ -673,6 +676,7 @@ td, th {
     height: 35rem; }
   #blockchain__tabla {
     width: 100%;
+    height: auto;
     margin: 0px; }
   .estiloTabla {
     width: 100vw;
@@ -683,12 +687,15 @@ td, th {
   /* --------------------------------------------- MODIFICACIONES A SECCION MERCADOS---------------------------------------------- */
   #mercados__article {
     justify-content: space-evenly;
+    width: auto;
     height: 145rem; }
-  .paginaDer {
+  .pagina--Der {
     flex-direction: column;
+    width: auto;
     height: 25rem; }
-  .paginaIzq {
+  .pagina--Izq {
     flex-direction: column;
+    width: auto;
     height: 25rem; }
   .tituloYparrafo {
     width: 100%;
@@ -704,25 +711,21 @@ td, th {
   .descripcionTitulo {
     font-size: 4rem; }
   /* --------------------------------------------- MODIFICACIONES A SECCION AYUDA---------------------------------------------- */
-  .ubicacionTitulo {
+  .ubi--Titulo {
     padding: 3rem; }
   .formularios {
     flex-direction: column;
     flex-wrap: nowrap;
+    width: auto;
     height: 100%; }
   form {
     width: 100%;
     height: 100%; }
-  #form1 {
+  fieldset {
     padding: 1rem;
     margin: 1rem;
     width: auto;
     height: auto; }
-  #form1 textarea {
-    border: solid 1px black;
-    margin: 0rem 0rem 0rem 7.7rem; }
-  #form2 {
-    padding: 2rem;
-    margin: 3rem;
-    width: auto;
-    height: auto; } }
+    fieldset textarea {
+      border: solid 1px black;
+      margin: 0rem 0rem 0rem 7.7rem; } }
