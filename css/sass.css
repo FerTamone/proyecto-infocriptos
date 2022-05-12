@@ -198,7 +198,7 @@ fieldset {
 
 .estiloTxt {
   padding: 3rem;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-family: profesional;
   text-align: left; }
 
@@ -269,7 +269,7 @@ fieldset {
 .txtStyleDescrip {
   color: white;
   padding: 3rem;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-family: profesional;
   text-align: left; }
 
@@ -371,8 +371,7 @@ td, th {
 
 .estiloTxtDescripciones {
   font-family: profesional;
-  font-size: 2.7rem;
-  line-height: 0.9;
+  font-size: 2rem;
   margin: 2rem;
   text-align: justify;
   color: white; }
