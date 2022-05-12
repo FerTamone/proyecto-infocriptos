@@ -95,7 +95,7 @@
     } 
 
     .txtStyleDescrip{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         padding: 0rem;
         margin-left: 1rem;
     }
@@ -140,8 +140,9 @@
     
     /* --------------------------------------------- MODIFICACIONES A SECCION BLOCKCHAIN---------------------------------------- */
     .titulos__blockchain{
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin: 0rem;
+        text-align: map-get($desing, centrado );
     }
 
     #blockchain__info{
@@ -193,7 +194,7 @@
 
     .estiloTxtParrafo{
         margin: 0.5rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         padding: 0rem;
         text-align: map-get($desing , justificado);
     }
@@ -337,8 +338,8 @@
     .estiloTxt{
         margin: 0.5rem;
         padding: 1rem;
-        font-size: 1.8rem;
-        text-align: map-get($desing , espaciadoAround);
+        font-size: 1.5rem;
+        text-align: map-get($desing , justificado);
     }
 
     .bannerStyle--Negro{
