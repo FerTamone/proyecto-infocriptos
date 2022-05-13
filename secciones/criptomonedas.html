@@ -1,195 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>criptomonedas</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid p-0">
-        
-        <header class="row border border-dark p-0 m-0">
-            <div id="logoNavbar__flex">
-                <div class="row ">
-                    <a href="../index.html" class="col-lg-3 mt-lg-2 col-md-3 mt-md-2 col-sm-3 mt-sm-2 col-3 mt-1"><img class="img-fluid " src="../iconos/pagina-icon.png" alt="pagina-icono"></a>
-                    <h1 class="col-lg-9 col-md-9  col-sm-9 col-7 offset-2 mt-2 pagina__titulo p-0 m-0">infocryptos</h1>
-                </div>
-                <nav class="navbar navbar-expand-lg navbar-light colorFondo">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="../index.html">Inicio</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Criptomonedas</a>
-                                    <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="criptomonedas.html">Ver todas</a></li>
-                                        <li><a class="dropdown-item" href="#btc">Bitcoin</a></li>
-                                        <li><a class="dropdown-item" href="#eth">Ethereum</a></li>
-                                        <li><a class="dropdown-item" href="#tusd">Tether</a></li>
-                                        <li><a class="dropdown-item" href="#bnb">Bnb</a></li>
-                                        <li><a class="dropdown-item" href="#usdc">Usdc</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blockchain.html">Blockchain</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mercados</a>
-                                    <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="mercados.html">Ver todos</a></li>
-                                        <li><a class="dropdown-item" href="mercados.html#binance">Binance</a></li>
-                                        <li><a class="dropdown-item" href="mercados.html#coinbase">Coinbase</a></li>
-                                        <li><a class="dropdown-item" href="mercados.html#ftx">Ftx</a></li>
-                                        <li><a class="dropdown-item" href="mercados.html#kraken">Kraken</a></li>
-                                        <li><a class="dropdown-item" href="mercados.html#kucoin">Kucoin</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contactanos.html">Ayuda</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+      <header>
+        <nav>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Criptomonedas</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="criptomonedas.html"
+                    >Ver todas</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#btc">Bitcoin</a></li>
+                <li><a class="dropdown-item" href="#eth">Ethereum</a></li>
+                <li><a class="dropdown-item" href="#tusd">Tether</a></li>
+                <li><a class="dropdown-item" href="#bnb">BNB</a></li>
+                <li><a class="dropdown-item" href="#usdc">USDC</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blockchain.html">Blockchain</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Mercados</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ver todos</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Binance</a></li>
+                <li><a class="dropdown-item" href="#">Coinbase</a></li>
+                <li><a class="dropdown-item" href="#">Kraken</a></li>
+                <li><a class="dropdown-item" href="#">FTX</a></li>
+                <li><a class="dropdown-item" href="#">KuCoin</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">Ayuda</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>mundo criptomonedas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In cum corrupti, illo, ullam quod iusto deleniti repudiandae obcaecati, et eos atque repellendus laboriosam quasi? Quia eveniet a fugit. Vitae, culpa?</p>
+          </div>
+          <div class="col-lg-6">
+            <center>
+              imagen
+            </center>
+            <img src="" alt="">
+          </div>
+        </div>
+        <article>
+          <div>
+            bitcoin
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+              </a>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-bs-target
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
             </div>
-        </header>
-
-        <section class="container-fluid">
-
-            <article id="art1">
-                <div  class="row criptosBanner efectoParallax">
-                    <center>
-                        <h2 class="centrarTituloBanner estiloTituloBannerBlanco">criptomonedas</h2>
-                    </center>
-                </div>
-                <div id="tarjetas">
-                    <div>
-                        <div class="card cardsSpecs">
-                            <div class="card-body">
-                                <img src="../iconos/btc-icon.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <a href="#btc" class="btn btn-primary">Conocer Más</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card cardsSpecs">
-                            <div class="card-body">
-                                <img src="../iconos/eth-icon.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <a href="#eth" class="btn btn-primary">Conocer Más</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card cardsSpecs">
-                            <div class="card-body">
-                                <img src="../iconos/tether-icon.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <a href="#tusd" class="btn btn-primary">Conocer Más</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card cardsSpecs" >
-                            <div class="card-body">
-                                <img src="../iconos/bnb-icon.png.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <a href="#bnb" class="btn btn-primary">Conocer Más</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card cardsSpecs" >
-                            <div class="card-body">
-                                <img src="../iconos/usdc-icon.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <a href="#usdc" class="btn btn-primary">Conocer Más</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article id="art2">
-                <div id="descripciones">
-                    <div id="btc" class="shadow-lg p-3 mb-5 bg-body rounded disposicionElementos">
-                        <div class="titleTxt">
-                            <h2 class="descripcionTitulo">Bitcoin</h2>
-                            <p class="estiloTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro distinctio eveniet non deleniti atque fugit dolorum obcaecati exercitationem saepe quas sit minus quae, optio libero nemo, quis natus? Culpa?
-                            Ullam ut dicta deleniti perferendis. Vero odio quibusdam in expedita, eos quod enim cupiditate. Eum placeat saepe incidunt, doloribus accusantium animi hic illo excepturi, quidem dolore molestiae sapiente minima reiciendis.
-                            Nulla dolorem quod placeat! Culpa, reiciendis molestias. Quibusdam qui expedita velit iste cupiditate. Inventore tenetur atque veritatis. Quo, nulla ex eveniet atque iusto eos rem, dolores pariatur ab voluptate explicabo?</p>
-                        </div>
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ZtPYPZCaLAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div id="eth" class="shadow-lg p-3 mb-5 bg-body rounded disposicionElementosReverse">
-                        <div class="titleTxt">
-                            <h2 class="descripcionTitulo">Ethereum</h2>
-                            <p class="estiloTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro distinctio eveniet non deleniti atque fugit dolorum obcaecati exercitationem saepe quas sit minus quae, optio libero nemo, quis natus? Culpa?
-                            Ullam ut dicta deleniti perferendis. Vero odio quibusdam in expedita, eos quod enim cupiditate. Eum placeat saepe incidunt, doloribus accusantium animi hic illo excepturi, quidem dolore molestiae sapiente minima reiciendis.
-                            Nulla dolorem quod placeat! Culpa, reiciendis molestias. Quibusdam qui expedita velit iste cupiditate. Inventore tenetur atque veritatis. Quo, nulla ex eveniet atque iusto eos rem, dolores pariatur ab voluptate explicabo?</p>
-                        </div>
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/WVF2szEtpMw?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div id="tusd" class="shadow-lg p-3 mb-5 bg-body rounded disposicionElementos">
-                        <div class="titleTxt">
-                            <h2 class="descripcionTitulo">Tether</h2>
-                            <p class="estiloTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro distinctio eveniet non deleniti atque fugit dolorum obcaecati exercitationem saepe quas sit minus quae, optio libero nemo, quis natus? Culpa?
-                            Ullam ut dicta deleniti perferendis. Vero odio quibusdam in expedita, eos quod enim cupiditate. Eum placeat saepe incidunt, doloribus accusantium animi hic illo excepturi, quidem dolore molestiae sapiente minima reiciendis.
-                            Nulla dolorem quod placeat! Culpa, reiciendis molestias. Quibusdam qui expedita velit iste cupiditate. Inventore tenetur atque veritatis. Quo, nulla ex eveniet atque iusto eos rem, dolores pariatur ab voluptate explicabo?</p>
-                        </div>
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/ROxA3QPTqL8?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div id="bnb" class="shadow-lg p-3 mb-5 bg-body rounded disposicionElementosReverse">
-                        <div class="titleTxt">
-                            <h2 class="descripcionTitulo">BNB</h2>
-                            <p class="estiloTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro distinctio eveniet non deleniti atque fugit dolorum obcaecati exercitationem saepe quas sit minus quae, optio libero nemo, quis natus? Culpa?
-                            Ullam ut dicta deleniti perferendis. Vero odio quibusdam in expedita, eos quod enim cupiditate. Eum placeat saepe incidunt, doloribus accusantium animi hic illo excepturi, quidem dolore molestiae sapiente minima reiciendis.
-                            Nulla dolorem quod placeat! Culpa, reiciendis molestias. Quibusdam qui expedita velit iste cupiditate. Inventore tenetur atque veritatis. Quo, nulla ex eveniet atque iusto eos rem, dolores pariatur ab voluptate explicabo?</p>
-                        </div>
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/19kniFdfnHA?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div id="usdc" class="shadow-lg p-3 mb-5 bg-body rounded disposicionElementos">
-                        <div class="titleTxt">
-                            <h2 class="descripcionTitulo">USDC</h2>
-                            <p class="estiloTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro distinctio eveniet non deleniti atque fugit dolorum obcaecati exercitationem saepe quas sit minus quae, optio libero nemo, quis natus? Culpa?
-                            Ullam ut dicta deleniti perferendis. Vero odio quibusdam in expedita, eos quod enim cupiditate. Eum placeat saepe incidunt, doloribus accusantium animi hic illo excepturi, quidem dolore molestiae sapiente minima reiciendis.
-                            Nulla dolorem quod placeat! Culpa, reiciendis molestias. Quibusdam qui expedita velit iste cupiditate. Inventore tenetur atque veritatis. Quo, nulla ex eveniet atque iusto eos rem, dolores pariatur ab voluptate explicabo?</p>
-                        </div>
-                        <div>
-                            <iframe class="tamañoVideo" src="https://www.youtube.com/embed/-7EgUb9kwyU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                
-            </article>
-
-        </section>
-        <footer class="row m-0">
-            <div class="col-lg-3 offset-lg-2 col-md-3 offset-md-2 col-sm-3 offset-sm-1 col-4 offset-1">
-                <h3 class="estiloAutor">autor</h3>
-                <p class="estiloTxtAutor">fernando tamone</p>
+          </div>
+          <div>ethereum</div>
+          <div>tether</div>
+          <div>bnb</div>
+          <div>usdc</div>
+        </article>
+      </section>
+      <footer>
+        <div class="container-flui">
+          <div class="row">
+            <div class="col-lg-4">
+              <h5>Autor</h5>
+              <p>Creada y diseñada por: Fernando Tamone</p>
             </div>
-            <div class="col-lg-4 offset-lg-3 col-md-4 offset-md-3 col-sm-4 offset-sm-3 col-5 offset-2">
-                <h3 class="estiloRedes">encontranos en</h3>
-                <div id="iconosRedes">
-                    <a href="https://www.facebook.com/"><img class="img-fluid sizeIcono" src="../iconos/face-icon.png" alt=""></a>
-                    <a href="https://twitter.com/?lang=es"><img class="img-fluid sizeIcono"src="../iconos/twitter-icon.png" alt=""></a>
-                    <a href="https://www.instagram.com/?hl=es-la"><img class="img-fluid sizeIcono" src="../iconos/ig-icon.png" alt=""></a>
-                    <a href="https://web.telegram.org/z/" ><img class="img-fluid sizeIcono"src="../iconos/telegram-icon.png" alt=""></a>
-                </div>
+            <div class="col-lg-4">
+              <h5>Links</h5>
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="mercados.html">Mercados</a></li>
+                <li><a href="contactanos.html">Ayuda</a></li>
+              </ul>
             </div>
-        </footer>
+            <div class="col-lg-4">
+              <h5>Encontranos en</h5>
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
