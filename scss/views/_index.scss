@@ -1,0 +1,46 @@
+.imagen{
+    @include sizes(60rem,60rem);
+    margin: 10rem;
+}
+h1{
+    text-align: center;
+    font-size: 10rem;
+}
+h3{
+    text-align: center;
+    font-size: 5rem;
+}
+h5{
+    font-size: 2rem;
+}
+
+.alineacion{
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos{
+    @include sizes(35px,35px);
+}
+
+p{
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: justify;
+}
+
+.espaciadoAround{
+    justify-content: space-around;
+}
+
+.espaciadoBeetwen{
+    justify-content: space-between;
+}
+
+.margin{
+    margin-top: 1.5rem;
+}
+
+.size{
+    @include sizes(15rem,auto)
+}

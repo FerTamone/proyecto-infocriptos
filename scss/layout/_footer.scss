@@ -1,0 +1,14 @@
+footer{
+    @include sizes(100%,10rem);
+    margin-top: 5rem;
+    ul{
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+}

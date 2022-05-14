@@ -44,7 +44,7 @@ section{
     display: flex;
     flex-direction: column;
     grid-area: section;
-    background-color: #F7E2E2;
+    background-image: url(../imagenes/background.jpg);
     
 }
 

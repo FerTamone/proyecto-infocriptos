@@ -1,0 +1,19 @@
+nav{
+    @include sizes(100%,10rem);
+    ul{
+        font-size: 2.5rem;
+        margin-top: 5rem;
+        li{
+            ul{
+                li{
+                    text-align: center;
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
