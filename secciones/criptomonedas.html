@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/desing.css">
     <title>criptomonedas</title>
   </head>
   <body>
@@ -68,66 +68,98 @@
         </nav>
       </header>
       <section>
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="flex-row alineacion ">
+          <div class="">
             <h3>mundo criptomonedas</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In cum corrupti, illo, ullam quod iusto deleniti repudiandae obcaecati, et eos atque repellendus laboriosam quasi? Quia eveniet a fugit. Vitae, culpa?</p>
           </div>
-          <div class="col-lg-6">
-            <center>
-              imagen
-            </center>
-            <img src="" alt="">
+          <div class="">
+              <img class="imagen" src="../imagenes/criptomonedas-img.png" alt="">
           </div>
         </div>
-        <article>
+        <article class="flex-row espaciadoAround">
           <div>
-            bitcoin
-            <p>
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Link with href
-              </a>
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Button with data-bs-target
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            <div class="card">
+              <div class="card-details">
+                <img class="iconoSize" src="../iconos/btc-icon.png" alt="">
               </div>
+              <button class="card-button">Info</button>
             </div>
           </div>
-          <div>ethereum</div>
-          <div>tether</div>
-          <div>bnb</div>
-          <div>usdc</div>
+          <div>
+            <div class="card">
+              <div class="card-details">
+                <img class="iconoSize" src="../iconos/eth-icon.png" alt="">
+              </div>
+              <button class="card-button">Info</button>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-details">
+                <img class="iconoSize" src="../iconos/tether-icon.png" alt="">
+              </div>
+              <button class="card-button">Info</button>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-details">
+                <img class="iconoSize" src="../iconos/bnb-icon.png.png" alt="">
+              </div>
+              <button class="card-button">Info</button>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-details">
+                <img class="iconoSize" src="../iconos/usdc-icon.png" alt="">
+              </div>
+              <button class="card-button">Info</button>
+            </div>
+          </div>
         </article>
       </section>
       <footer>
-        <div class="container-flui">
-          <div class="row">
-            <div class="col-lg-4">
-              <h5>Autor</h5>
-              <p>Creada y diseñada por: Fernando Tamone</p>
-            </div>
-            <div class="col-lg-4">
-              <h5>Links</h5>
-              <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="criptomonedas.html">Criptomonedas</a></li>
-                <li><a href="blockchain.html">Blockchain</a></li>
-                <li><a href="mercados.html">Mercados</a></li>
-                <li><a href="contactanos.html">Ayuda</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <h5>Encontranos en</h5>
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
+        <div class="flex-row espaciadoAround">
+          <div class="">
+            <h5>Autor</h5>
+            <p>Fernando Tamone.</p>
+          </div>
+          <div class="flex-column">
+            <h5>Secciones</h5>
+            <div class="flex-row">
+              <div>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="secciones/criptomonedas.html">Criptomonedas</a></li>
+                  <li><a href="secciones/blockchain.html">Blockchain</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="secciones/mercados.html">Mercados</a></li>
+                  <li><a href="secciones/contactanos.html">Ayuda</a></li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div class="flex-column">
+            <h5>Encontranos en</h5>
+            <div class="margin">
+              <a href="https://es-la.facebook.com/"
+              ><img class="iconos" src="../iconos/face-icon.png" alt="face"
+              /></a>
+              <a href="https://www.instagram.com/?hl=es-la"
+              ><img class="iconos" src="../iconos/ig-icon.png" alt="insta"
+              /></a>
+              <a href="https://twitter.com/?lang=es"
+              ><img class="iconos" src="../iconos/twitter-icon.png" alt="twitter"/></a>
+              <a href="https://web.telegram.org/z/"><img
+              class="iconos"src="../iconos/telegram-icon.png"alt="telegram"/></a>
+            </div>
+          </div>  
+          
         </div>
       </footer>
     </div>
