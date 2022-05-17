@@ -205,7 +205,7 @@
     }
 
     .img__mercados--secciones{
-        @include sizes(100%,100%);
+        @include sizes(100%,85%);
     }
 
     .estiloTxtDescripciones{
@@ -217,7 +217,7 @@
     }
 
     .imgLink{
-        @include sizes(100%,auto);
+        @include sizes(100%,100%);
     }
 
     .pagina--Der{
