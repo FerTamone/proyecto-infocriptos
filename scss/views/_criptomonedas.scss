@@ -15,15 +15,23 @@ p{
 
 /* From uiverse.io by @alexruix */
 .card {
-    width: 190px;
-    height: 254px;
-    border-radius: 20px;
-    background: #f5f5f5;
+    width: 182px;
+    height: 180px;
+    border-radius: 20rem;
+    background: black;
     position: relative;
     padding: 1.8rem;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-out;
     overflow: visible;
+    &:hover {
+        border-color: #008bf8;
+        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+    }
 }
 
 .card-details {
@@ -49,19 +57,6 @@ p{
     opacity: 0;
     transition: 0.3s ease-out;
 }
-
-
-/*Hover*/
-.card:hover {
-    border-color: #008bf8;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card:hover .card-button {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-}
-
 
 .espaciadoBeetwen{
     justify-content: space-between;
