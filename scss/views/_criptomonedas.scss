@@ -14,6 +14,10 @@ p{
     text-align: justify;
 }
 
+.cards{
+    @include sizes(100%,250rem);
+}
+
 .espaciadoBeetwen{
     justify-content: space-between;
 }
@@ -23,7 +27,12 @@ p{
 }
 
 .iconoSize{
-    @include sizes(180px,180px);
+    @include sizes(70px,70px);
+    margin-right: 5rem;
+    transition: all 1s ease;
+    &:hover{
+        transform: scale(1.1)
+    }
 }
 
 .descripciones{
@@ -41,6 +50,7 @@ p{
         margin-left: 2.5rem;
     }
     &:hover{
+        
         .imgCard{
             transform: scale(1.05);
         }

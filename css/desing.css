@@ -97,6 +97,10 @@ p {
   margin: 2rem;
   text-align: justify; }
 
+.cards {
+  width: 100%;
+  height: 250rem; }
+
 .espaciadoBeetwen {
   justify-content: space-between; }
 
@@ -104,8 +108,12 @@ p {
   justify-content: space-around; }
 
 .iconoSize {
-  width: 180px;
-  height: 180px; }
+  width: 70px;
+  height: 70px;
+  margin-right: 5rem;
+  transition: all 1s ease; }
+  .iconoSize:hover {
+    transform: scale(1.1); }
 
 .descripciones {
   width: 100%;
