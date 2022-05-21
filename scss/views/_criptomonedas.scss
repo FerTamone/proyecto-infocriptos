@@ -7,55 +7,11 @@ h3{
     font-size: 5rem;
 }
 
+
 p{
     font-size: 2rem;
     margin: 2rem;
     text-align: justify;
-}
-
-/* From uiverse.io by @alexruix */
-.card {
-    width: 182px;
-    height: 180px;
-    border-radius: 20rem;
-    background: black;
-    position: relative;
-    padding: 1.8rem;
-    border: 2px solid #c3c6ce;
-    transition: 0.5s ease-out;
-    overflow: visible;
-    &:hover {
-        border-color: #008bf8;
-        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-        .card-button {
-            transform: translate(-50%, 50%);
-            opacity: 1;
-        }
-    }
-}
-
-.card-details {
-    color: black;
-    height: 100%;
-    gap: .5em;
-    display: grid;
-    place-content: center;
-}
-
-.card-button {
-    transform: translate(-50%, 125%);
-    width: 60%;
-    border-radius: 1rem;
-    border: none;
-    background-color: #008bf8;
-    color: #fff;
-    font-size: 2rem;
-    padding: .5rem 1rem;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    opacity: 0;
-    transition: 0.3s ease-out;
 }
 
 .espaciadoBeetwen{
@@ -68,4 +24,106 @@ p{
 
 .iconoSize{
     @include sizes(180px,180px);
+}
+
+.descripciones{
+    @include sizes(100%,200rem);
+}
+
+.sizeCard{
+    @include sizes(75%,auto);
+    padding: 3rem;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+	border-radius: 10px;
+    button{
+        @include sizes(10rem,4rem);
+        border-radius: 10px;
+        margin-left: 2.5rem;
+    }
+    &:hover{
+        .imgCard{
+            transform: scale(1.05);
+        }
+        #btc{
+            .barra{
+                width: 150px;
+            }
+        }
+        #eth{
+            .barra{
+                width: 215px;
+            }
+        }
+        #tusd{
+            .barra{
+                width: 135px;
+            }
+        }
+        #bnb{
+            .barra{
+                width: 95px;
+            }
+        }
+        #usdc{
+            .barra{
+                width: 128px;
+            }
+        }
+    }
+    div{
+        h4{
+            font-size: 5rem;
+            margin-left: 5rem;
+        }
+        p{
+            margin: 5rem;
+        }
+    }
+    #btc{
+        .barra{
+            background-color: yellow;
+        }
+    }
+    #eth{
+        .barra{
+            background-color: blue;
+        }
+    }
+    #tusd{
+        .barra{
+            background-color: green;
+        }
+    }
+    #bnb{
+        .barra{
+            background-color: yellow;
+        }
+    }
+    #usdc{
+        .barra{
+            background-color: blue;
+        }
+    }
+}
+
+.alineacionCentral{
+    align-items: center;
+}
+.espaciadoVertical{
+    justify-items: space-between;
+}
+.descripcionCard{
+    @include sizes(100%,40rem);
+}
+
+.imgCard{
+    @include sizes(280px,280px);
+    transition: all 1s ease;
+}
+
+.barra{
+    @include sizes(75px,5px);
+    border-radius: 1px;
+    margin-left: 5rem;
+    transition: width 1s ease;
 }
