@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../iconos/shiba-icon.png" />
     <!-- exporto de diferentes librerias efectos que luego utilizo en la pagina -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/desing.css">
     <title>Blockchain</title>
   </head>
   <body>
@@ -76,73 +76,190 @@
         </nav>
       </header>
       <section>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>que es la blockchain</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In cum
-              corrupti, illo, ullam quod iusto deleniti repudiandae obcaecati,
-              et eos atque repellendus laboriosam quasi? Quia eveniet a fugit.
-              Vitae, culpa?
-            </p>
+        <div class="flex-row espaciadoAround">
+          <div class="flex-column alineacion">
+            <h1>blockchain</h1>
           </div>
-          <div class="col-lg-6">
-            <center>imagen</center>
-            <img src="" alt="" />
+          <div class="">
+            <img class="imgSize" src="../imagenes/blockchain-img.png" alt="" />
           </div>
         </div>
-        <article>
-          <div class="row">
-            <div class="col-lg-6">
-              texto
+        <article class="flex-column">
+          <div class="flex-row espaciadoBeetwen">
+            <div>
+              <h4>que es la blockchain</h4>
+              <p>es una base de datos o registro publico que puede ser compartido por multitud de usarios en modo peer-to-peer(red de pares) y que permite el registro de informacion de forma inmutable y organizada. Gracias a la blockchain las criptomonedas funcionan, a pesar de que fue creada para almacenar el historial de operaciones del Bitcoin, con el paso de los años, se ha visto un gran potencial para aplicarse a otros ambitos y sectores debido a las posibilidades que ofrece la misma.</p>
             </div>
-            <div class="col-lg-6">
-              video
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              texto
-            </div>
-            <div class="col-lg-6">
-              funcionamiento
+            <div>
+              <iframe class="" src="https://www.youtube.com/embed/70asKwy15Ds?start=7"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              ></iframe>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-6">
-              texto
+          <div class="flex-row espaciadoAround">
+            <div class="flex-column ">
+              <div>
+                <h4>como funciona una blockchain</h4>
+              </div>
+              <div>
+                <img class="imgSize" src="../imagenes/block2-img.jpg" alt="">
+              </div>
             </div>
-            <div class="col-lg-6">
-              tabla
+            <div class="flex-column">
+              <div>
+                <h4>caracteristicas y tipos de blockchain</h4>
+              </div>
+              <div>
+                <table class="estiloTabla">
+                  <tr>
+                    <th></th>
+                    <th>Blockchain Publicas</th>
+                    <th>Blockchain Privadas</th>
+                    <th>Blockchain Federadas</th>
+                    <th>Blockchain como Servicio</th>
+                  </tr>
+                  <tr>
+                    <td>Cualquiera puede participar</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+                  <tr>
+                    <td>Participantes como nodos</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+                  <tr>
+                    <td>Transparencia</td>
+                    <td align="center">SI</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+                  <tr>
+                    <td>Unico admin</td>
+                    <td align="center">NO</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+                  <tr>
+                    <td>Mas de un admin</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+                  <tr>
+                    <td>Ningun participante tiene mas derechos que los demas</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+                  <tr>
+                    <td>Smart Contracts</td>
+                    <td align="center">SI</td>
+                    <td align="center">SI</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+  
+                  <tr>
+                    <td>Recompensas por minado de bloques</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+  
+                  <tr>
+                    <td>Confiable</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+  
+                  <tr>
+                    <td>Seguridad basada en protocolos de conseso</td>
+                    <td align="center">SI</td>
+                    <td align="center">NO</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+  
+                  <tr>
+                    <td>Seguridad basada en funciones "hash"</td>
+                    <td align="center">SI</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">AVECES</td>
+                    <td align="center">NO APLICA</td>
+                  </tr>
+  
+                  <tr>
+                    <td>Servicios en la nube</td>
+                    <td align="center">NO APLICA</td>
+                    <td align="center">NO APLICA</td>
+                    <td align="center">NO APLICA</td>
+                    <td align="center">SI</td>
+                  </tr>
+                  <tr>
+                    <td>Ejemplos</td>
+                    <td>Bitcoin, Ethereum, Litecoin</td>
+                    <td>Hyperledger, Corda, Quorum</td>
+                    <td>Hyperledger, Corda, Quorum</td>
+                    <td>IBM, Microsoft, Amazon</td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </article>
       </section>
       <footer>
-        <div class="container-flui">
-          <div class="row">
-            <div class="col-lg-4">
-              <h5>Autor</h5>
-              <p>Creada y diseñada por: Fernando Tamone</p>
-            </div>
-            <div class="col-lg-4">
-              <h5>Links</h5>
-              <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="criptomonedas.html">Criptomonedas</a></li>
-                <li><a href="blockchain.html">Blockchain</a></li>
-                <li><a href="mercados.html">Mercados</a></li>
-                <li><a href="contactanos.html">Ayuda</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <h5>Encontranos en</h5>
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
+        <div class="flex-row espaciadoAround">
+          <div class="">
+            <h5>Autor</h5>
+            <p>Fernando Tamone.</p>
+          </div>
+          <div class="flex-column">
+            <h5>Secciones</h5>
+            <div class="flex-row">
+              <div>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="secciones/criptomonedas.html">Criptomonedas</a></li>
+                  <li><a href="secciones/blockchain.html">Blockchain</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="secciones/mercados.html">Mercados</a></li>
+                  <li><a href="secciones/contactanos.html">Ayuda</a></li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div class="flex-column">
+            <h5>Encontranos en</h5>
+            <div class="margin">
+              <a href="https://es-la.facebook.com/"
+              ><img class="iconos" src="../iconos/face-icon.png" alt="face"
+              /></a>
+              <a href="https://www.instagram.com/?hl=es-la"
+              ><img class="iconos" src="../iconos/ig-icon.png" alt="insta"
+              /></a>
+              <a href="https://twitter.com/?lang=es"
+              ><img class="iconos" src="../iconos/twitter-icon.png" alt="twitter"/></a>
+              <a href="https://web.telegram.org/z/"><img
+              class="iconos"src="../iconos/telegram-icon.png"alt="telegram"/></a>
+            </div>
+          </div>  
+          
         </div>
       </footer>
     </div>

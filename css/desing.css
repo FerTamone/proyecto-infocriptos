@@ -179,3 +179,27 @@ p {
   border-radius: 1px;
   margin-left: 5rem;
   transition: width 1s ease; }
+
+.imgSize {
+  width: 60rem;
+  height: 60rem;
+  margin: 10rem; }
+
+.espaciadoBeetwen {
+  justify-content: space-between; }
+
+.espaciadoAround {
+  justify-content: space-around; }
+
+h3 {
+  text-align: center;
+  font-size: 5rem; }
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+  margin: 5rem; }
+
+.alineacion {
+  justify-content: center;
+  align-items: center; }
