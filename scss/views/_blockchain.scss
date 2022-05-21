@@ -3,6 +3,11 @@
     margin: 10rem;
 }
 
+.videoSize{
+    @include sizes(75rem,45rem);
+    margin: 2rem;
+}
+
 .espaciadoBeetwen{
     justify-content: space-between;
 }
@@ -26,4 +31,54 @@ p{
 .alineacion{
     justify-content: center;
     align-items: center;
+}
+
+#videoSection{
+    @include sizes(100%,55rem);
+    margin-bottom: 2rem;
+    h4{
+        font-size: 3rem;
+        margin-left: 5rem;
+    }
+}
+
+#funcionamientoSection{
+    h4{
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    img{
+        @include sizes(70rem,70rem);
+
+    }
+}
+
+#tablaSection{
+    h4{
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    table{
+        margin-top: 15rem;
+        border: 1px solid black;
+        font-size: 1.3rem;
+        tr{
+            border: 1px solid black;
+            th{
+                border: 1px solid black;
+                text-align: center;
+                padding: 4px;
+            }
+            td{
+                border: 1px solid black;
+                padding: 4px;
+                font-weight: 500;
+            }
+        }
+    }
+    #columnaPrincipal{
+        font-weight: 700;
+    }
 }
