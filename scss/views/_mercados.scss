@@ -2,3 +2,11 @@
   @include sizes(60rem,60rem);
   margin: 10rem;
 }
+
+.espaciadoAround{
+  justify-content: space-around;
+}
+
+.espaciadoBeetwen{
+  justify-content: space-between;
+}

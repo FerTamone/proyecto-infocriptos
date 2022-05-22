@@ -253,3 +253,9 @@ p {
   width: 60rem;
   height: 60rem;
   margin: 10rem; }
+
+.espaciadoAround {
+  justify-content: space-around; }
+
+.espaciadoBeetwen {
+  justify-content: space-between; }
