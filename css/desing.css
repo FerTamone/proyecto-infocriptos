@@ -248,3 +248,8 @@ p {
 
 #tablaSection #columnaPrincipal {
   font-weight: 700; }
+
+.imagen {
+  width: 60rem;
+  height: 60rem;
+  margin: 10rem; }
