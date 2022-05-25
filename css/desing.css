@@ -79,9 +79,9 @@ p {
 .margin {
   margin-top: 1.5rem; }
 
-.imagen {
-  width: 60rem;
-  height: 60rem; }
+.seteoImg {
+  width: 80rem;
+  height: 80rem; }
 
 h3 {
   text-align: center;
@@ -175,10 +175,10 @@ p {
   margin-left: 5rem;
   transition: width 1s ease; }
 
-.imgSize {
-  width: 60rem;
-  height: 60rem;
-  margin: 10rem; }
+.seteoImg {
+  width: 80rem;
+  height: 80rem;
+  margin-bottom: 10rem; }
 
 .videoSize {
   width: 75rem;
@@ -244,10 +244,9 @@ p {
 #tablaSection #columnaPrincipal {
   font-weight: 700; }
 
-.imagen {
-  width: 60rem;
-  height: 60rem;
-  margin: 10rem; }
+.seteoImg {
+  width: 80rem;
+  height: 80rem; }
 
 .espaciadoAround {
   justify-content: space-around; }
@@ -309,9 +308,9 @@ p {
       text-decoration: none;
       color: black; }
 
-.imagen {
-  width: 80rem;
-  height: 60rem; }
+.seteoImg {
+  width: 75rem;
+  height: 70rem; }
 
 h1 {
   text-align: center;
