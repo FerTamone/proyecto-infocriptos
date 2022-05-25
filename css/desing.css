@@ -260,46 +260,56 @@ p {
 .espaciadoBeetwen {
   justify-content: space-between; }
 
+.borde {
+  border: 1px solid black; }
+
 .tarjetaContorno {
   width: 47rem;
-  height: 68rem;
+  height: 75rem;
   border: 1px solid black;
-  border-radius: 5px; }
+  margin: 2rem; }
   .tarjetaContorno h2 {
-    margin-left: 1rem; }
+    font-size: 3rem;
+    margin-left: 1rem;
+    text-transform: uppercase; }
   .tarjetaContorno .tarjetaContorno--cabezal {
     background-color: grey; }
+  .tarjetaContorno #ftx button {
+    width: 9rem;
+    height: 4rem; }
 
-.tarjetaCuerpo img {
-  width: 45rem;
-  height: 25rem;
-  margin: 1rem 0rem 1rem 0rem; }
-
-.tarjetaCuerpo p {
-  margin: 0rem;
-  padding: 1.5rem;
-  font-size: 1.5rem; }
-
-.tarjetaCuerpo button {
-  padding: 0.5em 2em;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none; }
-  .tarjetaCuerpo button:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px); }
-  .tarjetaCuerpo button:active {
-    transform: translateY(-1px); }
-  .tarjetaCuerpo button a {
-    text-decoration: none;
-    color: black; }
+.tarjetaCuerpo {
+  width: 47rem;
+  height: 75rem; }
+  .tarjetaCuerpo img {
+    width: 45rem;
+    height: 25rem;
+    margin: 1rem 0rem 1rem 0rem; }
+  .tarjetaCuerpo p {
+    margin: 0rem;
+    padding: 1.5rem;
+    font-size: 1.5rem; }
+  .tarjetaCuerpo button {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; }
+    .tarjetaCuerpo button:hover {
+      background-color: #23c483;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px); }
+    .tarjetaCuerpo button:active {
+      transform: translateY(-1px); }
+    .tarjetaCuerpo button a {
+      text-decoration: none;
+      color: black; }

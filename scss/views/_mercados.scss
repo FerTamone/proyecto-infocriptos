@@ -11,21 +11,33 @@
   justify-content: space-between;
 }
 
+.borde{
+  border: 1px solid black;
+}
+
 .tarjetaContorno{
   @extend .flex-column;
-  @include sizes(47rem,68rem);
+  @include sizes(47rem,75rem);
   border: 1px solid black;
-  border-radius: 5px;
+  margin: 2rem;
   h2{
+    font-size: 3rem;
     margin-left: 1rem;
+    text-transform: uppercase;
   }
   .tarjetaContorno--cabezal{
     background-color: grey;
+  }
+  #ftx{
+    button{
+      @include sizes(9rem,4rem);
+    }
   }
 }
 
 .tarjetaCuerpo{
   @extend .flex-column;
+  @include sizes(47rem,75rem);
   img{
     @include sizes(45rem,25rem);
     margin: 1rem 0rem 1rem 0rem;
@@ -36,8 +48,9 @@
     font-size: 1.5rem;
   }
   button {
-    padding: 0.5em 2em;
-    font-size: 12px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
     color: #000;
@@ -62,6 +75,5 @@
       color: black;
     }
   }
-  
   
 }
