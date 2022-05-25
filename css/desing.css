@@ -42,10 +42,9 @@ nav {
       nav ul li ul li a {
         font-size: 2rem; }
 
-.imagen {
-  width: 60rem;
-  height: 60rem;
-  margin: 10rem; }
+.seteoImg {
+  width: 80rem;
+  height: 80rem; }
 
 h1 {
   text-align: center;
@@ -79,10 +78,6 @@ p {
 
 .margin {
   margin-top: 1.5rem; }
-
-.size {
-  width: 15rem;
-  height: auto; }
 
 .imagen {
   width: 60rem;
