@@ -3,6 +3,10 @@
     height: $alto;
 }
 
+.seteoImg{
+    @include sizes(80rem,80rem );
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;

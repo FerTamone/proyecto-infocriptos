@@ -5,6 +5,10 @@
 html {
   font-size: 62.5%; }
 
+.seteoImg {
+  width: 80rem;
+  height: 80rem; }
+
 .flex-row {
   display: flex;
   flex-direction: row; }
@@ -42,10 +46,6 @@ nav {
       nav ul li ul li a {
         font-size: 2rem; }
 
-.seteoImg {
-  width: 80rem;
-  height: 80rem; }
-
 h1 {
   text-align: center;
   font-size: 10rem; }
@@ -78,10 +78,6 @@ p {
 
 .margin {
   margin-top: 1.5rem; }
-
-.seteoImg {
-  width: 80rem;
-  height: 80rem; }
 
 h3 {
   text-align: center;
@@ -175,11 +171,6 @@ p {
   margin-left: 5rem;
   transition: width 1s ease; }
 
-.seteoImg {
-  width: 80rem;
-  height: 80rem;
-  margin-bottom: 10rem; }
-
 .videoSize {
   width: 75rem;
   height: 45rem;
@@ -244,10 +235,6 @@ p {
 #tablaSection #columnaPrincipal {
   font-weight: 700; }
 
-.seteoImg {
-  width: 80rem;
-  height: 80rem; }
-
 .espaciadoAround {
   justify-content: space-around; }
 
@@ -307,10 +294,6 @@ p {
     .tarjetaCuerpo button a {
       text-decoration: none;
       color: black; }
-
-.seteoImg {
-  width: 75rem;
-  height: 70rem; }
 
 h1 {
   text-align: center;
