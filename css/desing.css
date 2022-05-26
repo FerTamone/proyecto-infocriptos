@@ -5,9 +5,16 @@
 html {
   font-size: 62.5%; }
 
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  text-transform: uppercase;
+  color: white; }
+
 .seteoImg {
   width: 80rem;
-  height: 80rem; }
+  height: 80rem;
+  margin-bottom: 3rem; }
 
 .flex-row {
   display: flex;
@@ -25,6 +32,15 @@ html {
   display: flex;
   flex-direction: column-reverse; }
 
+section {
+  background-color: #1D263B; }
+
+.banner {
+  background-color: #5C6784;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
 footer {
   width: 100%;
   height: 10rem;
@@ -35,20 +51,37 @@ footer {
       text-decoration: none;
       font-size: 1.5rem; }
 
+header {
+  background-color: #5C6784; }
+
 nav {
   width: 100%;
   height: 10rem; }
   nav ul {
     font-size: 2.5rem;
-    margin-top: 5rem; }
+    margin-top: 0rem;
+    background-color: #3B4154;
+    border-bottom: 1px solid black; }
     nav ul li ul li {
       text-align: center; }
       nav ul li ul li a {
-        font-size: 2rem; }
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white; }
 
-h1 {
-  text-align: center;
-  font-size: 10rem; }
+.nav-link {
+  color: white;
+  text-transform: uppercase; }
+  .nav-link:hover {
+    color: white; }
+  .nav-link:focus {
+    color: white; }
+
+.dropdown-menu.show {
+  width: 100%; }
+
+.dropdown-item {
+  text-transform: uppercase; }
 
 h3 {
   text-align: center;
@@ -75,9 +108,6 @@ p {
 
 .espaciadoBeetwen {
   justify-content: space-between; }
-
-.margin {
-  margin-top: 1.5rem; }
 
 h3 {
   text-align: center;
@@ -115,7 +145,9 @@ p {
   height: auto;
   padding: 3rem;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
+  color: white; }
   .sizeCard button {
     width: 10rem;
     height: 4rem;

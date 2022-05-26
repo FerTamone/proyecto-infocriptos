@@ -1,14 +1,22 @@
+header{
+    background-color: #5C6784;
+}
+
 nav{
     @include sizes(100%,10rem);
     ul{
         font-size: 2.5rem;
-        margin-top: 5rem;
+        margin-top: 0rem;
+        background-color: #3B4154;
+        border-bottom: 1px solid black;
         li{
             ul{
                 li{
                     text-align: center;
                     a{
                         font-size: 2rem;
+                        text-transform: uppercase;
+                        color: white;
                     }
                 }
             }
@@ -17,3 +25,21 @@ nav{
     }
 }
 
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+    &:hover{
+        color: white;
+    }
+    &:focus{
+        color: white;
+    }
+}
+
+.dropdown-menu.show{
+    width: 100%;
+}
+
+.dropdown-item{
+    text-transform: uppercase;
+}

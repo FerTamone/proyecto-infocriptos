@@ -3,8 +3,16 @@
     height: $alto;
 }
 
+h1{
+    text-align: center;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: white;
+}
+
 .seteoImg{
     @include sizes(80rem,80rem );
+    margin-bottom: 3rem;
 }
 
 .flex-row{
@@ -25,4 +33,18 @@
 .flex-columnReverse{
     display: flex;
     flex-direction: column-reverse;
+}
+
+
+
+section{
+    background-color: #1D263B;
+}
+
+.banner{
+    background-color: #5C6784;
+    box-shadow: 0 4px 21px -12px rgba(0,0,0,0);
+    // box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

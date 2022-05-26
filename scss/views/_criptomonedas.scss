@@ -40,6 +40,8 @@ p{
     padding: 3rem;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
 	border-radius: 10px;
+    background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
+    color: white;
     button{
         @include sizes(10rem,4rem);
         border-radius: 10px;
@@ -47,10 +49,18 @@ p{
     }
     &:hover{
         
+        // luz media
+        // background-image: radial-gradient(circle at 66.05% 27.08%, #805c69 0, #7b5366 8.33%, #744a63 16.67%, #6c3f60 25%, #61355d 33.33%, #542a5b 41.67%, #441f59 50%, #301657 58.33%, #121056 66.67%, #000d56 75%, #000655 83.33%, #000055 91.67%, #000053 100%);
+
+        //luz fin
+        //background-image: radial-gradient(circle at 50% 50%, #805c69 0, #7b5366 8.33%, #744a63 16.67%, #6c3f60 25%, #61355d 33.33%, #542a5b 41.67%, #441f59 50%, #301657 58.33%, #121056 66.67%, #000d56 75%, #000655 83.33%, #000055 91.67%, #000053 100%);
+
+        
         .imgCard{
             transform: scale(1.05);
         }
         #btc{
+                
             .barra{
                 width: 150px;
             }
@@ -86,6 +96,7 @@ p{
         }
     }
     #btc{
+        
         .barra{
             background-color: yellow;
         }
