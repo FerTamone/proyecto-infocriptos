@@ -14,7 +14,7 @@ h1 {
 .seteoImg {
   width: 80rem;
   height: 80rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem; }
 
 .flex-row {
   display: flex;
@@ -37,7 +37,7 @@ section {
 
 .banner {
   background-color: #5C6784;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0);
+  box-shadow: -1px 13px 9px -1px #ede3e3;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; }
 
