@@ -37,19 +37,35 @@ section {
 
 .banner {
   background-color: #5C6784;
-  box-shadow: -1px 13px 9px -1px #ede3e3;
+  box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.61);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; }
 
 footer {
   width: 100%;
   height: 10rem;
-  margin-top: 5rem; }
+  box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.74); }
+  footer div {
+    background-color: #3B4154; }
+  footer h5 {
+    color: white;
+    text-shadow: 0px 0px 8px #131212;
+    text-decoration: underline;
+    font-size: 2.2rem; }
+  footer p {
+    font-size: 2rem;
+    text-shadow: 0px 0px 8px #131212; }
+    footer p:hover {
+      color: aqua;
+      text-shadow: 0px 0px 8px #131212; }
   footer ul li {
     list-style: none; }
     footer ul li a {
+      color: black;
       text-decoration: none;
-      font-size: 1.5rem; }
+      font-size: 1.7rem; }
+      footer ul li a:hover {
+        color: aqua; }
 
 header {
   background-color: #5C6784; }
@@ -61,6 +77,8 @@ nav {
     font-size: 2.5rem;
     margin-top: 0rem;
     background-color: #3B4154;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.61);
+    border-radius: 0px 0px 10px 10px;
     border-bottom: 1px solid black; }
     nav ul li ul li {
       text-align: center; }
@@ -84,11 +102,9 @@ nav {
   text-transform: uppercase; }
 
 h3 {
+  color: white;
   text-align: center;
-  font-size: 5rem; }
-
-h5 {
-  font-size: 2rem; }
+  text-transform: uppercase; }
 
 .alineacion {
   justify-content: center;
@@ -99,6 +115,7 @@ h5 {
   height: 35px; }
 
 p {
+  color: white;
   font-size: 2rem;
   margin: 2rem;
   text-align: justify; }
@@ -108,6 +125,16 @@ p {
 
 .espaciadoBeetwen {
   justify-content: space-between; }
+
+article {
+  width: 100%;
+  height: 80rem; }
+
+#infoCriptos {
+  margin: 3rem; }
+
+#infoFuturos {
+  margin: 3rem; }
 
 h3 {
   text-align: center;
@@ -142,9 +169,8 @@ p {
 
 .sizeCard {
   width: 75%;
-  height: auto;
+  height: 38rem;
   padding: 3rem;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   border-radius: 10px;
   background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
   color: white; }
@@ -153,23 +179,26 @@ p {
     height: 4rem;
     border-radius: 10px;
     margin-left: 2.5rem; }
-  .sizeCard:hover .imgCard {
-    transform: scale(1.05); }
-  .sizeCard:hover #btc .barra {
-    width: 150px; }
-  .sizeCard:hover #eth .barra {
-    width: 215px; }
-  .sizeCard:hover #tusd .barra {
-    width: 135px; }
-  .sizeCard:hover #bnb .barra {
-    width: 95px; }
-  .sizeCard:hover #usdc .barra {
-    width: 128px; }
+  .sizeCard:hover {
+    box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.61);
+    transition: all 1s ease; }
+    .sizeCard:hover .imgCard {
+      transform: scale(1.05); }
+    .sizeCard:hover #btc .barra {
+      width: 150px; }
+    .sizeCard:hover #eth .barra {
+      width: 215px; }
+    .sizeCard:hover #tusd .barra {
+      width: 135px; }
+    .sizeCard:hover #bnb .barra {
+      width: 95px; }
+    .sizeCard:hover #usdc .barra {
+      width: 128px; }
   .sizeCard div h4 {
     font-size: 5rem;
-    margin-left: 5rem; }
+    margin-left: 2rem; }
   .sizeCard div p {
-    margin: 5rem; }
+    margin: 2rem; }
   .sizeCard #btc .barra {
     background-color: yellow; }
   .sizeCard #eth .barra {
@@ -200,7 +229,7 @@ p {
   width: 75px;
   height: 5px;
   border-radius: 1px;
-  margin-left: 5rem;
+  margin-left: 2rem;
   transition: width 1s ease; }
 
 .videoSize {

@@ -1,11 +1,9 @@
-
 h3{
+    color: white;
     text-align: center;
-    font-size: 5rem;
+    text-transform: uppercase;
 }
-h5{
-    font-size: 2rem;
-}
+
 
 .alineacion{
     justify-content: center;
@@ -17,6 +15,7 @@ h5{
 }
 
 p{
+    color: white;
     font-size: 2rem;
     margin: 2rem;
     text-align: justify;
@@ -30,4 +29,16 @@ p{
     justify-content: space-between;
 }
 
+article{
+    
+    @include sizes(100%,80rem);
+}
 
+#infoCriptos{
+    margin: 3rem ;
+}
+
+#infoFuturos{
+    margin: 3rem;
+
+}
