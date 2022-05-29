@@ -36,9 +36,66 @@ article{
 
 #infoCriptos{
     margin: 3rem ;
+    h3{
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
 }
 
 #infoFuturos{
-    margin: 3rem;
+    margin: 2rem;
+    h3{
+        margin: 0rem;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
 
+
+
+@keyframes rotacionMoneda {
+    0%{
+        transform: skew(0deg);
+        }
+    25%{
+        transform: rotate3d(0,1,0, 90deg);
+        }
+    50%{
+        transform: rotate3d(0,1,0, 180deg);
+    }
+    75%{
+        transform: rotate3d(0,1,0, 270deg);
+    }
+    100%{
+        transform: rotate3d(0,1,0, 360deg);
+        }
+}
+    
+    
+
+.rotacion{
+    animation-name: rotacionMoneda;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+#iconosRotando{
+    @include sizes(31rem,5rem);
+    .iconos{
+        @include sizes(45px,45px);
+    }
+}
+
+#iconoEstatico{
+    @include sizes(54rem,6rem);
+    .iconos{
+        @include sizes(95px,95px);
+    }
 }
