@@ -128,7 +128,7 @@ p {
 
 article {
   width: 100%;
-  height: 80rem; }
+  height: 100%; }
 
 #infoCriptos {
   margin: 3rem; }
@@ -288,58 +288,72 @@ p {
 .espaciadoAround {
   justify-content: space-around; }
 
-h3 {
-  text-align: center;
-  font-size: 5rem; }
+header {
+  background-color: #4575B4; }
 
-p {
-  font-size: 2rem;
-  text-align: justify;
-  margin: 5rem; }
+.banner {
+  background-color: #4575B4; }
 
 .alineacion {
   justify-content: center;
   align-items: center; }
+
+section {
+  background-image: url(../../imagenes/optical-fiber-background.jpg);
+  background-size: cover; }
 
 #videoSection {
   width: 100%;
   height: 55rem;
   margin-bottom: 2rem; }
   #videoSection h4 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
     font-size: 3rem;
     margin-left: 5rem; }
+  #videoSection p {
+    padding: 3rem; }
 
 #funcionamientoSection h4 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
   text-align: center;
   font-size: 3rem;
   margin: 2rem; }
 
 #funcionamientoSection img {
   width: 70rem;
-  height: 70rem; }
+  height: 70rem;
+  margin-bottom: 10rem; }
 
 #tablaSection h4 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
   text-align: center;
   font-size: 3rem;
   margin: 2rem; }
 
 #tablaSection table {
   margin-top: 15rem;
-  border: 1px solid black;
   font-size: 1.3rem; }
   #tablaSection table tr {
-    border: 1px solid black; }
+    color: white;
+    border: 1px solid white; }
     #tablaSection table tr th {
-      border: 1px solid black;
+      border: 1px solid white;
       text-align: center;
       padding: 4px; }
     #tablaSection table tr td {
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 4px;
       font-weight: 500; }
 
 #tablaSection #columnaPrincipal {
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.5rem; }
 
 .espaciadoAround {
   justify-content: space-around; }
@@ -360,14 +374,17 @@ p {
     margin-left: 1rem;
     text-transform: uppercase; }
   .tarjetaContorno .tarjetaContorno--cabezal {
-    background-color: grey; }
+    width: 47rem;
+    height: 4rem;
+    background-color: white; }
   .tarjetaContorno #ftx button {
     width: 9rem;
     height: 4rem; }
 
 .tarjetaCuerpo {
   width: 47rem;
-  height: 75rem; }
+  height: 75rem;
+  background-image: linear-gradient(0, #8f56ff 0, #3b38ff 50%, #0021e7 100%); }
   .tarjetaCuerpo img {
     width: 45rem;
     height: 25rem;
@@ -400,74 +417,3 @@ p {
     .tarjetaCuerpo button a {
       text-decoration: none;
       color: black; }
-
-h1 {
-  text-align: center;
-  font-size: 10rem; }
-
-.alineacion {
-  justify-content: center;
-  align-items: center; }
-
-p {
-  font-size: 2rem;
-  margin: 2rem;
-  text-align: justify; }
-
-.espaciadoAround {
-  justify-content: space-around; }
-
-.espaciadoBeetwen {
-  justify-content: space-between; }
-
-.formularios {
-  width: 100%;
-  height: 100rem; }
-
-form {
-  width: 60rem;
-  height: 65rem;
-  margin: 2rem; }
-
-fieldset {
-  border: 1px solid black;
-  padding: 5rem;
-  width: 100%;
-  height: 100%; }
-  fieldset legend {
-    font-size: 1.5rem;
-    text-align: center;
-    text-decoration: underline; }
-  fieldset ol {
-    list-style: none; }
-    fieldset ol li {
-      padding: 0.5rem;
-      font-size: 1.2rem; }
-      fieldset ol li label {
-        font-size: 2rem;
-        margin: 1rem; }
-      fieldset ol li ul li {
-        list-style: none;
-        font-size: 1.5rem;
-        text-align: justify; }
-  fieldset input.btn {
-    padding: 0.5rem;
-    margin: 0.4rem; }
-  fieldset input[name=nombre] {
-    border: 1px solid black;
-    margin: 0rem 0rem 0rem 1.9rem; }
-  fieldset input[name=apellido] {
-    border: 1px solid black;
-    margin: 0rem 0rem 0rem 1.3rem; }
-  fieldset input[type=email] {
-    border: 1px solid black;
-    margin: 0rem 0rem 0rem 2.7rem; }
-  fieldset input[type=radio] {
-    margin: 0.5rem 0.5rem 1rem 2rem; }
-  fieldset input[type=checkbox] {
-    margin: 0.5rem 0.5rem 0rem 2rem; }
-  fieldset textarea {
-    border: 1px solid black;
-    margin: 0rem 0rem 0rem 1rem; }
-  fieldset select {
-    margin: 1rem 0rem 1rem 2rem; }

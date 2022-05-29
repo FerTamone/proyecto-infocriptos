@@ -10,17 +10,13 @@
 .espaciadoAround{
     justify-content: space-around;
 }
+header{
+    background-color: #4575B4;
 
-h3{
-    text-align: center;
-    font-size: 5rem;
 }
 
-
-p{
-    font-size: 2rem;
-    text-align: justify;
-    margin: 5rem;
+.banner{
+    background-color: #4575B4;
 }
 
 .alineacion{
@@ -28,46 +24,65 @@ p{
     align-items: center;
 }
 
+section{
+    background-image: url(../../imagenes/optical-fiber-background.jpg);
+    background-size: cover
+}
+
+
 #videoSection{
     @include sizes(100%,55rem);
     margin-bottom: 2rem;
     h4{
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: white;
         font-size: 3rem;
         margin-left: 5rem;
+    }
+    p{
+        padding: 3rem;
     }
 }
 
 #funcionamientoSection{
     h4{
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: white;
         text-align: center;
         font-size: 3rem;
         margin: 2rem;
     }
     img{
         @include sizes(70rem,70rem);
+        margin-bottom: 10rem;
 
     }
 }
 
 #tablaSection{
     h4{
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: white;
         text-align: center;
         font-size: 3rem;
         margin: 2rem;
     }
     table{
         margin-top: 15rem;
-        border: 1px solid black;
         font-size: 1.3rem;
         tr{
-            border: 1px solid black;
+            color: white;
+            border: 1px solid white;
             th{
-                border: 1px solid black;
+                border: 1px solid white;
                 text-align: center;
                 padding: 4px;
             }
             td{
-                border: 1px solid black;
+                border: 1px solid white;
                 padding: 4px;
                 font-weight: 500;
             }
@@ -75,5 +90,6 @@ p{
     }
     #columnaPrincipal{
         font-weight: 700;
+        font-size: 1.5rem;
     }
 }
