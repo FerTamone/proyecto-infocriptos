@@ -11,13 +11,39 @@
   .tarjetaContorno--cabezal{
     @include sizes(47rem,4rem);
     font-family: oswald;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.8);
   }
+  #binance{
+    button{
+      @include sizes(9rem,4rem);
+    }
+  }
+
+  #coinbase{
+    button{
+      @include sizes(9rem,4rem);
+    }
+  }
+
   #ftx{
     button{
       @include sizes(9rem,4rem);
     }
   }
+
+  #kraken{
+    button{
+      @include sizes(9rem,4rem);
+    }
+  }
+
+  #kucoin{
+    button{
+      @include sizes(9rem,4rem);
+    }
+  }
+
+
 }
 
 .tarjetaCuerpo{
@@ -35,8 +61,7 @@
   }
   button {
     margin: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: oswald;
     text-transform: uppercase;
     font-weight: 500;
@@ -63,4 +88,8 @@
     }
   }
   
+}
+
+#cards{
+  margin-top: 5rem;
 }

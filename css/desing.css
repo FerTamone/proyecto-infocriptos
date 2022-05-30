@@ -332,8 +332,20 @@ nav {
     width: 47rem;
     height: 4rem;
     font-family: oswald;
-    background-color: white; }
+    background-color: rgba(255, 255, 255, 0.8); }
+  .tarjetaContorno #binance button {
+    width: 9rem;
+    height: 4rem; }
+  .tarjetaContorno #coinbase button {
+    width: 9rem;
+    height: 4rem; }
   .tarjetaContorno #ftx button {
+    width: 9rem;
+    height: 4rem; }
+  .tarjetaContorno #kraken button {
+    width: 9rem;
+    height: 4rem; }
+  .tarjetaContorno #kucoin button {
     width: 9rem;
     height: 4rem; }
 
@@ -351,8 +363,7 @@ nav {
     font-size: 1.5rem; }
   .tarjetaCuerpo button {
     margin: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: oswald;
     text-transform: uppercase;
     font-weight: 500;
@@ -374,6 +385,9 @@ nav {
     .tarjetaCuerpo button a {
       text-decoration: none;
       color: black; }
+
+#cards {
+  margin-top: 5rem; }
 
 .formularios {
   width: 100%;
