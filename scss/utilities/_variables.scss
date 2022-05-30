@@ -3,37 +3,30 @@
     height: $alto;
 }
 
+@mixin seteoLetra($estilo,$size,$txtalign,$decoracion,$transform,$color){
+    font-family: $estilo;
+    font-size: $size;
+    text-align: $txtalign;
+    text-decoration: $decoracion;
+    text-transform: $transform;
+    color: $color;
+}
+
 h1{
-    font-family: amatic;
-    text-align: center;
-    font-size: 20rem;
-    text-transform: uppercase;
-    color: white;
+    @include seteoLetra(amatic,20rem ,center ,none ,uppercase ,white );
 }
 
 h3{
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: oswald;
-    text-decoration: underline;
-
+    @include seteoLetra(oswald,none ,center ,underline ,uppercase ,white );
 }
 
 h4{
-    font-family: oswald;
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: white;
-    font-size: 3rem;
+    @include seteoLetra(oswald,3rem ,none ,underline ,uppercase ,white );
 }
 
 p{
-    font-family: nunito;
-    color: white;
-    font-size: 2rem;
+    @include seteoLetra(nunito,2rem ,justify ,none ,none ,white );
     margin: 2rem;
-    text-align: justify;
 }
 
 
@@ -94,10 +87,6 @@ section{
     display: flex;
     flex-direction: column-reverse;
 }
-
-
-
-
 
 .banner{
     background-color: rgba(0,0,0,0.4);

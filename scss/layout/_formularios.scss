@@ -9,8 +9,9 @@ fieldset{
     padding: 5rem;
     @include sizes(100%,100%);
     legend{
+        font-family: amatic;
         color: white;
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
         text-decoration: underline;
         text-transform: uppercase;
@@ -18,9 +19,10 @@ fieldset{
     ol{
         list-style: none;
         li{
+            font-family: oswald;
             color: white;
             padding: 0.5rem;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             label{
                 color: white;
                 font-size: 2rem;
