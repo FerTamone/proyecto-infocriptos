@@ -5,18 +5,21 @@
 
 #videoSection{
     @include sizes(100%,55rem);
-    margin-bottom: 2rem;
+    margin: 3rem 0rem 2rem 0rem;
     h4{
+        font-size: 5rem;
         margin-left: 5rem;
     }
     p{
+        font-size: 3rem;
         padding: 3rem;
     }
 }
 
 #funcionamientoSection{
     h4{
-        margin: 2rem;
+        font-size: 5rem;
+        margin-bottom: 1rem
     }
     img{
         @include sizes(70rem,70rem);
@@ -27,14 +30,12 @@
 
 #tablaSection{
     h4{
-        text-decoration: underline;
-        text-transform: uppercase;
-        color: white;
+        font-size: 5rem;
         text-align: center;
-        font-size: 3rem;
         margin: 2rem;
     }
     table{
+        background-color: rgba(0,0,0,0.7);
         margin-top: 15rem;
         font-size: 1.3rem;
         tr{

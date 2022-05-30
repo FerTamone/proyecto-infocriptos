@@ -20,7 +20,13 @@ h3{
 
 }
 
-
+h4{
+    font-family: oswald;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+}
 
 p{
     font-family: nunito;
@@ -30,12 +36,7 @@ p{
     text-align: justify;
 }
 
-h4{
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: white;
-    font-size: 3rem;
-}
+
 
 article{
     @include sizes(100%,100%);
@@ -63,6 +64,10 @@ section{
 
 .espaciadoBeetwen{
     justify-content: space-between;
+}
+
+.borde{
+    border: 1px solid black;
 }
 
 .seteoImg{

@@ -49,18 +49,19 @@ h3 {
   font-family: oswald;
   text-decoration: underline; }
 
+h4 {
+  font-family: oswald;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem; }
+
 p {
   font-family: nunito;
   color: white;
   font-size: 2rem;
   margin: 2rem;
   text-align: justify; }
-
-h4 {
-  text-decoration: underline;
-  text-transform: uppercase;
-  color: white;
-  font-size: 3rem; }
 
 article {
   width: 100%;
@@ -83,6 +84,9 @@ section {
 
 .espaciadoBeetwen {
   justify-content: space-between; }
+
+.borde {
+  border: 1px solid black; }
 
 .seteoImg {
   width: 80rem;
@@ -273,14 +277,17 @@ nav {
 #videoSection {
   width: 100%;
   height: 55rem;
-  margin-bottom: 2rem; }
+  margin: 3rem 0rem 2rem 0rem; }
   #videoSection h4 {
+    font-size: 5rem;
     margin-left: 5rem; }
   #videoSection p {
+    font-size: 3rem;
     padding: 3rem; }
 
 #funcionamientoSection h4 {
-  margin: 2rem; }
+  font-size: 5rem;
+  margin-bottom: 1rem; }
 
 #funcionamientoSection img {
   width: 70rem;
@@ -288,14 +295,12 @@ nav {
   margin-bottom: 10rem; }
 
 #tablaSection h4 {
-  text-decoration: underline;
-  text-transform: uppercase;
-  color: white;
+  font-size: 5rem;
   text-align: center;
-  font-size: 3rem;
   margin: 2rem; }
 
 #tablaSection table {
+  background-color: rgba(0, 0, 0, 0.7);
   margin-top: 15rem;
   font-size: 1.3rem; }
   #tablaSection table tr {
@@ -314,15 +319,6 @@ nav {
   font-weight: 700;
   font-size: 1.5rem; }
 
-.espaciadoAround {
-  justify-content: space-around; }
-
-.espaciadoBeetwen {
-  justify-content: space-between; }
-
-.borde {
-  border: 1px solid black; }
-
 .tarjetaContorno {
   width: 47rem;
   height: 75rem;
@@ -335,6 +331,7 @@ nav {
   .tarjetaContorno .tarjetaContorno--cabezal {
     width: 47rem;
     height: 4rem;
+    font-family: oswald;
     background-color: white; }
   .tarjetaContorno #ftx button {
     width: 9rem;
@@ -356,6 +353,7 @@ nav {
     margin: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
+    font-family: oswald;
     text-transform: uppercase;
     font-weight: 500;
     color: #000;
@@ -377,25 +375,6 @@ nav {
       text-decoration: none;
       color: black; }
 
-h1 {
-  text-align: center;
-  font-size: 10rem; }
-
-.alineacion {
-  justify-content: center;
-  align-items: center; }
-
-p {
-  font-size: 2rem;
-  margin: 2rem;
-  text-align: justify; }
-
-.espaciadoAround {
-  justify-content: space-around; }
-
-.espaciadoBeetwen {
-  justify-content: space-between; }
-
 .formularios {
   width: 100%;
   height: 100rem; }
@@ -406,14 +385,14 @@ form {
   margin: 2rem; }
 
 fieldset {
-  background-image: linear-gradient(135deg, #6B73FF 10%, #000DFF 100%);
+  background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid black;
   padding: 5rem;
   width: 100%;
   height: 100%; }
   fieldset legend {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase; }
@@ -432,29 +411,26 @@ fieldset {
         font-size: 1.5rem;
         text-align: justify; }
   fieldset input.btn {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 0.7rem;
     margin: 0.4rem;
     font-size: 1.5rem; }
-    fieldset input.btn:hover {
-      color: white;
-      border: 1px solid white; }
   fieldset input[name=nombre] {
     border: 1px solid black;
     margin: 0rem 0rem 0rem 1.9rem; }
   fieldset input[name=apellido] {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 1.3rem; }
+    margin: 0rem 0rem 0rem 1.9rem; }
   fieldset input[type=email] {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 2.7rem; }
+    margin: 0rem 0rem 0rem 3.5rem; }
   fieldset input[type=radio] {
     margin: 0.5rem 0.5rem 1rem 2rem; }
   fieldset input[type=checkbox] {
     margin: 0.5rem 0.5rem 0rem 2rem; }
   fieldset textarea {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 1rem; }
+    margin: 0rem 0rem 0rem 1.2rem; }
   fieldset select {
     margin: 1rem 0rem 1rem 2rem; }
