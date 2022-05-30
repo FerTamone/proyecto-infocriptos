@@ -56,6 +56,12 @@ p {
   margin: 2rem;
   text-align: justify; }
 
+h4 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem; }
+
 article {
   width: 100%;
   height: 100%; }
@@ -229,7 +235,9 @@ nav {
       width: 128px; }
   .sizeCard h4 {
     font-size: 5rem;
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    text-decoration: none;
+    text-transform: none; }
   .sizeCard #btc .barra {
     background-color: yellow; }
   .sizeCard #eth .barra {
@@ -267,20 +275,11 @@ nav {
   height: 55rem;
   margin-bottom: 2rem; }
   #videoSection h4 {
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: white;
-    font-size: 3rem;
     margin-left: 5rem; }
   #videoSection p {
     padding: 3rem; }
 
 #funcionamientoSection h4 {
-  text-decoration: underline;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  font-size: 3rem;
   margin: 2rem; }
 
 #funcionamientoSection img {
