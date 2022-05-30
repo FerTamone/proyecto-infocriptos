@@ -29,15 +29,10 @@ p{
     margin: 2rem;
 }
 
-
-
-article{
-    @include sizes(100%,100%);
-}
-
 section{
     background-image: url(../../imagenes/optical-fiber-background.jpg);
     background-size: cover;
+    @include sizes(100%,100%);
 }
 
 .iconos{
