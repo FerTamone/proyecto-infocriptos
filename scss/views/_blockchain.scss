@@ -3,33 +3,6 @@
     margin: 2rem;
 }
 
-.espaciadoBeetwen{
-    justify-content: space-between;
-}
-
-.espaciadoAround{
-    justify-content: space-around;
-}
-header{
-    background-color: #4575B4;
-
-}
-
-.banner{
-    background-color: #4575B4;
-}
-
-.alineacion{
-    justify-content: center;
-    align-items: center;
-}
-
-section{
-    background-image: url(../../imagenes/optical-fiber-background.jpg);
-    background-size: cover
-}
-
-
 #videoSection{
     @include sizes(100%,55rem);
     margin-bottom: 2rem;

@@ -11,6 +11,52 @@ h1{
     color: white;
 }
 
+h3{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: oswald;
+    text-decoration: underline;
+
+}
+
+
+p{
+    font-family: nunito;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: justify;
+}
+
+article{
+    @include sizes(100%,100%);
+}
+
+section{
+    background-image: url(../../imagenes/optical-fiber-background.jpg);
+    background-size: cover;
+}
+
+.iconos{
+    @include sizes(35px,35px);
+}
+
+
+.alineacion{
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.espaciadoAround{
+    justify-content: space-around;
+}
+
+.espaciadoBeetwen{
+    justify-content: space-between;
+}
+
 .seteoImg{
     @include sizes(80rem,80rem );
     margin-bottom: 1rem;
@@ -38,12 +84,10 @@ h1{
 
 
 
-section{
-    background-color: #1D263B;
-}
+
 
 .banner{
-    background-color: #5C6784;
+    background-color: rgba(0,0,0,0.4);
     box-shadow: 0px 6px 3px 0px rgba(0,0,0,0.61);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;

@@ -1,25 +1,5 @@
-h3{
-    text-align: center;
-    font-size: 5rem;
-}
-
-
-p{
-    font-size: 2rem;
-    margin: 2rem;
-    text-align: justify;
-}
-
 .cards{
     @include sizes(100%,250rem);
-}
-
-.espaciadoBeetwen{
-    justify-content: space-between;
-}
-
-.espaciadoAround{
-    justify-content: space-around;
 }
 
 .iconoSize{
@@ -31,9 +11,6 @@ p{
     }
 }
 
-.descripciones{
-    @include sizes(100%,200rem);
-}
 
 .sizeCard{
     @include sizes(75%,38rem);
@@ -79,15 +56,12 @@ p{
             }
         }
     }
-    div{
-        h4{
-            font-size: 5rem;
-            margin-left: 2rem;
-        }
-        p{
-            margin:2rem;
-        }
+
+    h4{
+        font-size: 5rem;
+        margin-left: 2rem;
     }
+
     #btc{
         
         .barra{
@@ -116,18 +90,12 @@ p{
     }
 }
 
-.alineacionCentral{
-    align-items: center;
-}
-.espaciadoVertical{
-    justify-items: space-between;
-}
 .descripcionCard{
     @include sizes(100%,40rem);
 }
 
 .imgCard{
-    @include sizes(280px,280px);
+    @include sizes(28rem,28rem);
     transition: all 1s ease;
 }
 
