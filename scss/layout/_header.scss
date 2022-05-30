@@ -5,6 +5,7 @@ header{
 nav{
     @include sizes(100%,10rem);
     ul{
+        font-family: oswald;
         font-size: 2.5rem;
         margin-top: 0rem;
         background-color: #3B4154;
