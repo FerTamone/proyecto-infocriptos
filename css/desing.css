@@ -45,7 +45,7 @@ h1 {
   @media (min-width: 368px) and (max-width: 767px) {
     h1 {
       font-family: amatic;
-      font-size: 10rem;
+      font-size: 8.5rem;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
@@ -90,14 +90,14 @@ section {
   width: 35px;
   height: 35px; }
 
-.alineacion, .banner, #iconosRotando {
+.alineacion, .banner, #iconosRotando, .cards {
   justify-content: center;
   align-items: center; }
 
-.espaciadoAround, .banner, .elementos, #iconosRotando, #iconoEstatico {
+.espaciadoAround, .banner, .elementos, #iconosRotando, #iconoEstatico, .cards {
   justify-content: space-around; }
 
-.espaciadoBeetwen {
+.espaciadoBeetwen, .titleLink {
   justify-content: space-between; }
 
 .borde {
@@ -112,11 +112,11 @@ section {
       width: 100%;
       height: 40rem; } }
 
-.flex-row, .banner, .elementos, #iconosRotando, #iconoEstatico {
+.flex-row, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink {
   display: flex;
   flex-direction: row; }
 
-.flex-column, #infoCriptos, #infoFuturos, .tarjetaContorno, .tarjetaCuerpo {
+.flex-column, #infoCriptos, #infoFuturos, .cards, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .tarjetaContorno, .tarjetaCuerpo {
   display: flex;
   flex-direction: column; }
 
@@ -334,6 +334,10 @@ nav {
   transition: all 1s ease; }
   .iconoSize:hover {
     transform: scale(1.1); }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .iconoSize {
+      width: 50px;
+      height: 50px; } }
 
 .sizeCard {
   width: 75%;
@@ -342,11 +346,11 @@ nav {
   border-radius: 10px;
   background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
   color: white; }
-  .sizeCard button {
-    width: 10rem;
-    height: 4rem;
-    border-radius: 10px;
-    margin-left: 2.5rem; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .sizeCard {
+      width: 95%;
+      height: 100%;
+      padding: 0rem; } }
   .sizeCard:hover {
     box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.61);
     transition: all 1s ease; }
@@ -378,14 +382,15 @@ nav {
   .sizeCard #usdc .barra {
     background-color: blue; }
 
-.descripcionCard {
-  width: 100%;
-  height: 40rem; }
-
 .imgCard {
   width: 28rem;
   height: 28rem;
   transition: all 1s ease; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .imgCard {
+      width: 10rem;
+      height: 10rem;
+      transition: none; } }
 
 .barra {
   width: 75px;
@@ -393,6 +398,9 @@ nav {
   border-radius: 1px;
   margin-left: 2rem;
   transition: width 1s ease; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .barra {
+      display: none; } }
 
 .videoSize {
   width: 75rem;

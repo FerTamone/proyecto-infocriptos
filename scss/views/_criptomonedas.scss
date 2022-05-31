@@ -1,5 +1,7 @@
 .cards{
     @include sizes(100%,250rem);
+    @extend .flex-column, .espaciadoAround, .alineacion;
+
 }
 
 .iconoSize{
@@ -8,6 +10,10 @@
     transition: all 1s ease;
     &:hover{
         transform: scale(1.1)
+    }
+    @include media-query(mobile){
+        @include sizes(50px,50px);
+
     }
 }
 
@@ -18,10 +24,9 @@
 	border-radius: 10px;
     background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
     color: white;
-    button{
-        @include sizes(10rem,4rem);
-        border-radius: 10px;
-        margin-left: 2.5rem;
+    @include media-query(mobile){
+        @include sizes(95%,100%);
+        padding: 0rem;
     }
     &:hover{
         box-shadow: 0px 0px 7px 8px rgba(0,0,0,0.61);
@@ -65,40 +70,49 @@
     }
 
     #btc{
-        
+        @extend .flex-column;
+
         .barra{
             background-color: yellow;
         }
     }
     #eth{
+        @extend .flex-column;
+
         .barra{
             background-color: blue;
         }
     }
     #tusd{
+        @extend .flex-column;
+
         .barra{
             background-color: green;
         }
     }
     #bnb{
+        @extend .flex-column;
+
         .barra{
             background-color: yellow;
         }
     }
     #usdc{
+        @extend .flex-column;
+
         .barra{
             background-color: blue;
         }
     }
 }
 
-.descripcionCard{
-    @include sizes(100%,40rem);
-}
-
 .imgCard{
     @include sizes(28rem,28rem);
     transition: all 1s ease;
+    @include media-query(mobile){
+        @include sizes(10rem,10rem);
+        transition: none;
+    }
 }
 
 .barra{
@@ -106,4 +120,11 @@
     border-radius: 1px;
     margin-left: 2rem;
     transition: width 1s ease;
+    @include media-query(mobile){
+        display: none;
+    }
+}
+
+.titleLink{
+    @extend .flex-row, .espaciadoBeetwen;
 }

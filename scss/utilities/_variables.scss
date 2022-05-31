@@ -15,7 +15,7 @@
 h1{
     @include seteoLetra(amatic,20rem ,center ,none ,uppercase ,white );
     @include media-query(mobile){
-        @include seteoLetra(amatic,10rem ,center ,none ,uppercase ,white );
+        @include seteoLetra(amatic,8.5rem ,center ,none ,uppercase ,white );
         margin-top: 1rem;
     }
 }
