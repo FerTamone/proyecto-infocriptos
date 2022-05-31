@@ -1,28 +1,65 @@
+.cuerpoArticle{
+    @extend .flex-rowReverse;
+    @include media-query(mobile){
+        flex-direction: column-reverse;
+    }
+}
+
 #infoCriptos{
+    @extend .flex-column;
     margin: 3rem 0rem 5rem 0rem ;
     h3{
         font-size: 4.5rem;
+        @include media-query(mobile){
+            font-size: 3rem;
+        }
+    }
+    @include media-query(mobile){
+        @include sizes(100%,100%);
+        margin: 0rem;
     }
 }
 
 #infoFuturos{
+    @extend .flex-column;
     margin: 2rem;
     h3{
         margin-top: 2rem;
         font-size: 4.5rem;
+        @include media-query(mobile){
+            font-size: 3rem;
+        }
+    }
+    @include media-query(mobile){
+        @include sizes(100%,100%);
+        margin: 0rem;
     }
 }
 
 #iconosRotando{
     @include sizes(31rem,5rem);
+    @extend .flex-row, .espaciadoAround, .alineacion;
     .iconos{
         @include sizes(45px,45px);
+    }
+    @include media-query(mobile){
+        display: none;
     }
 }
 
 #iconoEstatico{
+    @extend .flex-row;
+    @extend .espaciadoAround;
     @include sizes(54rem,6rem);
+    @include media-query(mobile){
+        @include sizes(100%,6rem);
+        justify-content: center;
+    }
     .iconos{
         @include sizes(95px,95px);
+        @include media-query(mobile){
+            @include sizes(70px,70px);
+        }
+        
     }
 }
