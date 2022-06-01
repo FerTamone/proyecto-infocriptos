@@ -71,7 +71,10 @@
   p{
     margin: 0rem;
     padding: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    @include media-query(mobile){
+      font-size: 1.4rem;
+    }
   }
   button {
     margin: 1rem;

@@ -120,11 +120,11 @@ section {
   display: flex;
   flex-direction: column; }
 
-.flex-rowReverse, .cuerpoArticle {
+.flex-rowReverse {
   display: flex;
   flex-direction: row-reverse; }
 
-.flex-columnReverse {
+.flex-columnReverse, .cuerpoArticle {
   display: flex;
   flex-direction: column-reverse; }
 
@@ -194,7 +194,7 @@ fieldset {
     margin: 0rem 0rem 0rem 1.9rem; }
   fieldset input[type=email] {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 3.5rem; }
+    margin: 0rem 0rem 0rem 3.1rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       fieldset input[type=email] {
         margin-left: 2.9rem; } }
@@ -279,10 +279,6 @@ nav {
 .dropdown-item {
   text-transform: uppercase; }
 
-@media (min-width: 368px) and (max-width: 767px) {
-  .cuerpoArticle {
-    flex-direction: column-reverse; } }
-
 #infoCriptos {
   margin: 3rem 0rem 5rem 0rem; }
   #infoCriptos h3 {
@@ -295,6 +291,9 @@ nav {
       width: 100%;
       height: 100%;
       margin: 0rem; } }
+  @media (min-width: 368px) and (max-width: 767px) {
+    #infoCriptos p {
+      font-size: 1.5rem; } }
 
 #infoFuturos {
   margin: 2rem; }
@@ -309,6 +308,9 @@ nav {
       width: 100%;
       height: 100%;
       margin: 0rem; } }
+  @media (min-width: 368px) and (max-width: 767px) {
+    #infoFuturos p {
+      font-size: 1.5rem; } }
 
 #iconosRotando {
   width: 31rem;
@@ -594,7 +596,10 @@ nav {
   .tarjetaCuerpo p {
     margin: 0rem;
     padding: 1.5rem;
-    font-size: 1.4rem; }
+    font-size: 1.5rem; }
+    @media (min-width: 368px) and (max-width: 767px) {
+      .tarjetaCuerpo p {
+        font-size: 1.4rem; } }
   .tarjetaCuerpo button {
     margin: 1rem;
     font-size: 2rem;

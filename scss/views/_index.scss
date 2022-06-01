@@ -1,8 +1,5 @@
 .cuerpoArticle{
-    @extend .flex-rowReverse;
-    @include media-query(mobile){
-        flex-direction: column-reverse;
-    }
+    @extend .flex-columnReverse;
 }
 
 #infoCriptos{
@@ -17,6 +14,11 @@
     @include media-query(mobile){
         @include sizes(100%,100%);
         margin: 0rem;
+    }
+    p{
+        @include media-query(mobile){
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -33,6 +35,11 @@
     @include media-query(mobile){
         @include sizes(100%,100%);
         margin: 0rem;
+    }
+    p{
+        @include media-query(mobile){
+            font-size: 1.5rem;
+        }
     }
 }
 
