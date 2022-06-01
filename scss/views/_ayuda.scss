@@ -1,4 +1,9 @@
 .formularios{
     @include sizes(100%,100rem);
+    @extend .flex-row, .alineacion;
+    @include media-query(mobile){
+        @include sizes(100%,100%);
+        flex-direction: column;
+    }
 }
 

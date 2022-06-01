@@ -1,6 +1,9 @@
 form{
     @include sizes(60rem,65rem);
     margin: 2rem;
+    @include media-query(mobile){
+        @include sizes(99%,100%);
+    }
 }
 
 fieldset{
@@ -8,6 +11,9 @@ fieldset{
     border: 1px solid black;
     padding: 5rem;
     @include sizes(100%,100%);
+    @include media-query(mobile){
+        padding: 0rem;
+    }
     legend{
         font-family: amatic;
         color: white;
@@ -44,6 +50,9 @@ fieldset{
             padding:0.7rem;
             margin: 0.4rem;
             font-size: 1.5rem;
+            @include media-query(mobile){
+                font-size: 1.3rem;
+            }
         }
         &[name=nombre] {
             border: 1px solid black;
@@ -56,6 +65,9 @@ fieldset{
         &[type=email] {
             border: 1px solid black;
             margin: 0rem 0rem 0rem 3.5rem;
+            @include media-query(mobile){
+                margin-left: 2.9rem;
+            }
         }
         &[type=radio]{
             margin: 0.5rem 0.5rem 1rem 2rem;
