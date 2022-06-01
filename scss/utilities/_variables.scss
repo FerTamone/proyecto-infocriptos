@@ -18,6 +18,9 @@ h1{
         @include seteoLetra(amatic,8.5rem ,center ,none ,uppercase ,white );
         margin-top: 1rem;
     }
+    @include media-query(tablet){
+        @include seteoLetra(amatic,13rem ,center ,none ,uppercase ,white );
+    }
 }
 
 h3{
@@ -41,6 +44,17 @@ section{
     background-size: cover;
     @include sizes(100%,100%);
 }
+
+.seteoArticleRow{
+    @extend .flex-row, .espaciadoAround;
+    @include sizes(100%,100% );
+}
+
+.seteoArticleColumn{
+    @extend .flex-column, .espaciadoAround;
+    @include sizes(100%,100% );
+}
+
 
 .iconos{
     @include sizes(35px,35px);
@@ -71,6 +85,10 @@ section{
     @include media-query(mobile){
         @include sizes(100%,40rem);
     }
+    @include media-query(tablet){
+        @include sizes(100%,60rem);
+    }
+
 }
 
 .flex-row{
@@ -96,6 +114,9 @@ section{
 .banner{
     @extend .flex-row, .espaciadoAround, .alineacion;
     @include media-query(mobile){
+        flex-direction: column;
+    }
+    @include media-query(tablet){
         flex-direction: column;
     }
     background-color: rgba(0,0,0,0.4);

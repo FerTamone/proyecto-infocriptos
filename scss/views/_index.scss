@@ -24,9 +24,8 @@
 
 #infoFuturos{
     @extend .flex-column;
-    margin: 2rem;
+    margin: 3rem 0rem 5rem 0rem ;
     h3{
-        margin-top: 2rem;
         font-size: 4.5rem;
         @include media-query(mobile){
             font-size: 3rem;
@@ -34,7 +33,6 @@
     }
     @include media-query(mobile){
         @include sizes(100%,100%);
-        margin: 0rem;
     }
     p{
         @include media-query(mobile){
@@ -50,6 +48,9 @@
         @include sizes(45px,45px);
     }
     @include media-query(mobile){
+        display: none;
+    }
+    @include media-query(tablet){
         display: none;
     }
 }

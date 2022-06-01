@@ -5,7 +5,11 @@
         @include sizes(35rem,25rem);
         margin: 0rem;
     }
+    @include media-query(tablet){
+        @include sizes(60rem, 45rem);
+    }
 }
+
 
 #videoSection{
     @include sizes(100%,55rem);
@@ -14,42 +18,75 @@
     @include media-query(mobile){
         flex-direction: column;
         margin-bottom: 4rem;
+        height: 100%;
+    }
+    @include media-query(tablet){
+        flex-direction: column;
+        height: 100%;
+
     }
     h4{
-        font-size: 5rem;
+        font-size: 4rem;
         margin-left: 5rem;
         @include media-query(mobile){
             font-size: 3rem;
             margin: 0rem;
             text-align: center;
         }
+        @include media-query(tablet){
+            font-size: 4rem;
+            margin: 0rem;
+            text-align: center;
+        }
     }
     p{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 3rem;
         @include media-query(mobile){
             font-size: 1.4rem;
             padding: 0rem;
         }
+        @include media-query(tablet){
+            font-size: 2rem;
+            padding: 0rem;
+        }
+    }
+}
+
+.tablaYfuncionamiento{
+    @extend .flex-row, .espaciadoAround;
+    @include media-query(mobile){
+        flex-direction: column;
+    }
+    @include media-query(tablet){
+        flex-direction: column;
     }
 }
 
 #funcionamientoSection{
+    @extend .flex-column;
     h4{
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: 1rem;
+        text-align: center;
         @include media-query(mobile){
             font-size: 3rem;
             margin-top: 2rem;
-            text-align: center;
+        }
+        @include media-query(tablet){
+            margin-top: 2rem;
         }
     }
     img{
         @include sizes(70rem,70rem);
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
         @include media-query(mobile){
             @include sizes(35rem,35rem);
             margin-left: 1rem;
+        }
+        @include media-query(tablet){
+            @include sizes(60rem,60rem);
+            margin-left: 9rem;
         }
 
     }
@@ -57,14 +94,15 @@
 
 #tablaSection{
     h4{
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
         margin: 2rem;
+        
     }
     table{
         background-color: rgba(0,0,0,0.7);
-        margin-top: 15rem;
         font-size: 1.3rem;
+        margin-bottom: 3rem;
         tr{
             color: white;
             border: 1px solid white;
@@ -87,11 +125,7 @@
     @include media-query(mobile){
         display: none;
     }
+    
 }
 
-.tablaYfuncionamiento{
-    @extend .flex-row, .espaciadoAround;
-    @include media-query(mobile){
-        flex-direction: column;
-    }
-}
+

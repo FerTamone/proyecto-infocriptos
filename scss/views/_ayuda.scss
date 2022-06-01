@@ -2,7 +2,11 @@
     @include sizes(100%,100rem);
     @extend .flex-row, .alineacion;
     @include media-query(mobile){
-        @include sizes(100%,100%);
+        height: 100%;
+        flex-direction: column;
+    }
+    @include media-query(tablet){
+        height: 100%;
         flex-direction: column;
     }
 }

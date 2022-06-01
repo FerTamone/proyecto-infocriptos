@@ -4,6 +4,9 @@ form{
     @include media-query(mobile){
         @include sizes(99%,100%);
     }
+    @include media-query(tablet){
+        @include sizes(52rem,100%);
+    }
 }
 
 fieldset{
@@ -13,6 +16,9 @@ fieldset{
     @include sizes(100%,100%);
     @include media-query(mobile){
         padding: 0rem;
+    }
+    @include media-query(tablet){
+        width: 90%;
     }
     legend{
         font-family: amatic;
@@ -53,6 +59,7 @@ fieldset{
             @include media-query(mobile){
                 font-size: 1.3rem;
             }
+        
         }
         &[name=nombre] {
             border: 1px solid black;

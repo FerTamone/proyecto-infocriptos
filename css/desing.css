@@ -51,6 +51,14 @@ h1 {
       text-transform: uppercase;
       color: white;
       margin-top: 1rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      font-family: amatic;
+      font-size: 13rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white; } }
 
 h3 {
   font-family: oswald;
@@ -86,6 +94,14 @@ section {
   width: 100%;
   height: 100%; }
 
+.seteoArticleRow {
+  width: 100%;
+  height: 100%; }
+
+.seteoArticleColumn {
+  width: 100%;
+  height: 100%; }
+
 .iconos {
   width: 35px;
   height: 35px; }
@@ -94,7 +110,7 @@ section {
   justify-content: center;
   align-items: center; }
 
-.espaciadoAround, .banner, .elementos, #iconosRotando, #iconoEstatico, .cards, .imagenCripto, .tablaYfuncionamiento {
+.espaciadoAround, .seteoArticleRow, .seteoArticleColumn, .banner, .elementos, #iconosRotando, #iconoEstatico, .cards, .imagenCripto, .tablaYfuncionamiento {
   justify-content: space-around; }
 
 .espaciadoBeetwen, .titleLink, #videoSection {
@@ -111,12 +127,16 @@ section {
     .seteoImg {
       width: 100%;
       height: 40rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .seteoImg {
+      width: 100%;
+      height: 60rem; } }
 
-.flex-row, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink, #videoSection, .tablaYfuncionamiento, .formularios {
+.flex-row, .seteoArticleRow, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink, #videoSection, .tablaYfuncionamiento, .formularios {
   display: flex;
   flex-direction: row; }
 
-.flex-column, #infoCriptos, #infoFuturos, .cards, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .imagenCripto, .tarjetaContorno, .tarjetaCuerpo {
+.flex-column, .seteoArticleColumn, #infoCriptos, #infoFuturos, .cards, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .imagenCripto, #funcionamientoSection, .tarjetaContorno, .tarjetaCuerpo {
   display: flex;
   flex-direction: column; }
 
@@ -136,6 +156,9 @@ section {
   @media (min-width: 368px) and (max-width: 767px) {
     .banner {
       flex-direction: column; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+      flex-direction: column; } }
 
 form {
   width: 60rem;
@@ -144,6 +167,10 @@ form {
   @media (min-width: 368px) and (max-width: 767px) {
     form {
       width: 99%;
+      height: 100%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    form {
+      width: 52rem;
       height: 100%; } }
 
 fieldset {
@@ -155,6 +182,9 @@ fieldset {
   @media (min-width: 368px) and (max-width: 767px) {
     fieldset {
       padding: 0rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    fieldset {
+      width: 90%; } }
   fieldset legend {
     font-family: amatic;
     color: white;
@@ -296,9 +326,8 @@ nav {
       font-size: 1.5rem; } }
 
 #infoFuturos {
-  margin: 2rem; }
+  margin: 3rem 0rem 5rem 0rem; }
   #infoFuturos h3 {
-    margin-top: 2rem;
     font-size: 4.5rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       #infoFuturos h3 {
@@ -306,8 +335,7 @@ nav {
   @media (min-width: 368px) and (max-width: 767px) {
     #infoFuturos {
       width: 100%;
-      height: 100%;
-      margin: 0rem; } }
+      height: 100%; } }
   @media (min-width: 368px) and (max-width: 767px) {
     #infoFuturos p {
       font-size: 1.5rem; } }
@@ -319,6 +347,9 @@ nav {
     width: 45px;
     height: 45px; }
   @media (min-width: 368px) and (max-width: 767px) {
+    #iconosRotando {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
     #iconosRotando {
       display: none; } }
 
@@ -341,6 +372,10 @@ nav {
 .cards {
   width: 100%;
   height: 250rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .cards {
+      width: 100%;
+      height: 100%; } }
 
 .iconoSize {
   width: 70px;
@@ -354,6 +389,10 @@ nav {
       width: 50px;
       height: 50px;
       margin-top: 1rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .iconoSize {
+      width: 60px;
+      height: 60px; } }
 
 .sizeCard {
   width: 75%;
@@ -366,16 +405,27 @@ nav {
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard {
       width: 95%;
-      height: 100%;
+      height: 50rem;
       padding: 0rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sizeCard {
+      width: 95%;
+      height: 36rem;
+      padding: 1rem; } }
   .sizeCard:hover {
     box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.61);
     transition: all 1s ease; }
     .sizeCard:hover .imgCard {
       transform: scale(1.05); }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .sizeCard:hover .imgCard {
+          transform: none; } }
     .sizeCard:hover #btc .barra {
       width: 150px; }
       @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #btc .barra {
+          width: 125px; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
         .sizeCard:hover #btc .barra {
           width: 125px; } }
     .sizeCard:hover #eth .barra {
@@ -383,9 +433,15 @@ nav {
       @media (min-width: 368px) and (max-width: 767px) {
         .sizeCard:hover #eth .barra {
           width: 165px; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .sizeCard:hover #eth .barra {
+          width: 165px; } }
     .sizeCard:hover #tusd .barra {
       width: 135px; }
       @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #tusd .barra {
+          width: 115px; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
         .sizeCard:hover #tusd .barra {
           width: 115px; } }
     .sizeCard:hover #bnb .barra {
@@ -393,9 +449,15 @@ nav {
       @media (min-width: 368px) and (max-width: 767px) {
         .sizeCard:hover #bnb .barra {
           width: 80px; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .sizeCard:hover #bnb .barra {
+          width: 80px; } }
     .sizeCard:hover #usdc .barra {
       width: 128px; }
       @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #usdc .barra {
+          width: 100px; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
         .sizeCard:hover #usdc .barra {
           width: 100px; } }
   .sizeCard h4 {
@@ -406,32 +468,51 @@ nav {
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard #btc p {
       font-size: 1.4rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sizeCard #btc p {
+      font-size: 1.5rem; } }
   .sizeCard #btc .barra {
     background-color: yellow; }
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard #eth p {
       font-size: 1.4rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sizeCard #eth p {
+      font-size: 1.5rem; } }
   .sizeCard #eth .barra {
     background-color: blue; }
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard #tusd p {
       font-size: 1.4rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sizeCard #tusd p {
+      font-size: 1.5rem; } }
   .sizeCard #tusd .barra {
     background-color: green; }
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard #bnb p {
       font-size: 1.4rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sizeCard #bnb p {
+      font-size: 1.5rem; } }
   .sizeCard #bnb .barra {
     background-color: yellow; }
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard #usdc p {
       font-size: 1.4rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sizeCard #usdc p {
+      font-size: 1.5rem; } }
   .sizeCard #usdc .barra {
     background-color: blue; }
 
 @media (min-width: 368px) and (max-width: 767px) {
   .imagenCripto {
     display: none; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imagenCripto {
+    justify-content: start; } }
 
 .imgCard {
   width: 28rem;
@@ -441,6 +522,12 @@ nav {
     .imgCard {
       width: 5rem;
       height: 5rem;
+      transition: none;
+      margin: 1rem 0rem 0rem 1rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .imgCard {
+      width: 10rem;
+      height: 10rem;
       transition: none;
       margin: 1rem 0rem 0rem 1rem; } }
 
@@ -460,6 +547,10 @@ nav {
       width: 35rem;
       height: 25rem;
       margin: 0rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .videoSize {
+      width: 60rem;
+      height: 45rem; } }
 
 #videoSection {
   width: 100%;
@@ -468,51 +559,81 @@ nav {
   @media (min-width: 368px) and (max-width: 767px) {
     #videoSection {
       flex-direction: column;
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem;
+      height: 100%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #videoSection {
+      flex-direction: column;
+      height: 100%; } }
   #videoSection h4 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-left: 5rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       #videoSection h4 {
         font-size: 3rem;
         margin: 0rem;
         text-align: center; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #videoSection h4 {
+        font-size: 4rem;
+        margin: 0rem;
+        text-align: center; } }
   #videoSection p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 3rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       #videoSection p {
         font-size: 1.4rem;
         padding: 0rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #videoSection p {
+        font-size: 2rem;
+        padding: 0rem; } }
+
+@media (min-width: 368px) and (max-width: 767px) {
+  .tablaYfuncionamiento {
+    flex-direction: column; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tablaYfuncionamiento {
+    flex-direction: column; } }
 
 #funcionamientoSection h4 {
-  font-size: 5rem;
-  margin-bottom: 1rem; }
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center; }
   @media (min-width: 368px) and (max-width: 767px) {
     #funcionamientoSection h4 {
       font-size: 3rem;
-      margin-top: 2rem;
-      text-align: center; } }
+      margin-top: 2rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #funcionamientoSection h4 {
+      margin-top: 2rem; } }
 
 #funcionamientoSection img {
   width: 70rem;
   height: 70rem;
-  margin-bottom: 10rem; }
+  margin-bottom: 2rem; }
   @media (min-width: 368px) and (max-width: 767px) {
     #funcionamientoSection img {
       width: 35rem;
       height: 35rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #funcionamientoSection img {
+      width: 60rem;
+      height: 60rem;
+      margin-left: 9rem; } }
 
 #tablaSection h4 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   margin: 2rem; }
 
 #tablaSection table {
   background-color: rgba(0, 0, 0, 0.7);
-  margin-top: 15rem;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-bottom: 3rem; }
   #tablaSection table tr {
     color: white;
     border: 1px solid white; }
@@ -532,10 +653,6 @@ nav {
 @media (min-width: 368px) and (max-width: 767px) {
   #tablaSection {
     display: none; } }
-
-@media (min-width: 368px) and (max-width: 767px) {
-  .tablaYfuncionamiento {
-    flex-direction: column; } }
 
 .tarjetaContorno {
   width: 47rem;
@@ -594,21 +711,22 @@ nav {
         width: 100%;
         height: 100%; } }
   .tarjetaCuerpo p {
-    margin: 0rem;
-    padding: 1.5rem;
+    margin: 1rem;
     font-size: 1.5rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       .tarjetaCuerpo p {
         font-size: 1.4rem; } }
   .tarjetaCuerpo button {
-    margin: 1rem;
-    font-size: 2rem;
     font-family: oswald;
+    font-size: 2rem;
+    text-align: none;
+    text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
+    color: none;
+    margin: 1rem;
     border: none;
+    font-weight: 500;
+    background-color: #fff;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
@@ -617,19 +735,39 @@ nav {
     .tarjetaCuerpo button:hover {
       background-color: #23c483;
       box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-      color: #fff;
       transform: translateY(-7px); }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .tarjetaCuerpo button:hover {
+          box-shadow: none;
+          transform: none; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .tarjetaCuerpo button:hover {
+          box-shadow: none;
+          transform: none; } }
     .tarjetaCuerpo button:active {
       transform: translateY(-1px); }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .tarjetaCuerpo button:active {
+          transform: none; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .tarjetaCuerpo button:active {
+          transform: none; } }
     .tarjetaCuerpo button a {
       text-decoration: none;
       color: black; }
+
+.seteoArticleRow {
+  margin-top: 5rem;
+  flex-wrap: wrap; }
 
 .formularios {
   width: 100%;
   height: 100rem; }
   @media (min-width: 368px) and (max-width: 767px) {
     .formularios {
-      width: 100%;
+      height: 100%;
+      flex-direction: column; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .formularios {
       height: 100%;
       flex-direction: column; } }

@@ -1,6 +1,9 @@
 .cards{
     @include sizes(100%,250rem);
     @extend .flex-column, .espaciadoAround, .alineacion;
+    @include media-query(tablet){
+        @include sizes(100%,100%);
+    }
 
 }
 
@@ -16,6 +19,9 @@
         margin-top: 1rem;
 
     }
+    @include media-query(tablet){
+        @include sizes(60px,60px);
+    }
 }
 
 
@@ -27,20 +33,30 @@
     color: white;
     margin:3rem 0rem 3rem 0rem;
     @include media-query(mobile){
-        @include sizes(95%,100%);
+        @include sizes(95%,50rem);
         padding: 0rem;
+    }
+    @include media-query(tablet){
+        @include sizes(95%,36rem);
+        padding: 1rem;
     }
     &:hover{
         box-shadow: 0px 0px 7px 8px rgba(0,0,0,0.61);
         transition: all 1s ease;
         .imgCard{
             transform: scale(1.05);
+            @include media-query(tablet){
+                transform: none;
+            }
         }
         #btc{
                 
             .barra{
                 width: 150px;
                 @include media-query(mobile){
+                    width: 125px;
+                }
+                @include media-query(tablet){
                     width: 125px;
                 }
             }
@@ -51,12 +67,19 @@
                 @include media-query(mobile){
                     width: 165px;
                 }
+                @include media-query(tablet){
+                    width: 165px;
+
+                }
             }
         }
         #tusd{
             .barra{
                 width: 135px;
                 @include media-query(mobile){
+                    width: 115px;
+                }
+                @include media-query(tablet){
                     width: 115px;
                 }
             }
@@ -67,12 +90,18 @@
                 @include media-query(mobile){
                     width: 80px;
                 }
+                @include media-query(tablet){
+                    width: 80px;
+                }
             }
         }
         #usdc{
             .barra{
                 width: 128px;
                 @include media-query(mobile){
+                    width: 100px;
+                }
+                @include media-query(tablet){
                     width: 100px;
                 }
             }
@@ -93,6 +122,11 @@
                 font-size: 1.4rem;
             }
         }
+        @include media-query(tablet){
+            p{
+                font-size: 1.5rem;
+            }
+        }
         .barra{
             background-color: yellow;
             
@@ -103,6 +137,11 @@
         @include media-query(mobile){
             p{
                 font-size: 1.4rem;
+            }
+        }
+        @include media-query(tablet){
+            p{
+                font-size: 1.5rem;
             }
         }
         .barra{
@@ -116,6 +155,11 @@
                 font-size: 1.4rem;
             }
         }
+        @include media-query(tablet){
+            p{
+                font-size: 1.5rem;
+            }
+        }
         .barra{
             background-color: green;
         }
@@ -125,6 +169,11 @@
         @include media-query(mobile){
             p{
                 font-size: 1.4rem;
+            }
+        }
+        @include media-query(tablet){
+            p{
+                font-size: 1.5rem;
             }
         }
         .barra{
@@ -138,6 +187,11 @@
                 font-size: 1.4rem;
             }
         }
+        @include media-query(tablet){
+            p{
+                font-size: 1.5rem;
+            }
+        }
         .barra{
             background-color: blue;
         }
@@ -149,6 +203,9 @@
     @include media-query(mobile){
         display: none;
     }
+    @include media-query(tablet){
+        justify-content: start;
+    }
 }
 
 .imgCard{
@@ -159,6 +216,12 @@
         transition: none;
         margin: 1rem 0rem 0rem 1rem;
         
+    }
+    @include media-query(tablet){
+        @include sizes(10rem,10rem);
+        transition: none;
+        margin: 1rem 0rem 0rem 1rem;
+
     }
 }
 

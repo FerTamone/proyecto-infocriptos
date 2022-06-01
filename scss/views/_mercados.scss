@@ -69,22 +69,18 @@
     }
   }
   p{
-    margin: 0rem;
-    padding: 1.5rem;
+    margin: 1rem;
     font-size: 1.5rem;
     @include media-query(mobile){
       font-size: 1.4rem;
     }
   }
   button {
+    @include seteoLetra(oswald,2rem,none,none,uppercase,none);
     margin: 1rem;
-    font-size: 2rem;
-    font-family: oswald;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
     border: none;
+    font-weight: 500;
+    background-color: #fff;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
@@ -93,11 +89,24 @@
     &:hover{
       background-color: #23c483;
       box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-      color: #fff;
       transform: translateY(-7px);
+      @include media-query(mobile){
+        box-shadow: none;
+        transform: none;
+      }
+      @include media-query(tablet){
+        box-shadow: none;
+        transform: none;
+      }
     }
     &:active{
       transform: translateY(-1px);
+      @include media-query(mobile){
+        transform: none;
+      }
+      @include media-query(tablet){
+        transform: none;
+      }
     }
     a{
       text-decoration: none;
@@ -105,4 +114,9 @@
     }
   }
   
+}
+
+.seteoArticleRow{
+  margin-top: 5rem;
+  flex-wrap: wrap;
 }
