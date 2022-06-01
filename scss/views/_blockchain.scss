@@ -1,29 +1,56 @@
 .videoSize{
     @include sizes(75rem,45rem);
     margin: 2rem;
+    @include media-query(mobile){
+        @include sizes(35rem,25rem);
+        margin: 0rem;
+    }
 }
 
 #videoSection{
     @include sizes(100%,55rem);
+    @extend .flex-row, .espaciadoBeetwen, .alineacion;
     margin: 3rem 0rem 2rem 0rem;
+    @include media-query(mobile){
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
     h4{
         font-size: 5rem;
         margin-left: 5rem;
+        @include media-query(mobile){
+            font-size: 3rem;
+            margin: 0rem;
+            text-align: center;
+        }
     }
     p{
         font-size: 3rem;
         padding: 3rem;
+        @include media-query(mobile){
+            font-size: 1.4rem;
+            padding: 0rem;
+        }
     }
 }
 
 #funcionamientoSection{
     h4{
         font-size: 5rem;
-        margin-bottom: 1rem
+        margin-bottom: 1rem;
+        @include media-query(mobile){
+            font-size: 3rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
     }
     img{
         @include sizes(70rem,70rem);
         margin-bottom: 10rem;
+        @include media-query(mobile){
+            @include sizes(35rem,35rem);
+            margin-left: 1rem;
+        }
 
     }
 }
@@ -56,5 +83,15 @@
     #columnaPrincipal{
         font-weight: 700;
         font-size: 1.5rem;
+    }
+    @include media-query(mobile){
+        display: none;
+    }
+}
+
+.tablaYfuncionamiento{
+    @extend .flex-row, .espaciadoAround;
+    @include media-query(mobile){
+        flex-direction: column;
     }
 }

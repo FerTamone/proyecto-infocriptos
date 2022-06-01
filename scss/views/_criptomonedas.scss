@@ -13,6 +13,7 @@
     }
     @include media-query(mobile){
         @include sizes(50px,50px);
+        margin-top: 1rem;
 
     }
 }
@@ -24,6 +25,7 @@
 	border-radius: 10px;
     background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
     color: white;
+    margin:3rem 0rem 3rem 0rem;
     @include media-query(mobile){
         @include sizes(95%,100%);
         padding: 0rem;
@@ -38,26 +40,41 @@
                 
             .barra{
                 width: 150px;
+                @include media-query(mobile){
+                    width: 125px;
+                }
             }
         }
         #eth{
             .barra{
                 width: 215px;
+                @include media-query(mobile){
+                    width: 165px;
+                }
             }
         }
         #tusd{
             .barra{
                 width: 135px;
+                @include media-query(mobile){
+                    width: 115px;
+                }
             }
         }
         #bnb{
             .barra{
                 width: 95px;
+                @include media-query(mobile){
+                    width: 80px;
+                }
             }
         }
         #usdc{
             .barra{
                 width: 128px;
+                @include media-query(mobile){
+                    width: 100px;
+                }
             }
         }
     }
@@ -71,38 +88,66 @@
 
     #btc{
         @extend .flex-column;
-
+        @include media-query(mobile){
+            p{
+                font-size: 1.4rem;
+            }
+        }
         .barra{
             background-color: yellow;
+            
         }
     }
     #eth{
         @extend .flex-column;
-
+        @include media-query(mobile){
+            p{
+                font-size: 1.4rem;
+            }
+        }
         .barra{
             background-color: blue;
         }
     }
     #tusd{
         @extend .flex-column;
-
+        @include media-query(mobile){
+            p{
+                font-size: 1.4rem;
+            }
+        }
         .barra{
             background-color: green;
         }
     }
     #bnb{
         @extend .flex-column;
-
+        @include media-query(mobile){
+            p{
+                font-size: 1.4rem;
+            }
+        }
         .barra{
             background-color: yellow;
         }
     }
     #usdc{
         @extend .flex-column;
-
+        @include media-query(mobile){
+            p{
+                font-size: 1.4rem;
+            }
+        }
         .barra{
             background-color: blue;
         }
+    }
+}
+
+.imagenCripto{
+    @extend .flex-column, .espaciadoAround;
+    @include media-query(mobile){
+        display: none;
     }
 }
 
@@ -110,8 +155,10 @@
     @include sizes(28rem,28rem);
     transition: all 1s ease;
     @include media-query(mobile){
-        @include sizes(10rem,10rem);
+        @include sizes(5rem,5rem);
         transition: none;
+        margin: 1rem 0rem 0rem 1rem;
+        
     }
 }
 
@@ -120,9 +167,7 @@
     border-radius: 1px;
     margin-left: 2rem;
     transition: width 1s ease;
-    @include media-query(mobile){
-        display: none;
-    }
+    
 }
 
 .titleLink{

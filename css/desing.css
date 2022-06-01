@@ -90,14 +90,14 @@ section {
   width: 35px;
   height: 35px; }
 
-.alineacion, .banner, #iconosRotando, .cards {
+.alineacion, .banner, #iconosRotando, .cards, #videoSection {
   justify-content: center;
   align-items: center; }
 
-.espaciadoAround, .banner, .elementos, #iconosRotando, #iconoEstatico, .cards {
+.espaciadoAround, .banner, .elementos, #iconosRotando, #iconoEstatico, .cards, .imagenCripto, .tablaYfuncionamiento {
   justify-content: space-around; }
 
-.espaciadoBeetwen, .titleLink {
+.espaciadoBeetwen, .titleLink, #videoSection {
   justify-content: space-between; }
 
 .borde {
@@ -112,11 +112,11 @@ section {
       width: 100%;
       height: 40rem; } }
 
-.flex-row, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink {
+.flex-row, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink, #videoSection, .tablaYfuncionamiento {
   display: flex;
   flex-direction: row; }
 
-.flex-column, #infoCriptos, #infoFuturos, .cards, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .tarjetaContorno, .tarjetaCuerpo {
+.flex-column, #infoCriptos, #infoFuturos, .cards, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .imagenCripto, .tarjetaContorno, .tarjetaCuerpo {
   display: flex;
   flex-direction: column; }
 
@@ -337,7 +337,8 @@ nav {
   @media (min-width: 368px) and (max-width: 767px) {
     .iconoSize {
       width: 50px;
-      height: 50px; } }
+      height: 50px;
+      margin-top: 1rem; } }
 
 .sizeCard {
   width: 75%;
@@ -345,7 +346,8 @@ nav {
   padding: 3rem;
   border-radius: 10px;
   background-image: radial-gradient(circle at 116.45% 25.82%, #774d64 0, #6e4260 12.5%, #63375e 25%, #552b5b 37.5%, #441f59 50%, #2e1557 62.5%, #091056 75%, #000c56 87.5%, #000355 100%);
-  color: white; }
+  color: white;
+  margin: 3rem 0rem 3rem 0rem; }
   @media (min-width: 368px) and (max-width: 767px) {
     .sizeCard {
       width: 95%;
@@ -358,29 +360,63 @@ nav {
       transform: scale(1.05); }
     .sizeCard:hover #btc .barra {
       width: 150px; }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #btc .barra {
+          width: 125px; } }
     .sizeCard:hover #eth .barra {
       width: 215px; }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #eth .barra {
+          width: 165px; } }
     .sizeCard:hover #tusd .barra {
       width: 135px; }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #tusd .barra {
+          width: 115px; } }
     .sizeCard:hover #bnb .barra {
       width: 95px; }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #bnb .barra {
+          width: 80px; } }
     .sizeCard:hover #usdc .barra {
       width: 128px; }
+      @media (min-width: 368px) and (max-width: 767px) {
+        .sizeCard:hover #usdc .barra {
+          width: 100px; } }
   .sizeCard h4 {
     font-size: 5rem;
     margin-left: 2rem;
     text-decoration: none;
     text-transform: none; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .sizeCard #btc p {
+      font-size: 1.4rem; } }
   .sizeCard #btc .barra {
     background-color: yellow; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .sizeCard #eth p {
+      font-size: 1.4rem; } }
   .sizeCard #eth .barra {
     background-color: blue; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .sizeCard #tusd p {
+      font-size: 1.4rem; } }
   .sizeCard #tusd .barra {
     background-color: green; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .sizeCard #bnb p {
+      font-size: 1.4rem; } }
   .sizeCard #bnb .barra {
     background-color: yellow; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .sizeCard #usdc p {
+      font-size: 1.4rem; } }
   .sizeCard #usdc .barra {
     background-color: blue; }
+
+@media (min-width: 368px) and (max-width: 767px) {
+  .imagenCripto {
+    display: none; } }
 
 .imgCard {
   width: 28rem;
@@ -388,9 +424,10 @@ nav {
   transition: all 1s ease; }
   @media (min-width: 368px) and (max-width: 767px) {
     .imgCard {
-      width: 10rem;
-      height: 10rem;
-      transition: none; } }
+      width: 5rem;
+      height: 5rem;
+      transition: none;
+      margin: 1rem 0rem 0rem 1rem; } }
 
 .barra {
   width: 75px;
@@ -398,34 +435,59 @@ nav {
   border-radius: 1px;
   margin-left: 2rem;
   transition: width 1s ease; }
-  @media (min-width: 368px) and (max-width: 767px) {
-    .barra {
-      display: none; } }
 
 .videoSize {
   width: 75rem;
   height: 45rem;
   margin: 2rem; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .videoSize {
+      width: 35rem;
+      height: 25rem;
+      margin: 0rem; } }
 
 #videoSection {
   width: 100%;
   height: 55rem;
   margin: 3rem 0rem 2rem 0rem; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    #videoSection {
+      flex-direction: column;
+      margin-bottom: 4rem; } }
   #videoSection h4 {
     font-size: 5rem;
     margin-left: 5rem; }
+    @media (min-width: 368px) and (max-width: 767px) {
+      #videoSection h4 {
+        font-size: 3rem;
+        margin: 0rem;
+        text-align: center; } }
   #videoSection p {
     font-size: 3rem;
     padding: 3rem; }
+    @media (min-width: 368px) and (max-width: 767px) {
+      #videoSection p {
+        font-size: 1.4rem;
+        padding: 0rem; } }
 
 #funcionamientoSection h4 {
   font-size: 5rem;
   margin-bottom: 1rem; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    #funcionamientoSection h4 {
+      font-size: 3rem;
+      margin-top: 2rem;
+      text-align: center; } }
 
 #funcionamientoSection img {
   width: 70rem;
   height: 70rem;
   margin-bottom: 10rem; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    #funcionamientoSection img {
+      width: 35rem;
+      height: 35rem;
+      margin-left: 1rem; } }
 
 #tablaSection h4 {
   font-size: 5rem;
@@ -451,6 +513,14 @@ nav {
 #tablaSection #columnaPrincipal {
   font-weight: 700;
   font-size: 1.5rem; }
+
+@media (min-width: 368px) and (max-width: 767px) {
+  #tablaSection {
+    display: none; } }
+
+@media (min-width: 368px) and (max-width: 767px) {
+  .tablaYfuncionamiento {
+    flex-direction: column; } }
 
 .tarjetaContorno {
   width: 47rem;
