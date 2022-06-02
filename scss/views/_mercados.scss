@@ -1,3 +1,10 @@
+//modificacion a la clase seteoArticleRow para que esta tenga un margen superior y los objetos se ubiquen cada uno con su espacio
+.seteoArticleRow{
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+
 .tarjetaContorno{
   @extend .flex-column;
   @include sizes(47rem,75rem);
@@ -116,7 +123,3 @@
   
 }
 
-.seteoArticleRow{
-  margin-top: 5rem;
-  flex-wrap: wrap;
-}

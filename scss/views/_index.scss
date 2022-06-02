@@ -3,6 +3,8 @@
     @extend .flex-columnReverse;
 }
 
+
+//ìdentificador que organiza contenido y define estilos de los componentes que estan dentro del mismo
 #infoCriptos{
     @extend .flex-column;
     margin: 3rem 0rem 5rem 0rem ;
@@ -23,6 +25,8 @@
     }
 }
 
+//ìdentificador que organiza contenido y define estilos de los componentes que estan dentro del mismo
+
 #infoFuturos{
     @extend .flex-column;
     margin: 3rem 0rem 5rem 0rem ;
@@ -42,6 +46,8 @@
     }
 }
 
+//ìdentificador que organiza contenido y define formato de los iconos que giran con la animacion,desactivada esta en las vistas mobile y tablet
+
 #iconosRotando{
     @include sizes(31rem,5rem);
     @extend .flex-row, .espaciadoAround, .alineacion;
@@ -56,9 +62,10 @@
     }
 }
 
+//ìdentificador que organiza contenido y define estilos de los componentes que estan dentro del mismo
+
 #iconoEstatico{
-    @extend .flex-row;
-    @extend .espaciadoAround;
+    @extend .flex-row, .espaciadoAround;
     @include sizes(54rem,6rem);
     @include media-query(mobile){
         @include sizes(100%,6rem);

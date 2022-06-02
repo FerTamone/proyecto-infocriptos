@@ -652,6 +652,10 @@ nav {
   #tablaSection {
     display: none; } }
 
+.seteoArticleRow {
+  margin-top: 5rem;
+  flex-wrap: wrap; }
+
 .tarjetaContorno {
   width: 47rem;
   height: 75rem;
@@ -753,10 +757,6 @@ nav {
     .tarjetaCuerpo button a {
       text-decoration: none;
       color: black; }
-
-.seteoArticleRow {
-  margin-top: 5rem;
-  flex-wrap: wrap; }
 
 .formularios {
   width: 100%;
