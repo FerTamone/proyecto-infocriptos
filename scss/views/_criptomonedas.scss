@@ -1,3 +1,4 @@
+// defino una clase que organiza las cards de la seccion, modificandose en la vista de tablet
 .cards{
     @include sizes(100%,250rem);
     @extend .flex-column, .espaciadoAround, .alineacion;
@@ -7,6 +8,7 @@
 
 }
 
+// clase que define el tamaño del incono de youtube con un efecto y hover, y modificandose en las vistas mobile y tablet
 .iconoSize{
     @include sizes(70px,70px);
     margin-right: 5rem;
@@ -24,7 +26,7 @@
     }
 }
 
-
+//clase que define el formato y estilo de las cards donde esta posada la informacion de la seccion, modificandose sus componentes dependiendo de la vista del sitio
 .sizeCard{
     @include sizes(75%,38rem);
     padding: 3rem;
@@ -42,6 +44,7 @@
     }
     &:hover{
         box-shadow: 0px 0px 7px 8px rgba(0,0,0,0.61);
+        // tiempo en que dura la transicion del efecto al posarce sobre la card, los efectos son: apliacion del tamaño del icono de la cripto y barra dinamica debajo el nombre de la misma
         transition: all 1s ease;
         .imgCard{
             transform: scale(1.05);
@@ -49,6 +52,7 @@
                 transform: none;
             }
         }
+        //modificacion de la barra de cada card dependiendo del tamaño del nombre de la criptomoneda, considerando tambien las vistas mobile y tablet
         #btc{
                 
             .barra{
@@ -114,7 +118,7 @@
         text-decoration: none;
         text-transform: none;
     }
-
+    //declaro la organizacion de los componentes de la card segun criptomoneda
     #btc{
         @extend .flex-column;
         @include media-query(mobile){
@@ -198,6 +202,7 @@
     }
 }
 
+//clase que organiza el div donde esta la imagen de la criptomoneda, modificandose segun corresponda en las vistas mobile y tablet
 .imagenCripto{
     @extend .flex-column, .espaciadoAround;
     @include media-query(mobile){
@@ -208,6 +213,7 @@
     }
 }
 
+//clase que da estilo a la imagen de la criptomoneda
 .imgCard{
     @include sizes(28rem,28rem);
     transition: all 1s ease;
@@ -225,6 +231,7 @@
     }
 }
 
+//clase que declara las caracteristicas de la barra que esta debajo de los titulos de cada card, con un efecto en esta
 .barra{
     @include sizes(75px,5px);
     border-radius: 1px;
@@ -232,7 +239,7 @@
     transition: width 1s ease;
     
 }
-
+// clase que organiza los elementes titulo e icono de youtube en la card
 .titleLink{
     @extend .flex-row, .espaciadoBeetwen;
 }

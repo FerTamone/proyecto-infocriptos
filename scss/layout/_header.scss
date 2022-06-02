@@ -1,4 +1,5 @@
 nav{
+    //definiendo estilo del nav como sus componentes
     @include sizes(100%,100%);
     ul{
         justify-content: end;
@@ -9,6 +10,9 @@ nav{
         @include media-query(mobile){
             justify-content: center;
             font-size: 2rem;
+        }
+        @include media-query(tablet){
+            justify-content: center;
         }
         li{
             ul{
@@ -26,6 +30,7 @@ nav{
     }
 }
 
+//modifico clases propietarias del nav que use de BS para cambiarle el estilo 
 .nav-link{
     color: white;
     text-transform: uppercase;

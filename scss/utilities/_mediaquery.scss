@@ -1,4 +1,6 @@
+//defino mixin para los mediaquerys del sitio (mobile y tablet)
 @mixin media-query ($dispositivo){
+    //uso de condicionales para limitar los breakpoints
     @if $dispositivo == mobile{
         @media (min-width:368px) and (max-width:767px) {
             @content;

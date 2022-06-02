@@ -1,8 +1,10 @@
+//definicion de mixin para medidas de un elemento
 @mixin sizes($ancho,$alto) {
     width: $ancho;
     height: $alto;
 }
 
+//definicion de mixin para el estilo de letra de un elemento
 @mixin seteoLetra($estilo,$size,$txtalign,$decoracion,$transform,$color){
     font-family: $estilo;
     font-size: $size;
@@ -12,7 +14,9 @@
     color: $color;
 }
 
+
 h1{
+    //defino el estilo de todos los h1 del sitio (utilizando mixin), con sus respectivas vistas(tambien uso de mixin)
     @include seteoLetra(amatic,20rem ,center ,none ,uppercase ,white );
     @include media-query(mobile){
         @include seteoLetra(amatic,8.5rem ,center ,none ,uppercase ,white );
@@ -24,14 +28,17 @@ h1{
 }
 
 h3{
+    //defino el estilo de todos los h3 del sitio con el mixin
     @include seteoLetra(oswald,none ,center ,underline ,uppercase ,white );
 }
 
 h4{
+    //defino el estilo de todos los h4 del sitio con el mixin
     @include seteoLetra(oswald,3rem ,none ,underline ,uppercase ,white );
 }
 
 p{
+    //defino el estilo de todos los parrafos del sitio con una vista (uso de mixins)
     @include seteoLetra(nunito,2rem ,justify ,none ,none ,white );
     margin: 2rem;
     @include media-query(mobile){
@@ -40,11 +47,13 @@ p{
 }
 
 section{
+    //seteo fondo de el section del sitio
     background-image: url(../../imagenes/fondo-section.jpg);
     background-size: cover;
     @include sizes(100%,100%);
 }
 
+//defino seteos a article del sitio, dependiendo de la organizacion del contenido
 .seteoArticleRow{
     @extend .flex-row, .espaciadoAround;
     @include sizes(100%,100% );
@@ -55,17 +64,11 @@ section{
     @include sizes(100%,100% );
 }
 
-
-.iconos{
-    @include sizes(35px,35px);
-}
-
-
+//defino ciertas clases que utilizo con frecuencia en el codigo y en otras clases
 .alineacion{
     justify-content: center;
     align-items: center;
 } 
-
 
 .espaciadoAround{
     justify-content: space-around;
@@ -73,22 +76,6 @@ section{
 
 .espaciadoBeetwen{
     justify-content: space-between;
-}
-
-.borde{
-    border: 1px solid black;
-}
-
-.seteoImg{
-    @include sizes(80rem,80rem );
-    margin-bottom: 1rem;
-    @include media-query(mobile){
-        @include sizes(100%,40rem);
-    }
-    @include media-query(tablet){
-        @include sizes(100%,60rem);
-    }
-
 }
 
 .flex-row{
@@ -111,6 +98,21 @@ section{
     flex-direction: column-reverse;
 }
 
+
+//clase que define el tamaño de la imagen del banner principal de cada seccion, y en cada vista del sitio
+.seteoImg{
+    @include sizes(80rem,80rem );
+    margin-bottom: 1rem;
+    @include media-query(mobile){
+        @include sizes(100%,40rem);
+    }
+    @include media-query(tablet){
+        @include sizes(100%,60rem);
+    }
+
+}
+
+//definicion del banner que esta en todas las seccion del sitio, con su estilo y vistas
 .banner{
     @extend .flex-row, .espaciadoAround, .alineacion;
     @include media-query(mobile){

@@ -1,3 +1,4 @@
+//defino clase que organiza los formularios de la seccion ayuda, con sus respectivas vistas
 .formularios{
     @include sizes(100%,100rem);
     @extend .flex-row, .alineacion;

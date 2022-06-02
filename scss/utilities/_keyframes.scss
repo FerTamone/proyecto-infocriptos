@@ -1,3 +1,4 @@
+//definicion de keyframes para usarlo en la seccion index
 @keyframes rotacionMoneda {
     0%{
         transform: skew(0deg);
@@ -15,9 +16,8 @@
         transform: rotate3d(0,1,0, 360deg);
         }
 }
-    
-    
 
+//definicion de la clase que usa el keyframe
 .rotacion{
     animation-name: rotacionMoneda;
     animation-iteration-count: infinite;

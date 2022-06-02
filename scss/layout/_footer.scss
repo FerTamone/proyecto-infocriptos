@@ -1,22 +1,24 @@
 footer{
+    //defino los estilos del footer y sus componentes
     @include sizes(100%,10rem);
     box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.74);
-
+    
     div{
         background-color: #3B4154;
     }
+
     h5{
         margin-top: 1rem;
+        //seteo el estilo de h5 con un mixin
         @include seteoLetra(oswald,2.2rem,none,underline,none,white);
-        text-shadow: 0px 0px 8px rgba(19,18,18,1);
+        //defino los estilos en breakpoint de h5
         @include media-query(mobile){
             margin: 0rem;
         }
-
     }
+
     p{
         font-size: 2rem;
-        text-shadow: 0px 0px 8px rgba(19,18,18,1);
         
     }
 
@@ -36,11 +38,16 @@ footer{
         }
     }
 }
-
+// clase para organizar los componentes del footer
 .elementos{
     @extend .flex-row, .espaciadoAround;
     @include media-query(mobile){
         flex-direction: column;
         align-items: center;
     }
+}
+
+//definicion de clase para el tamaño de los iconos de redes sociales
+.iconos{
+    @include sizes(35px,35px);
 }

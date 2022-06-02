@@ -1,33 +1,38 @@
 form{
+    //definiendo el tamaño por default del form en sus dif. vistas
     @include sizes(60rem,65rem);
     margin: 2rem;
+    
     @include media-query(mobile){
         @include sizes(99%,100%);
     }
+    
     @include media-query(tablet){
         @include sizes(52rem,100%);
     }
 }
 
 fieldset{
+    //definicion de estilos de fieldset, el de sus componentes y vistas
     background-color: rgba(0,0,0,0.7);
     border: 1px solid black;
     padding: 5rem;
     @include sizes(100%,100%);
+    
     @include media-query(mobile){
         padding: 0rem;
     }
+    
     @include media-query(tablet){
         width: 90%;
     }
+    
     legend{
-        font-family: amatic;
-        color: white;
-        font-size: 3rem;
-        text-align: center;
-        text-decoration: underline;
-        text-transform: uppercase;
+        //definicion del estilo legend con mixin
+        @include seteoLetra(amatic,3rem,center,underline,uppercase,white);
     }
+    
+    //estructurado del formulario y estilo
     ol{
         list-style: none;
         li{
@@ -49,6 +54,8 @@ fieldset{
             }
         }
     }
+    
+    //modificando estilo de los inputs del formulario, con sus respectivas vistas
     input{
         &.btn{
             background-color: white;            
@@ -83,10 +90,12 @@ fieldset{
             margin: 0.5rem 0.5rem 0rem 2rem;    
         }
     }
+    
     textarea{
         border: 1px solid black;
         margin: 0rem 0rem 0rem 1.2rem;
     } 
+    
     select{
         margin: 1rem 0rem 1rem 2rem;
     }

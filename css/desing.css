@@ -102,10 +102,6 @@ section {
   width: 100%;
   height: 100%; }
 
-.iconos {
-  width: 35px;
-  height: 35px; }
-
 .alineacion, .banner, #iconosRotando, .cards, #videoSection, .formularios {
   justify-content: center;
   align-items: center; }
@@ -115,22 +111,6 @@ section {
 
 .espaciadoBeetwen, .titleLink, #videoSection {
   justify-content: space-between; }
-
-.borde {
-  border: 1px solid black; }
-
-.seteoImg {
-  width: 80rem;
-  height: 80rem;
-  margin-bottom: 1rem; }
-  @media (min-width: 368px) and (max-width: 767px) {
-    .seteoImg {
-      width: 100%;
-      height: 40rem; } }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .seteoImg {
-      width: 100%;
-      height: 60rem; } }
 
 .flex-row, .seteoArticleRow, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink, #videoSection, .tablaYfuncionamiento, .formularios {
   display: flex;
@@ -147,6 +127,19 @@ section {
 .flex-columnReverse, .cuerpoArticle {
   display: flex;
   flex-direction: column-reverse; }
+
+.seteoImg {
+  width: 80rem;
+  height: 80rem;
+  margin-bottom: 1rem; }
+  @media (min-width: 368px) and (max-width: 767px) {
+    .seteoImg {
+      width: 100%;
+      height: 40rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .seteoImg {
+      width: 100%;
+      height: 60rem; } }
 
 .banner {
   background-color: rgba(0, 0, 0, 0.4);
@@ -187,11 +180,11 @@ fieldset {
       width: 90%; } }
   fieldset legend {
     font-family: amatic;
-    color: white;
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: white; }
   fieldset ol {
     list-style: none; }
     fieldset ol li {
@@ -251,14 +244,12 @@ footer {
     text-align: none;
     text-decoration: underline;
     text-transform: none;
-    color: white;
-    text-shadow: 0px 0px 8px #131212; }
+    color: white; }
     @media (min-width: 368px) and (max-width: 767px) {
       footer h5 {
         margin: 0rem; } }
   footer p {
-    font-size: 2rem;
-    text-shadow: 0px 0px 8px #131212; }
+    font-size: 2rem; }
   footer ul {
     font-family: nunito; }
     footer ul li {
@@ -275,6 +266,10 @@ footer {
     flex-direction: column;
     align-items: center; } }
 
+.iconos {
+  width: 35px;
+  height: 35px; }
+
 nav {
   width: 100%;
   height: 100%; }
@@ -288,6 +283,9 @@ nav {
       nav ul {
         justify-content: center;
         font-size: 2rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      nav ul {
+        justify-content: center; } }
     nav ul li ul li {
       text-align: center; }
       nav ul li ul li a {

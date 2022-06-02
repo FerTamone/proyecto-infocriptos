@@ -1,3 +1,4 @@
+//defino la clase que da estilo al tamaño del video en la seccion
 .videoSize{
     @include sizes(75rem,45rem);
     margin: 2rem;
@@ -10,7 +11,7 @@
     }
 }
 
-
+//id que tiene todos los estilos que se utiliza con el txt que esta junto al video de la seccion y las modificaicones en sus respectivas vistas
 #videoSection{
     @include sizes(100%,55rem);
     @extend .flex-row, .espaciadoBeetwen, .alineacion;
@@ -53,6 +54,7 @@
     }
 }
 
+//defino clase que organiza los elementos img de funcionamiento y tabla de blockchains, adaptado a la vistas pertinentes
 .tablaYfuncionamiento{
     @extend .flex-row, .espaciadoAround;
     @include media-query(mobile){
@@ -63,6 +65,7 @@
     }
 }
 
+//defino el estilo de los componentes de la seccion de funcionamiento de blockchain con sus respectivas modificaciones
 #funcionamientoSection{
     @extend .flex-column;
     h4{
@@ -92,6 +95,7 @@
     }
 }
 
+//identificador donde se define la estructura de la tabla con su estilo y vista
 #tablaSection{
     h4{
         font-size: 4rem;
