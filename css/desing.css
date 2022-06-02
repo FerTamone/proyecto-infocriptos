@@ -679,21 +679,6 @@ nav {
       .tarjetaContorno .tarjetaContorno--cabezal {
         width: 100%;
         height: 100%; } }
-  .tarjetaContorno #binance button {
-    width: 9rem;
-    height: 4rem; }
-  .tarjetaContorno #coinbase button {
-    width: 9rem;
-    height: 4rem; }
-  .tarjetaContorno #ftx button {
-    width: 9rem;
-    height: 4rem; }
-  .tarjetaContorno #kraken button {
-    width: 9rem;
-    height: 4rem; }
-  .tarjetaContorno #kucoin button {
-    width: 9rem;
-    height: 4rem; }
 
 .tarjetaCuerpo {
   width: 47rem;
@@ -725,6 +710,8 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     color: none;
+    width: 9rem;
+    height: 4rem;
     margin: 1rem;
     border: none;
     font-weight: 500;
