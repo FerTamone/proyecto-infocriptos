@@ -203,23 +203,49 @@ fieldset {
         font-size: 1.3rem; } }
   fieldset input[name=nombre] {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 1.9rem; }
+    margin: 0rem 0rem 0rem 1.9rem;
+    padding-right: 10rem; }
+    @media (min-width: 368px) and (max-width: 767px) {
+      fieldset input[name=nombre] {
+        padding: 0rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      fieldset input[name=nombre] {
+        padding-right: 5rem; } }
   fieldset input[name=apellido] {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 1.9rem; }
+    margin: 0rem 0rem 0rem 1.9rem;
+    padding-right: 10rem; }
+    @media (min-width: 368px) and (max-width: 767px) {
+      fieldset input[name=apellido] {
+        padding: 0rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      fieldset input[name=apellido] {
+        padding-right: 5rem; } }
   fieldset input[type=email] {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 3.1rem; }
+    margin: 0rem 0rem 0rem 3.1rem;
+    padding-right: 10rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       fieldset input[type=email] {
-        margin-left: 2.9rem; } }
+        margin-left: 2.9rem;
+        padding: 0rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      fieldset input[type=email] {
+        padding-right: 5rem; } }
   fieldset input[type=radio] {
     margin: 0.5rem 0.5rem 1rem 2rem; }
   fieldset input[type=checkbox] {
     margin: 0.5rem 0.5rem 0rem 2rem; }
   fieldset textarea {
     border: 1px solid black;
-    margin: 0rem 0rem 0rem 1.2rem; }
+    margin: 0rem 0rem 0rem 1.2rem;
+    padding-right: 7rem; }
+    @media (min-width: 368px) and (max-width: 767px) {
+      fieldset textarea {
+        padding: 0rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      fieldset textarea {
+        padding-right: 5rem; } }
   fieldset select {
     margin: 1rem 0rem 1rem 2rem; }
 

@@ -71,16 +71,37 @@ fieldset{
         &[name=nombre] {
             border: 1px solid black;
             margin: 0rem 0rem 0rem 1.9rem;
+            padding-right: 10rem;
+            @include media-query(mobile){
+                padding: 0rem;
+            }
+            @include media-query(tablet){
+                padding-right: 5rem;
+            }
         }
         &[name=apellido] {
             border: 1px solid black;
             margin: 0rem 0rem 0rem 1.9rem;
+            padding-right: 10rem;
+            @include media-query(mobile){
+                padding: 0rem;
+            }
+            @include media-query(tablet){
+                padding-right: 5rem;
+            }
+
         }
         &[type=email] {
             border: 1px solid black;
             margin: 0rem 0rem 0rem 3.1rem;
+            padding-right: 10rem;
+
             @include media-query(mobile){
                 margin-left: 2.9rem;
+                padding: 0rem;
+            }
+            @include media-query(tablet){
+                padding-right: 5rem;
             }
         }
         &[type=radio]{
@@ -94,6 +115,14 @@ fieldset{
     textarea{
         border: 1px solid black;
         margin: 0rem 0rem 0rem 1.2rem;
+        padding-right: 7rem;
+        @include media-query(mobile){
+            padding: 0rem;
+        }
+        @include media-query(tablet){
+            padding-right: 5rem;
+        }
+
     } 
     
     select{
