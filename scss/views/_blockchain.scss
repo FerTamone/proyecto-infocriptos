@@ -123,15 +123,21 @@
                 border: 1px solid white;
                 padding: 4px;
                 font-weight: 500;
+                text-align: center;
             }
         }
     }
-    #columnaPrincipal{
+    .columnaPrincipal{
         font-weight: 700;
         font-size: 1.5rem;
+        text-align: left;
     }
     @include media-query(mobile){
         display: none;
     }
     
+}
+
+.txtCentro{
+    text-align: center;
 }

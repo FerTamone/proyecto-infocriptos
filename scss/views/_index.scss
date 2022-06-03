@@ -49,7 +49,7 @@
 
 //ìdentificador que organiza contenido y define formato de los iconos que giran con la animacion,desactivada esta en las vistas mobile y tablet
 
-#iconosRotando{
+.iconosRotando{
     @include sizes(31rem,5rem);
     @extend .flex-row, .espaciadoAround, .alineacion;
     .iconos{

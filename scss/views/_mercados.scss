@@ -43,7 +43,7 @@
   }
   img{
     @include sizes(45rem,25rem);
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0rem 1rem 1rem;
     @include media-query(mobile){
       @include sizes(100%,100%);
     }
@@ -55,8 +55,10 @@
       font-size: 1.4rem;
     }
   }
-  button {
-    @include seteoLetra(oswald,2rem,none,none,uppercase,none);
+  
+
+  .button {
+    @include seteoLetra(oswald,2rem,center,none,uppercase,black);
     @include sizes(9rem,4rem);
     margin: 1rem;
     border: none;
@@ -91,10 +93,7 @@
         transform: none;
       }
     }
-    a{
-      text-decoration: none;
-      color: black;
-    }
+    
   }
   
 }
