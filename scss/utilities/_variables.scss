@@ -34,7 +34,7 @@ h3{
 
 h4{
     //defino el estilo de todos los h4 del sitio con el mixin
-    @include seteoLetra(oswald,3rem ,none ,underline ,uppercase ,white );
+    @include seteoLetra(oswald,4rem ,none ,underline ,uppercase ,white );
 }
 
 p{

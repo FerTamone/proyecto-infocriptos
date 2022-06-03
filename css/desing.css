@@ -70,7 +70,7 @@ h3 {
 
 h4 {
   font-family: oswald;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: none;
   text-decoration: underline;
   text-transform: uppercase;
@@ -564,7 +564,6 @@ nav {
       flex-direction: column;
       height: 100%; } }
   #videoSection h4 {
-    font-size: 4rem;
     margin-left: 5rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       #videoSection h4 {
@@ -597,7 +596,6 @@ nav {
     flex-direction: column; } }
 
 #funcionamientoSection h4 {
-  font-size: 4rem;
   margin-bottom: 1rem;
   text-align: center; }
   @media (min-width: 368px) and (max-width: 767px) {
@@ -624,7 +622,6 @@ nav {
       margin-left: 9rem; } }
 
 #tablaSection h4 {
-  font-size: 4rem;
   text-align: center;
   margin: 2rem; }
 

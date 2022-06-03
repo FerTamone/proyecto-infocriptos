@@ -33,7 +33,6 @@
 
     }
     h4{
-        font-size: 4rem;
         margin-left: 5rem;
         @include media-query(mobile){
             font-size: 3rem;
@@ -75,7 +74,6 @@
 #funcionamientoSection{
     @extend .flex-column;
     h4{
-        font-size: 4rem;
         margin-bottom: 1rem;
         text-align: center;
         @include media-query(mobile){
@@ -105,7 +103,6 @@
 #tablaSection{
     @extend .flex-column;
     h4{
-        font-size: 4rem;
         text-align: center;
         margin: 2rem;
         
