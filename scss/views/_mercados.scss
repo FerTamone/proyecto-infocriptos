@@ -1,7 +1,9 @@
-//modificacion a la clase seteoArticleRow para que esta tenga un margen superior y los objetos se ubiquen cada uno con su espacio
-.seteoArticleRow{
-  margin-top: 5rem;
+//clase que organiza los elementos de la seccion mercados
+.article__mercados{
+  @extend .flex-row, .espaciadoAround;
+  @include sizes(100%,100%);
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 //clase que define la organizacion de elementos,estilos de el exterior de la tarjeta, y como se modifica en las vistas mobile y tablet

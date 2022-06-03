@@ -1,5 +1,5 @@
 // defino una clase que organiza las cards de la seccion, modificandose en la vista de tablet
-.cards{
+.article__criptomonedas{
     @include sizes(100%,250rem);
     @extend .flex-column, .espaciadoAround, .alineacion;
     @include media-query(tablet){

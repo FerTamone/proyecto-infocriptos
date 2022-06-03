@@ -94,29 +94,21 @@ section {
   width: 100%;
   height: 100%; }
 
-.seteoArticleRow {
-  width: 100%;
-  height: 100%; }
-
-.seteoArticleColumn {
-  width: 100%;
-  height: 100%; }
-
-.alineacion, .banner, #iconosRotando, .cards, #videoSection, .formularios {
+.alineacion, .banner, #iconosRotando, .article__criptomonedas, #videoSection, .article__ayuda {
   justify-content: center;
   align-items: center; }
 
-.espaciadoAround, .seteoArticleRow, .seteoArticleColumn, .banner, .elementos, #iconosRotando, #iconoEstatico, .cards, .imagenCripto, .tablaYfuncionamiento {
+.espaciadoAround, .banner, .elementos, .article__index, #iconosRotando, #iconoEstatico, .article__criptomonedas, .imagenCripto, .article__blockchain, .tablaYfuncionamiento, .article__mercados {
   justify-content: space-around; }
 
 .espaciadoBeetwen, .titleLink, #videoSection {
   justify-content: space-between; }
 
-.flex-row, .seteoArticleRow, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink, #videoSection, .tablaYfuncionamiento, .formularios {
+.flex-row, .banner, .elementos, #iconosRotando, #iconoEstatico, .titleLink, #videoSection, .tablaYfuncionamiento, .article__mercados, .article__ayuda {
   display: flex;
   flex-direction: row; }
 
-.flex-column, .seteoArticleColumn, #infoCriptos, #infoFuturos, .cards, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .imagenCripto, #funcionamientoSection, .tarjetaContorno, .tarjetaCuerpo {
+.flex-column, #infoCriptos, #infoFuturos, .article__criptomonedas, .sizeCard #btc, .sizeCard #eth, .sizeCard #tusd, .sizeCard #bnb, .sizeCard #usdc, .imagenCripto, .article__blockchain, #funcionamientoSection, #tablaSection, .tarjetaContorno, .tarjetaCuerpo {
   display: flex;
   flex-direction: column; }
 
@@ -124,7 +116,7 @@ section {
   display: flex;
   flex-direction: row-reverse; }
 
-.flex-columnReverse, .cuerpoArticle {
+.flex-columnReverse, .article__index {
   display: flex;
   flex-direction: column-reverse; }
 
@@ -307,6 +299,10 @@ nav {
 .dropdown-item {
   text-transform: uppercase; }
 
+.article__index {
+  width: 100%;
+  height: 100%; }
+
 #infoCriptos {
   margin: 3rem 0rem 5rem 0rem; }
   #infoCriptos h3 {
@@ -367,11 +363,11 @@ nav {
         width: 70px;
         height: 70px; } }
 
-.cards {
+.article__criptomonedas {
   width: 100%;
   height: 250rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
-    .cards {
+    .article__criptomonedas {
       width: 100%;
       height: 100%; } }
 
@@ -536,6 +532,10 @@ nav {
   margin-left: 2rem;
   transition: width 1s ease; }
 
+.article__blockchain {
+  width: 100%;
+  height: 100%; }
+
 .videoSize {
   width: 75rem;
   height: 45rem;
@@ -652,9 +652,11 @@ nav {
   #tablaSection {
     display: none; } }
 
-.seteoArticleRow {
-  margin-top: 5rem;
-  flex-wrap: wrap; }
+.article__mercados {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-top: 5rem; }
 
 .tarjetaContorno {
   width: 47rem;
@@ -745,14 +747,14 @@ nav {
       text-decoration: none;
       color: black; }
 
-.formularios {
+.article__ayuda {
   width: 100%;
   height: 100rem; }
   @media (min-width: 368px) and (max-width: 767px) {
-    .formularios {
+    .article__ayuda {
       height: 100%;
       flex-direction: column; } }
   @media (min-width: 768px) and (max-width: 1024px) {
-    .formularios {
+    .article__ayuda {
       height: 100%;
       flex-direction: column; } }

@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- definimos el viewport para poder ver el contenido en todas las vistas posibles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png" />
-    <!-- exporto de diferentes librerias efectos que luego utilizo en la pagina -->
+    <!-- linkeo de los css de BS, de donde uso para organizar mi nav. Y mi css creado con SASS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/desing.css">
+    <!-- SEO de la pagina -->
     <meta name="keywords" content="ayuda, soporte, encuesta, formulario, consultas, criptomonedas, bitcoin">
     <title>AYUDA</title>
   </head>
   <body>
     <div class="container-fluid p-0">
       <header>
+        <!-- utilizo un nav ya definido por BS, le modifico los linkeos y colores de las letras por medio de la modificacion de las clases ya seteadas por BS -->
         <nav>
           <ul class="nav ">
             <li class="nav-item">
@@ -77,6 +78,7 @@
         </nav>
       </header>
       <section>
+        <!-- defino el banner principal de la pagina, que esta en todas las secciones hecho por igual  -->
         <div class="banner">
           <div class="flex-column alineacion ">
             <h1>ayuda</h1>
@@ -85,7 +87,9 @@
             <img class="seteoImg" src="../imagenes/ayuda.png" alt="" />
           </div>
         </div>
-        <article class="formularios">
+        <!-- defino el article, con su respectiva clase que organiza los elementos del mismo -->
+        <article class="article__ayuda">
+          <!-- creo formularios, uno para la consulta del usuario que entre al sitio, la otra una encuesta -->
           <form>
             <fieldset>
               <legend>consultas</legend>
@@ -178,7 +182,9 @@
           
         </article>
       </section>
+      <!-- seccion del footer de la pagina -->
       <footer>
+        <!-- fracciono el footer con los diferentes elementos que quiero mostrar en este -->
         <div class="elementos">
           <div class="">
             <h5>Autor</h5>
@@ -187,6 +193,7 @@
           <div class="flex-column">
             <h5>Secciones</h5>
             <div class="flex-row">
+              <!-- creo seccion con una lista de las secciones que conforman el sitio para que el usuario pueda linkear directo a ellos -->
               <div>
                 <ul>
                   <li><a href="../index.html">Inicio</a></li>
@@ -203,6 +210,7 @@
             </div>
           </div>
           <div class="flex-column">
+            <!-- seccion de redes de la pagina, linkeados a las redes sociales representadas por iconos -->
             <h5>Encontranos en</h5>
             <div class="margin">
               <a href="https://es-la.facebook.com/"
@@ -221,6 +229,7 @@
         </div>
       </footer>
     </div>
+    <!-- importo JS que tiene BS para utilizarlos, en este caso el nav -->
     <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -53,17 +53,6 @@ section{
     @include sizes(100%,100%);
 }
 
-//defino seteos a article del sitio, dependiendo de la organizacion del contenido
-.seteoArticleRow{
-    @extend .flex-row, .espaciadoAround;
-    @include sizes(100%,100% );
-}
-
-.seteoArticleColumn{
-    @extend .flex-column, .espaciadoAround;
-    @include sizes(100%,100% );
-}
-
 //defino ciertas clases que utilizo con frecuencia en el codigo y en otras clases
 .alineacion{
     justify-content: center;

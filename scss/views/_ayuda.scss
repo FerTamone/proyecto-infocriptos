@@ -1,5 +1,5 @@
 //defino clase que organiza los formularios de la seccion ayuda, con sus respectivas vistas
-.formularios{
+.article__ayuda{
     @include sizes(100%,100rem);
     @extend .flex-row, .alineacion;
     @include media-query(mobile){

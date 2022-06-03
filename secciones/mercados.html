@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- agrego un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png" />
-
+    <!-- linkeo de los css de BS, de donde uso para organizar mi nav. Y mi css creado con SASS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/desing.css" />
+    <!-- SEO de la pagina -->
     <meta name="description" content="Una exchange hay que imaginarsela como una casa de cambio online, que es el punto de encuentro donde se realizan los intercambios de criptomonedas por dinero fiat u otras ">
     <meta name="keywords" content="binance, coinbase, kraken, ftx, kucoin, exchange, cambio criptomonedas, capital, plataforma online, monedero digital, compraventa, cripto, tokenizacion, derivados, apalancamientos, futuros, dark pools, bots trading, mercado  ">
     <title>MERCADOS</title>
@@ -15,6 +17,7 @@
   <body>
     <div class="container-fluid p-0">
       <header>
+        <!-- utilizo un nav ya definido por BS, le modifico los linkeos y colores de las letras por medio de la modificacion de las clases ya seteadas por BS -->
         <nav>
           <ul class="nav ">
             <li class="nav-item">
@@ -77,6 +80,7 @@
         </nav>
       </header>
       <section>
+        <!-- defino el banner principal de la pagina, que esta en todas las secciones hecho por igual  -->
         <div class="banner">
           <div >
             <h1>Exchanges</h1>
@@ -85,7 +89,9 @@
             <img class="seteoImg" src="../imagenes/mercados.png" alt="" />
           </div>
         </div>
-        <article class="seteoArticleRow ">
+        <!-- defino el article, con su respectiva clase que organiza los elementos del mismo -->
+        <article class="article__mercados">
+          <!-- voy listando las tarjetas que conteneran la info de la seccion -->
           <div   class="tarjetaContorno ">
             <div class="tarjetaContorno--cabezal">
               <h2>binance</h2>
@@ -223,7 +229,9 @@
           </div>
         </article>
       </section>
+      <!-- seccion del footer de la pagina -->
       <footer>
+        <!-- fracciono el footer con los diferentes elementos que quiero mostrar en este -->
         <div class="elementos">
           <div class="">
             <h5>Autor</h5>
@@ -232,6 +240,7 @@
           <div class="flex-column">
             <h5>Secciones</h5>
             <div class="flex-row">
+              <!-- creo seccion con una lista de las secciones que conforman el sitio para que el usuario pueda linkear directo a ellos -->
               <div>
                 <ul>
                   <li><a href="../index.html">Inicio</a></li>
@@ -248,6 +257,7 @@
             </div>
           </div>
           <div class="flex-column">
+            <!-- seccion de redes de la pagina, linkeados a las redes sociales representadas por iconos -->
             <h5>Encontranos en</h5>
             <div class="margin">
               <a href="https://es-la.facebook.com/"
@@ -262,10 +272,10 @@
               class="iconos"src="../iconos/telegram-icon.png"alt="telegram"/></a>
             </div>
           </div>  
-          
         </div>
       </footer>
     </div>
+    <!-- importo JS que tiene BS para utilizarlos, en este caso el nav -->
     <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

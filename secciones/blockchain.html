@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- definimos el viewport para poder ver el contenido en todas las vistas posibles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- agregamos un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
+    <!-- agrego un icono al nombre de la pagina, se ve reflejado en la pestaña del navegador -->
     <link rel="shortcut icon" href="../iconos/shiba-icon.png" />
-    <!-- exporto de diferentes librerias efectos que luego utilizo en la pagina -->
+    <!-- linkeo de los css de BS, de donde uso para organizar mi nav. Y mi css creado con SASS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/desing.css">
+    <!-- SEO de la pagina -->
     <meta name="description" content="funcionamiento de una blockchain, la cual es una base de datos o registro publico que puede ser compartido por multitud de usarios en modo peer-to-peer(red de pares) y que permite el registro de informacion de forma inmutable y organizada">
     <meta name="keywords" content="blockchain, base de datos, registro, peer-to-peer, inmutable, criptomonedas, bitcoin">
     <title>BLOCKCHAIN</title>
@@ -16,6 +16,7 @@
   <body>
     <div class="container-fluid p-0">
       <header>
+        <!-- utilizo un nav ya definido por BS, le modifico los linkeos y colores de las letras por medio de la modificacion de las clases ya seteadas por BS -->
         <nav>
           <ul class="nav ">
             <li class="nav-item">
@@ -78,6 +79,7 @@
         </nav>
       </header>
       <section>
+        <!-- defino el banner principal de la pagina, que esta en todas las secciones hecho por igual  -->
         <div class="banner">
           <div class="flex-column alineacion ">
             <h1>blockchain</h1>
@@ -86,12 +88,15 @@
             <img class="seteoImg" src="../imagenes/blockchain.png" alt="" />
           </div>
         </div>
-        <article class="seteoArticleColumn">
+        <!-- defino el article, con su respectiva clase que organiza los elementos del mismo -->
+        <article class="article__blockchain">
+          <!-- fracciono el cuerpo del article, donde voy mostrando diferentes informaciones con sus respectivos estilos -->
           <div id="videoSection" >
             <div>
               <h4>¿que es?</h4>
               <p>Se puede definir como una base de datos o registro publico que puede ser compartido por multitud de usarios en modo peer-to-peer(red de pares) y que permite el registro de informacion de forma inmutable y organizada. Gracias a la blockchain las criptomonedas funcionan, a pesar de que fue creada para almacenar el historial de operaciones del Bitcoin, con el paso de los años, se ha visto un gran potencial para aplicarse a otros ambitos y sectores debido a las posibilidades que ofrece la misma.</p>
             </div>
+            <!-- agrego un etiqueta iframe con video de youtube -->
             <div >
               <iframe class="videoSize" src="https://www.youtube.com/embed/70asKwy15Ds?start=7"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -107,11 +112,12 @@
                 <img  src="../imagenes/block2-img.jpg" alt="">
               </div>
             </div>
-            <div id="tablaSection" class="flex-column ">
+            <div id="tablaSection" >
               <div>
                 <h4>caracteristicas y tipos de blockchain</h4>
               </div>
               <div >
+                <!-- creacion de tabla desde 0 -->
                 <table>
                   <tr>
                     <th></th>
@@ -222,7 +228,9 @@
           </div>
         </article>
       </section>
+      <!-- seccion del footer de la pagina -->
       <footer>
+        <!-- fracciono el footer con los diferentes elementos que quiero mostrar en este -->
         <div class="elementos">
           <div class="">
             <h5>Autor</h5>
@@ -231,6 +239,7 @@
           <div class="flex-column">
             <h5>Secciones</h5>
             <div class="flex-row">
+              <!-- creo seccion con una lista de las secciones que conforman el sitio para que el usuario pueda linkear directo a ellos -->
               <div>
                 <ul>
                   <li><a href="../index.html">Inicio</a></li>
@@ -247,6 +256,7 @@
             </div>
           </div>
           <div class="flex-column">
+            <!-- seccion de redes de la pagina, linkeados a las redes sociales representadas por iconos -->
             <h5>Encontranos en</h5>
             <div class="margin">
               <a href="https://es-la.facebook.com/"
@@ -265,6 +275,7 @@
         </div>
       </footer>
     </div>
+    <!-- importo JS que tiene BS para utilizarlos, en este caso el nav -->
     <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

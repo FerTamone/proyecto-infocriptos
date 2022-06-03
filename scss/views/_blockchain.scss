@@ -1,3 +1,9 @@
+//clase que organiza los elementos del article de la pagina
+.article__blockchain{
+    @extend .flex-column, .espaciadoAround;
+    @include sizes(100%,100%);
+}
+
 //defino la clase que da estilo al tamaño del video en la seccion
 .videoSize{
     @include sizes(75rem,45rem);
@@ -97,6 +103,7 @@
 
 //identificador donde se define la estructura de la tabla con su estilo y vista
 #tablaSection{
+    @extend .flex-column;
     h4{
         font-size: 4rem;
         text-align: center;
@@ -131,5 +138,3 @@
     }
     
 }
-
-
