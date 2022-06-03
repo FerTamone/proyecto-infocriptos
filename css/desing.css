@@ -725,8 +725,9 @@ nav {
     margin: 1rem 0rem 1rem 1rem; }
     @media (min-width: 368px) and (max-width: 767px) {
       .tarjetaCuerpo img {
-        width: 100%;
-        height: 100%; } }
+        width: 94%;
+        height: 100%;
+        margin: 1rem 0rem 0rem 1rem; } }
   .tarjetaCuerpo p {
     margin: 1rem;
     font-size: 1.5rem; }
