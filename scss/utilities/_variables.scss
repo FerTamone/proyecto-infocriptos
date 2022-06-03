@@ -48,7 +48,7 @@ p{
 
 section{
     //seteo fondo de el section del sitio
-    background-image: url(../../imagenes/fondo-section.jpg);
+    background-image: url(/imagenes/fondo-section.jpg);
     background-size: cover;
     @include sizes(100%,100%);
 }
