@@ -14,8 +14,11 @@ Para conocer este hace click en el  [link](https://infocryptos2022.000webhostapp
 
 * HTML 5
 * CSS 3
+* Bootstrap
+* SASS
+
 
 
 ## Autor 🖋️
 *Fernando Tamone*
-https://infocryptos2022.000webhostapp.com/index.html
+
