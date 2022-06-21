@@ -6,7 +6,7 @@ Es un proyecto en el cual brindamos toda la información necesaria para conocer 
 
 ## Proyecto 📁
 
-Para conocer este hace click en el  [link](https://fertamone.github.io/proyecto-infocriptos-coderhouse/). :globe_with_meridians:
+Para conocer este hace click en el  [link](https://infocryptos2022.000webhostapp.com/index.html). :globe_with_meridians:
 
 
 
@@ -18,3 +18,4 @@ Para conocer este hace click en el  [link](https://fertamone.github.io/proyecto-
 
 ## Autor 🖋️
 *Fernando Tamone*
+https://infocryptos2022.000webhostapp.com/index.html
